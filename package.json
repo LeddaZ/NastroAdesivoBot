@@ -1,0 +1,16 @@
+{
+  "name": "ilbusi",
+  "version": "1.0.0",
+  "description": "The Real Busi",
+  "main": "index.js",
+  "dependencies": {
+    "lower-case": "^1.1.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "@LeddaZ su Telegram",
+  "license": "ISC"
+}
