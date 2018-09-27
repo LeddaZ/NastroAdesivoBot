@@ -18,6 +18,12 @@ const trigger14 = 'tigre';
 const trigger15 = 'Tigre';
 const trigger16 = 'Buongiorno';
 const trigger17 = 'buongiorno';
+const trigger18 = 'chi sei?';
+const trigger19 = 'Chi sei?';
+const trigger20 = 'chi sei tu?';
+const trigger21 = 'Chi sei tu?';
+const trigger22 = 'Salute';
+const trigger23 = 'salute';
 const bot = new Bot(token, {polling: true});
 bot.on('message', (msg) => {
   if (msg.text.toString() === trigger)
@@ -37,11 +43,11 @@ bot.on('message', (msg) => {
   if (msg.text.toString() === trigger8)
     bot.sendMessage(msg.chat.id, 'MERJAAA VAI FUORI DALLA PORTAAAAAH!');
   if (msg.text.toString() === trigger9)
-    bot.sendMessage(msg.chat.id, 'Il Busi 1.1.0 by @LeddaZ - Digita BusiTrigger per i comandi');
+    bot.sendMessage(msg.chat.id, 'Il Busi 1.1.1 by @LeddaZ - Digita BusiTrigger per la lista dei comandi - Codice del bot: https://github.com/LeddaZ/NastroAdesivoBot');
   if (msg.text.toString() === trigger10)
-    bot.sendMessage(msg.chat.id, 'Il Busi 1.1.0 by @LeddaZ - Digita BusiTrigger per i comandi');
+    bot.sendMessage(msg.chat.id, 'Il Busi 1.1.1 by @LeddaZ - Digita BusiTrigger per la lista dei comandi - Codice del bot: https://github.com/LeddaZ/NastroAdesivoBot');
   if (msg.text.toString() === trigger11)
-    bot.sendMessage(msg.chat.id, 'Comandi del Busi - Loddo; Non ho lo scotch; Buongiorno prof; Buongiorno; Businfo; Popopopo; Tigre; Merjaaa');
+    bot.sendMessage(msg.chat.id, 'Comandi del Busi - Loddo; Non ho lo scotch; Buongiorno prof; Buongiorno; Businfo; Popopopo; Tigre; Merjaaa; Chi sei?; Chi sei tu?; Salute');
   if (msg.text.toString() === trigger12)
     bot.sendMessage(msg.chat.id, 'CHI È QUESTO? AH È GUERAAAAAAH!');
   if (msg.text.toString() === trigger13)
@@ -54,4 +60,16 @@ bot.on('message', (msg) => {
     bot.sendMessage(msg.chat.id, 'BUONGIORNO SEDUTI! SI VA IN LABORATORIOH!');
   if (msg.text.toString() === trigger17)
     bot.sendMessage(msg.chat.id, 'BUONGIORNO SEDUTI! SI VA IN LABORATORIOH!');
+  if (msg.text.toString() === trigger18)
+    bot.sendMessage(msg.chat.id, 'SEI BELLABONA?');
+  if (msg.text.toString() === trigger19)
+    bot.sendMessage(msg.chat.id, 'SEI BELLABONA?');
+  if (msg.text.toString() === trigger20)
+    bot.sendMessage(msg.chat.id, 'SEI BELLABONA?');
+  if (msg.text.toString() === trigger21)
+    bot.sendMessage(msg.chat.id, 'SEI BELLABONA?');
+  if (msg.text.toString() === trigger22)
+    bot.sendMessage(msg.chat.id, "Dire 'salute' quando si StErNutA è buona educazione, ma in alcuni casi, come nella 2IE, disturba la lezione, quindi non si dice, PENA... L'INFERNOOOOOOH! CI SIAMO CAPITIIIIH?");
+  if (msg.text.toString() === trigger23)
+    bot.sendMessage(msg.chat.id, "Dire 'salute' quando si StErNutA è buona educazione, ma in alcuni casi, come nella 2IE, disturba la lezione, quindi non si dice, PENA... L'INFERNOOOOOOH! CI SIAMO CAPITIIIIH?");
 })
