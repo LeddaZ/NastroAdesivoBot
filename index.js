@@ -12,6 +12,12 @@ const trigger8 = 'Popopopo';
 const trigger9 = 'Businfo';
 const trigger10 = 'businfo';
 const trigger11 = 'BusiTrigger';
+const trigger12 = 'Merjaaa';
+const trigger13 = 'merjaaa';
+const trigger14 = 'tigre';
+const trigger15 = 'Tigre';
+const trigger16 = 'Buongiorno';
+const trigger17 = 'buongiorno';
 const bot = new Bot(token, {polling: true});
 bot.on('message', (msg) => {
   if (msg.text.toString() === trigger)
@@ -35,5 +41,17 @@ bot.on('message', (msg) => {
   if (msg.text.toString() === trigger10)
     bot.sendMessage(msg.chat.id, 'Il Busi 1.1.0 by @LeddaZ - Digita BusiTrigger per i comandi');
   if (msg.text.toString() === trigger11)
-    bot.sendMessage(msg.chat.id, 'Comandi del Busi - Loddo; Non ho lo scotch; Buongiorno prof; Businfo; Popopopo');
+    bot.sendMessage(msg.chat.id, 'Comandi del Busi - Loddo; Non ho lo scotch; Buongiorno prof; Buongiorno; Businfo; Popopopo; Tigre; Merjaaa');
+  if (msg.text.toString() === trigger12)
+    bot.sendMessage(msg.chat.id, 'CHI È QUESTO? AH È GUERAAAAAAH!');
+  if (msg.text.toString() === trigger13)
+    bot.sendMessage(msg.chat.id, 'CHI È QUESTO? AH È GUERAAAAAAH!');
+  if (msg.text.toString() === trigger14)
+    bot.sendMessage(msg.chat.id, 'https://i.ytimg.com/vi/q2l06PW6Uts/maxresdefault.jpg LE TIGRI SOFFRONOOOOH!');
+  if (msg.text.toString() === trigger15)
+    bot.sendMessage(msg.chat.id, 'https://i.ytimg.com/vi/q2l06PW6Uts/maxresdefault.jpg LE TIGRI SOFFRONOOOOH!');
+  if (msg.text.toString() === trigger16)
+    bot.sendMessage(msg.chat.id, 'BUONGIORNO SEDUTI! SI VA IN LABORATORIOH!');
+  if (msg.text.toString() === trigger17)
+    bot.sendMessage(msg.chat.id, 'BUONGIORNO SEDUTI! SI VA IN LABORATORIOH!');
 })
