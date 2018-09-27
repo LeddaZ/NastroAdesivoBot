@@ -1,8 +1,6 @@
 const Bot = require('node-telegram-bot-api');
-const lc = require('lower-case');
 const request = require('request');
 const token = '697036602:AAHwtJbcP7mp-nNzepGJibUUruUOksLOqXY';
-const url = 'https://launchlibrary.net/1.3/launch';
 const trigger = 'loddo';
 const trigger2 = 'Loddo';
 const trigger3 = 'buongiorno prof';
@@ -11,6 +9,9 @@ const trigger5 = 'non ho lo scotch';
 const trigger6 = 'Non ho lo scotch';
 const trigger7 = 'popopopo';
 const trigger8 = 'Popopopo';
+const trigger9 = 'Businfo';
+const trigger10 = 'businfo';
+const trigger11 = 'BusiTrigger';
 const bot = new Bot(token, {polling: true});
 bot.on('message', (msg) => {
   if (msg.text.toString() === trigger)
@@ -29,4 +30,10 @@ bot.on('message', (msg) => {
     bot.sendMessage(msg.chat.id, 'MERJAAA VAI FUORI DALLA PORTAAAAAH!');
   if (msg.text.toString() === trigger8)
     bot.sendMessage(msg.chat.id, 'MERJAAA VAI FUORI DALLA PORTAAAAAH!');
+  if (msg.text.toString() === trigger9)
+    bot.sendMessage(msg.chat.id, 'Il Busi 1.1.0 by @LeddaZ - Digita BusiTrigger per i comandi');
+  if (msg.text.toString() === trigger10)
+    bot.sendMessage(msg.chat.id, 'Il Busi 1.1.0 by @LeddaZ - Digita BusiTrigger per i comandi');
+  if (msg.text.toString() === trigger11)
+    bot.sendMessage(msg.chat.id, 'Comandi del Busi - Loddo; Non ho lo scotch; Buongiorno prof; Businfo; Popopopo');
 })
