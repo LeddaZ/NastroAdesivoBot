@@ -16,3 +16,6 @@ Il comando businfo mostra anche il link del codice. Sono stati aggiunti chi sei?
 
 1.1.2
 Sono stati aggiunti i trigger punto Z, paesaggio veneto, dispensa (illegale xd) e farfalle
+
+1.1.3
+È stato rimosso il trigger dispensa
