@@ -20,4 +20,4 @@ Sono stati aggiunti i trigger punto Z, paesaggio veneto, dispensa (illegale xd) 
 1.1.3
 È stato rimosso il trigger dispensa
 
-Per le versioni successive guardare qui[https://github.com/LeddaZ/NastroAdesivoBot/releases]
+Per le versioni successive guardare [qui](https://github.com/LeddaZ/NastroAdesivoBot/releases)
