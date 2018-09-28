@@ -53,9 +53,9 @@ bot.on('message', (msg) => {
   if (msg.text.toString() === trigger9)
     bot.sendMessage(msg.chat.id, 'Il Busi 1.1.3 by @LeddaZ - Digita BusiTrigger per la lista dei comandi - Codice del bot: https://github.com/LeddaZ/NastroAdesivoBot');
   if (msg.text.toString() === trigger10)
-    bot.sendMessage(msg.chat.id, 'Il Busi 1.1.2 by @LeddaZ - Digita BusiTrigger per la lista dei comandi - Codice del bot: https://github.com/LeddaZ/NastroAdesivoBot');
+    bot.sendMessage(msg.chat.id, 'Il Busi 1.1.3 by @LeddaZ - Digita BusiTrigger per la lista dei comandi - Codice del bot: https://github.com/LeddaZ/NastroAdesivoBot');
   if (msg.text.toString() === trigger11)
-    bot.sendMessage(msg.chat.id, 'Comandi del Busi - Loddo; Non ho lo scotch; Buongiorno prof; Buongiorno; Businfo; Popopopo; Tigre; Merjaaa; Chi sei?; Chi sei tu?; Salute; Punto Z; Paesaggio veneto; Farfalle');
+    bot.sendMessage(msg.chat.id, 'Trigger del Busi - Loddo; Non ho lo scotch; Buongiorno prof; Buongiorno; Businfo; Popopopo; Tigre; Merjaaa; Chi sei?; Chi sei tu?; Salute; Punto Z; Paesaggio veneto; Farfalle');
   if (msg.text.toString() === trigger12)
     bot.sendMessage(msg.chat.id, 'CHI È QUESTO? AH È GUERAAAAAAH!');
   if (msg.text.toString() === trigger13)
