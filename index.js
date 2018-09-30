@@ -35,6 +35,10 @@ const trigger31 = 'farfalle';
 const trigger32 = 'BioBusi';
 const trigger33 = 'Non ho la tavola';
 const trigger34 = 'non ho la tavola';
+const trigger35 = 'Due';
+const trigger36 = 'due';
+const trigger37 = 'Ma non ho fatto niente';
+const trigger38 = 'ma non ho fatto niente';
 const bot = new Bot(token, {polling: true});
 bot.on('message', (msg) => {
   if (msg.text.toString() === trigger)
@@ -54,11 +58,11 @@ bot.on('message', (msg) => {
   if (msg.text.toString() === trigger8)
     bot.sendMessage(msg.chat.id, 'MERJAAA VAI FUORI DALLA PORTAAAAAH!');
   if (msg.text.toString() === trigger9)
-    bot.sendMessage(msg.chat.id, 'Il Busi 1.1.4 by @LeddaZ - Digita BusiTrigger per la lista dei comandi - Codice del bot: https://github.com/LeddaZ/NastroAdesivoBot');
+    bot.sendMessage(msg.chat.id, 'Il Busi 1.1.5 by @LeddaZ - Digita BusiTrigger per la lista dei comandi - Codice del bot: https://github.com/LeddaZ/NastroAdesivoBot');
   if (msg.text.toString() === trigger10)
-    bot.sendMessage(msg.chat.id, 'Il Busi 1.1.4 by @LeddaZ - Digita BusiTrigger per la lista dei comandi - Codice del bot: https://github.com/LeddaZ/NastroAdesivoBot');
+    bot.sendMessage(msg.chat.id, 'Il Busi 1.1.5 by @LeddaZ - Digita BusiTrigger per la lista dei comandi - Codice del bot: https://github.com/LeddaZ/NastroAdesivoBot');
   if (msg.text.toString() === trigger11)
-    bot.sendMessage(msg.chat.id, 'Trigger del Busi - Loddo; Non ho lo scotch; Buongiorno prof; Buongiorno; Businfo; Popopopo; Tigre; Merjaaa; Chi sei?; Chi sei tu?; Salute; Punto Z; Paesaggio veneto; Farfalle; BioBusi');
+    bot.sendMessage(msg.chat.id, 'Trigger del Busi - Loddo; Non ho lo scotch; Buongiorno prof; Buongiorno; Businfo; Popopopo; Tigre; Merjaaa; Chi sei?; Chi sei tu?; Salute; Punto Z; Paesaggio veneto; Farfalle; BioBusi; Non ho la tavola; Due; Ma non ho fatto niente');
   if (msg.text.toString() === trigger12)
     bot.sendMessage(msg.chat.id, 'CHI È QUESTO? AH È GUERAAAAAAH!');
   if (msg.text.toString() === trigger13)
@@ -105,4 +109,12 @@ bot.on('message', (msg) => {
     bot.sendMessage(msg.chat.id, "DUEEEEEEEEEE!");
   if (msg.text.toString() === trigger34)
     bot.sendMessage(msg.chat.id, "DUEEEEEEEEEE!");
+  if (msg.text.toString() === trigger35)
+    bot.sendMessage(msg.chat.id, "LO DICO IO QUANDO METTERE DUE!");
+  if (msg.text.toString() === trigger36)
+    bot.sendMessage(msg.chat.id, "LO DICO IO QUANDO METTERE DUE!");
+  if (msg.text.toString() === trigger37)
+    bot.sendMessage(msg.chat.id, "VAI VIAAAAAAAAH!");
+  if (msg.text.toString() === trigger38)
+    bot.sendMessage(msg.chat.id, "VAI VIAAAAAAAAH!");
 })
