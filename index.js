@@ -58,19 +58,19 @@ bot.on('message', (msg) => {
   if (msg.text.toString() === trigger8)
     bot.sendMessage(msg.chat.id, 'MERJAAA VAI FUORI DALLA PORTAAAAAH!');
   if (msg.text.toString() === trigger9)
-    bot.sendMessage(msg.chat.id, 'Il Busi 1.1.5 by @LeddaZ - Digita BusiTrigger per la lista dei comandi - Codice del bot: https://github.com/LeddaZ/NastroAdesivoBot');
+    bot.sendMessage(msg.chat.id, 'Il Busi 1.1.6 by @LeddaZ\nDigita BusiTrigger per la lista dei comandi\nCodice del bot: https://github.com/LeddaZ/NastroAdesivoBot');
   if (msg.text.toString() === trigger10)
-    bot.sendMessage(msg.chat.id, 'Il Busi 1.1.5 by @LeddaZ - Digita BusiTrigger per la lista dei comandi - Codice del bot: https://github.com/LeddaZ/NastroAdesivoBot');
+    bot.sendMessage(msg.chat.id, 'Il Busi 1.1.6 by @LeddaZ\nDigita BusiTrigger per la lista dei comandi\nCodice del bot: https://github.com/LeddaZ/NastroAdesivoBot');
   if (msg.text.toString() === trigger11)
-    bot.sendMessage(msg.chat.id, 'Trigger del Busi - Loddo; Non ho lo scotch; Buongiorno prof; Buongiorno; Businfo; Popopopo; Tigre; Merjaaa; Chi sei?; Chi sei tu?; Salute; Punto Z; Paesaggio veneto; Farfalle; BioBusi; Non ho la tavola; Due; Ma non ho fatto niente');
+    bot.sendMessage(msg.chat.id, 'Trigger del Busi\nLoddo - Non ho lo scotch - Buongiorno prof - Buongiorno - Businfo - Popopopo - Tigre - Merjaaa - Chi sei? - Chi sei tu? - Salute - Punto Z - Paesaggio veneto - Farfalle - BioBusi - Non ho la tavola - Due - Ma non ho fatto niente');
   if (msg.text.toString() === trigger12)
     bot.sendMessage(msg.chat.id, 'CHI È QUESTO? AH È GUERAAAAAAH!');
   if (msg.text.toString() === trigger13)
     bot.sendMessage(msg.chat.id, 'CHI È QUESTO? AH È GUERAAAAAAH!');
   if (msg.text.toString() === trigger14)
-    bot.sendMessage(msg.chat.id, 'https://i.ytimg.com/vi/q2l06PW6Uts/maxresdefault.jpg LE TIGRI SOFFRONOOOOH!');
+    bot.sendMessage(msg.chat.id, 'https://i.ytimg.com/vi/q2l06PW6Uts/maxresdefault.jpg\nLE TIGRI SOFFRONOOOOH!');
   if (msg.text.toString() === trigger15)
-    bot.sendMessage(msg.chat.id, 'https://i.ytimg.com/vi/q2l06PW6Uts/maxresdefault.jpg LE TIGRI SOFFRONOOOOH!');
+    bot.sendMessage(msg.chat.id, 'https://i.ytimg.com/vi/q2l06PW6Uts/maxresdefault.jpg\nLE TIGRI SOFFRONOOOOH!');
   if (msg.text.toString() === trigger16)
     bot.sendMessage(msg.chat.id, 'BUONGIORNO SEDUTI! SI VA IN LABORATORIOH!');
   if (msg.text.toString() === trigger17)
