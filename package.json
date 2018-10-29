@@ -1,10 +1,10 @@
 {
   "name": "nastroadesivo",
-  "version": "1.1.6",
+  "version": "1.2.0",
   "description": "The Real Busi",
   "main": "index.js",
   "dependencies": {
-    "lower-case": "^1.1.4"
+    "node-telegram-bot-api": "^0.30.0"
   },
   "devDependencies": {},
   "scripts": {
