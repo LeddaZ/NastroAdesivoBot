@@ -33,6 +33,8 @@ const trigger30 = 'nirvana';
 const trigger31 = 'norvegia';
 const trigger32 = 'ti caccio via';
 const trigger33 = 'violenza privata';
+const trigger34 = 'cane procione';
+const trigger35 = 'pelliccia';
 const bot = new Bot(token, {polling: true});
 bot.on('message', (msg) => {
   if (msg.text.toString().toLowerCase().indexOf(trigger1) === 0)
@@ -44,9 +46,9 @@ bot.on('message', (msg) => {
   if (msg.text.toString().toLowerCase().indexOf(trigger4) === 0)
     bot.sendMessage(msg.chat.id, 'MERJAAA VAI FUORI DALLA PORTAAAAAH!');
   if (msg.text.toString().toLowerCase().indexOf(trigger5) === 0)
-    bot.sendMessage(msg.chat.id, 'Il Busi 1.2.0 by @LeddaZ\nDigita BusiTrigger per la lista dei comandi\nCodice del bot: https://github.com/LeddaZ/NastroAdesivoBot');
+    bot.sendMessage(msg.chat.id, 'Il Busi 1.2.1 by @LeddaZ\nDigita BusiTrigger per la lista dei comandi\nCodice del bot: https://github.com/LeddaZ/NastroAdesivoBot');
   if (msg.text.toString().toLowerCase().indexOf(trigger6) === 0)
-    bot.sendMessage(msg.chat.id, 'Trigger del Busi\nLoddo - Non ho lo scotch - Buongiorno - Businfo - Popopopo - Tigre - Merjaaa - Chi sei? - Salute - Punto Z - Paesaggio veneto - Farfalle - BioBusi - Non ho la tavola - Ma non ho fatto niente - Busiaudio');
+    bot.sendMessage(msg.chat.id, 'Trigger del Busi\nLoddo - Non ho lo scotch - Buongiorno - Businfo - Popopopo - Tigre - Merjaaa - Chi sei? - Salute - Punto Z - Paesaggio veneto - Farfalle - BioBusi - Non ho la tavola - Ma non ho fatto niente - Busiaudio - Cane procione - Pelliccia');
   if (msg.text.toString().toLowerCase().indexOf(trigger7) === 0)
     bot.sendMessage(msg.chat.id, 'CHI È QUESTO? AH È GUERAAAAAAH!');
   if (msg.text.toString().toLowerCase().indexOf(trigger8) === 0)
@@ -99,4 +101,8 @@ bot.on('message', (msg) => {
     bot.sendMessage(msg.chat.id, "http://deaddrop.ftp.sh/JpOZ2bW3i30n.mp3");
   if (msg.text.toString().toLowerCase().indexOf(trigger33) === 0)
     bot.sendMessage(msg.chat.id, "http://deaddrop.ftp.sh/EZj0Kk3pzC34.mp3");
+  if (msg.text.toString().toLowerCase().indexOf(trigger34) === 0)
+    bot.sendMessage(msg.chat.id, "https://t1.ea.ltmcdn.com/it/images/5/2/4/img_il_cane_procione_come_animale_domestico_1425_paso_0_600.jpg\nI CANI PROCIONI SOFFRONOOOOH!");
+  if (msg.text.toString().toLowerCase().indexOf(trigger35) === 0)
+    bot.sendMessage(msg.chat.id, "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Mink_coat_lunaraine.jpg/275px-Mink_coat_lunaraine.jpg\nNON COMPRATE I CAPPOTTI CON LE PELLICCIE CHE VI PORTATE DIETRO LA SOFFERENZA DEGLI ANIMALIIIIIH!");
 })
