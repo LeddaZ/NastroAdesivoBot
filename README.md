@@ -2,7 +2,7 @@
 Il bot Telegram del Busi scritto in node.js (JavaScript con un nome più elegante).
 
 # Versioni
-1.0.0 (iniziale)\nGli unici comandi disponibili sono Loddo, non ho lo scotch, popopopo e buongiorno.
+1.0.0 (iniziale) Gli unici comandi disponibili sono Loddo, non ho lo scotch, popopopo e buongiorno.
 
 1.0.1
 Sono stati aggiunti i comandi BusiTrigger (mostra i comandi disponibili) e businfo (mostra versione e autore del bot). Buongiorno è stato rinominato in buongiorno prof
