@@ -35,6 +35,21 @@ const trigger32 = 'ti caccio via';
 const trigger33 = 'violenza privata';
 const trigger34 = 'cane procione';
 const trigger35 = 'pelliccia';
+const trigger36 = 'palazzo';
+const trigger37 = 'facebook';
+const trigger38 = 'cosmo';
+const trigger39 = 'orco2';
+const trigger40 = 'orco';
+const trigger41 = 'che schifo';
+const trigger42 = 'busiacuto';
+const trigger43 = 'marchesin';
+const trigger44 = 'viva la rivoluzione';
+const trigger45 = 'busifoto';
+const trigger46 = 'oh no';
+const trigger47 = 'non sono parallele';
+const trigger48 = 'busecs';
+const trigger49 = 'busecs2';
+const trigger50 = 'triggered';
 const bot = new Bot(token, {polling: true});
 bot.on('message', (msg) => {
   if (msg.text.toString().toLowerCase().indexOf(trigger1) === 0)
@@ -46,7 +61,7 @@ bot.on('message', (msg) => {
   if (msg.text.toString().toLowerCase().indexOf(trigger4) === 0)
     bot.sendMessage(msg.chat.id, 'MERJAAA VAI FUORI DALLA PORTAAAAAH!');
   if (msg.text.toString().toLowerCase().indexOf(trigger5) === 0)
-    bot.sendMessage(msg.chat.id, 'Il Busi 1.2.1 by @LeddaZ\nDigita BusiTrigger per la lista dei comandi\nCodice del bot: https://github.com/LeddaZ/NastroAdesivoBot');
+    bot.sendMessage(msg.chat.id, 'Il Busi 1.3.0 by @LeddaZ\nDigita BusiTrigger per la lista dei comandi\nCodice del bot: https://github.com/LeddaZ/NastroAdesivoBot');
   if (msg.text.toString().toLowerCase().indexOf(trigger6) === 0)
     bot.sendMessage(msg.chat.id, 'Trigger del Busi\nLoddo - Non ho lo scotch - Buongiorno - Businfo - Popopopo - Tigre - Merjaaa - Chi sei? - Salute - Punto Z - Paesaggio veneto - Farfalle - BioBusi - Non ho la tavola - Ma non ho fatto niente - Busiaudio - Cane procione - Pelliccia');
   if (msg.text.toString().toLowerCase().indexOf(trigger7) === 0)
@@ -70,7 +85,7 @@ bot.on('message', (msg) => {
   if (msg.text.toString().toLowerCase().indexOf(trigger18) === 0)
     bot.sendMessage(msg.chat.id, "VAI VIAAAAAAAAH!");
   if (msg.text.toString().toLowerCase().indexOf(trigger19) === 0)
-    bot.sendMessage(msg.chat.id, "Lista audio del Busi:\nAutoCAD - Brutto sto qua - Busata è un sapiente - Busirena - Compassione - Due - Gomma - Hai capito - Busi16 - Insolente - Nirvana lento - Nirvana - Norvegia - Ti caccio via - Violenza privata");
+    bot.sendMessage(msg.chat.id, "Lista audio del Busi:\nAutoCAD - Brutto sto qua - Busata è un sapiente - Busirena - Compassione - Due - Gomma - Hai capito - Busi16 - Insolente - Nirvana lento - Nirvana - Norvegia - Ti caccio via - Violenza privata - Palazzo - Facebook - Cosmo - Orco2 - Orco - Che schifo - BusiAcuto - Marchesin - Rivoluzione");
   if (msg.text.toString().toLowerCase().indexOf(trigger20) === 0)
     bot.sendMessage(msg.chat.id, "http://deaddrop.ftp.sh/CujnZBJRaRS9.mp3");
   if (msg.text.toString().toLowerCase().indexOf(trigger21) === 0)
@@ -105,4 +120,34 @@ bot.on('message', (msg) => {
     bot.sendMessage(msg.chat.id, "https://t1.ea.ltmcdn.com/it/images/5/2/4/img_il_cane_procione_come_animale_domestico_1425_paso_0_600.jpg\nI CANI PROCIONI SOFFRONOOOOH!");
   if (msg.text.toString().toLowerCase().indexOf(trigger35) === 0)
     bot.sendMessage(msg.chat.id, "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Mink_coat_lunaraine.jpg/275px-Mink_coat_lunaraine.jpg\nNON COMPRATE I CAPPOTTI CON LE PELLICCIE CHE VI PORTATE DIETRO LA SOFFERENZA DEGLI ANIMALIIIIIH!");
+  if (msg.text.toString().toLowerCase().indexOf(trigger36) === 0)
+	bot.sendMessage(msg.chat.id, "http://deaddrop.ftp.sh/bNUb7iOEMkMn.mp3");
+  if (msg.text.toString().toLowerCase().indexOf(trigger37) === 0)
+	bot.sendMessage(msg.chat.id, "http://deaddrop.ftp.sh/082QoWMMz_Ow.mp3");
+  if (msg.text.toString().toLowerCase().indexOf(trigger38) === 0)
+	bot.sendMessage(msg.chat.id, "http://deaddrop.ftp.sh/0GA2Xeg9sRd5.mp3");
+  if (msg.text.toString().toLowerCase().indexOf(trigger39) === 0)
+	bot.sendMessage(msg.chat.id, "http://deaddrop.ftp.sh/90d2gas3dwQa.mp3");
+  if (msg.text.toString().toLowerCase().indexOf(trigger40) === 0)
+	bot.sendMessage(msg.chat.id, "http://deaddrop.ftp.sh/EcF4bCUdfWiL.mp3");
+  if (msg.text.toString().toLowerCase().indexOf(trigger41) === 0)
+	bot.sendMessage(msg.chat.id, "http://deaddrop.ftp.sh/qIdbEkxljQHX.mp3");
+  if (msg.text.toString().toLowerCase().indexOf(trigger42) === 0)
+	bot.sendMessage(msg.chat.id, "http://deaddrop.ftp.sh/SVMEfdg7yV2V.mp3");
+  if (msg.text.toString().toLowerCase().indexOf(trigger43) === 0)
+	bot.sendMessage(msg.chat.id, "http://deaddrop.ftp.sh/t2a9IJtcvqWD.mp3");
+  if (msg.text.toString().toLowerCase().indexOf(trigger44) === 0)
+	bot.sendMessage(msg.chat.id, "http://deaddrop.ftp.sh/UWhCnzcJps7h.mp3");
+  if (msg.text.toString().toLowerCase().indexOf(trigger45) === 0)
+	bot.sendMessage(msg.chat.id, "Lista foto del Busi:\nTigre - Cane procione - Pelliccia - Oh no - Non sono parallele - Busecs - Busecs2 - Triggered");
+  if (msg.text.toString().toLowerCase().indexOf(trigger46) === 0)
+	bot.sendMessage(msg.chat.id, "http://deaddrop.ftp.sh/wrQSmPlj55IH.jpg\nOh no, non sono parallele...");
+  if (msg.text.toString().toLowerCase().indexOf(trigger47) === 0)
+	bot.sendMessage(msg.chat.id, "http://deaddrop.ftp.sh/YJa8N__BT0E4.jpg\nNON SONO PARALLELEEEEEEEEH!");
+  if (msg.text.toString().toLowerCase().indexOf(trigger48) === 0)
+	bot.sendMessage(msg.chat.id, "http://deaddrop.ftp.sh/K5wZ-5klUlCz.jpg\nDUEEEEH!");
+  if (msg.text.toString().toLowerCase().indexOf(trigger49) === 0)
+	bot.sendMessage(msg.chat.id, "http://deaddrop.ftp.sh/NagriUpAqytQ.jpg\nBUONGIORNOH!");
+  if (msg.text.toString().toLowerCase().indexOf(trigger50) === 0)
+	bot.sendMessage(msg.chat.id, "http://deaddrop.ftp.sh/E_FJlFM2gc0a.jpg\nNON SI SPRECA LA CARTAAAAAH!");
 })
