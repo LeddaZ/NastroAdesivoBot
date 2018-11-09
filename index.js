@@ -63,7 +63,7 @@ bot.on('message', (msg) => {
   if (msg.text.toString().toLowerCase().indexOf(trigger5) === 0)
     bot.sendMessage(msg.chat.id, 'Il Busi 1.3.0 by @LeddaZ\nDigita BusiTrigger per la lista dei comandi\nCodice del bot: https://github.com/LeddaZ/NastroAdesivoBot');
   if (msg.text.toString().toLowerCase().indexOf(trigger6) === 0)
-    bot.sendMessage(msg.chat.id, 'Trigger del Busi\nLoddo - Non ho lo scotch - Buongiorno - Businfo - Popopopo - Tigre - Merjaaa - Chi sei? - Salute - Punto Z - Paesaggio veneto - Farfalle - BioBusi - Non ho la tavola - Ma non ho fatto niente - Busiaudio - Cane procione - Pelliccia');
+    bot.sendMessage(msg.chat.id, 'Trigger del Busi\nLoddo - Non ho lo scotch - Buongiorno - Businfo - Popopopo - Merjaaa - Chi sei? - Salute - Punto Z - Paesaggio veneto - Farfalle - BioBusi - Non ho la tavola - Ma non ho fatto niente - Busiaudio - Busifoto');
   if (msg.text.toString().toLowerCase().indexOf(trigger7) === 0)
     bot.sendMessage(msg.chat.id, 'CHI È QUESTO? AH È GUERAAAAAAH!');
   if (msg.text.toString().toLowerCase().indexOf(trigger8) === 0)
