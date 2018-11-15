@@ -7,7 +7,7 @@ const trigger3 = 'non ho lo scotch';
 const trigger4 = 'popopopo';
 const trigger5 = 'businfo';
 const trigger6 = 'busitrigger';
-const trigger7 = 'merjaaa';
+const trigger7 = 'merja';
 const trigger8 = 'tigre';
 const trigger10 = 'chi sei?';
 const trigger11 = 'salute';
@@ -52,6 +52,14 @@ const trigger49 = 'busecs2';
 const trigger50 = 'triggered';
 const trigger51 = 'dio';
 const trigger52 = 'dio cane';
+const trigger53 = 'bassi';
+const trigger54 = 'benvegn';
+const trigger55 = 'cacciato via';
+const trigger56 = 'guerra';
+const trigger57 = 'marchesin vai via';
+const trigger58 = 'carta stracciata';
+const trigger59 = 'mi avete stufato';
+const trigger60 = 'vedovato traffica';
 const bot = new Bot(token, {polling: true});
 bot.on('message', (msg) => {
   if (msg.text.toString().toLowerCase().indexOf(trigger1) === 0)
@@ -63,7 +71,7 @@ bot.on('message', (msg) => {
   if (msg.text.toString().toLowerCase().indexOf(trigger4) === 0)
     bot.sendMessage(msg.chat.id, 'MERJAAA VAI FUORI DALLA PORTAAAAAH!');
   if (msg.text.toString().toLowerCase().indexOf(trigger5) === 0)
-    bot.sendMessage(msg.chat.id, 'Il Busi 1.3.2 by @LeddaZ\nDigita BusiTrigger per la lista dei comandi\nCodice del bot: https://github.com/LeddaZ/NastroAdesivoBot');
+    bot.sendMessage(msg.chat.id, 'Il Busi 1.3.3 by @LeddaZ\nDigita BusiTrigger per la lista dei comandi\nCodice del bot: https://github.com/LeddaZ/NastroAdesivoBot\nTrigger: 60 (21 parole, 8 foto e 31 audio)');
   if (msg.text.toString().toLowerCase().indexOf(trigger6) === 0)
     bot.sendMessage(msg.chat.id, 'Trigger del Busi\nLoddo; Non ho lo scotch; Buongiorno; Businfo; Popopopo; Merjaaa; Chi sei?; Salute; Punto Z; Paesaggio veneto; Farfalle; BioBusi; Non ho la tavola; Ma non ho fatto niente; BusiAudio; BusiFoto; Dio <qualsiasi cosa>');
   if (msg.text.toString().toLowerCase().indexOf(trigger7) === 0)
@@ -87,7 +95,7 @@ bot.on('message', (msg) => {
   if (msg.text.toString().toLowerCase().indexOf(trigger18) === 0)
     bot.sendMessage(msg.chat.id, "VAI VIAAAAAAAAH!");
   if (msg.text.toString().toLowerCase().indexOf(trigger19) === 0)
-    bot.sendMessage(msg.chat.id, "Lista audio del Busi:\nAutoCAD; Brutto sto qua; Busata è un sapiente; Busirena; Compassione; Due; Gomma; Hai capito; Busi16; Insolente; Nirvana lento; Nirvana; Norvegia; Ti caccio via; Violenza privata; Palazzo; Facebook; Cosmo; Orco2; Orco; Che schifo; BusiAcuto; Marchesin; Rivoluzione");
+    bot.sendMessage(msg.chat.id, "Lista audio del Busi:\nAutoCAD; Brutto sto qua; Busata è un sapiente; Busirena; Compassione; Due; Gomma; Hai capito; Busi16; Insolente; Nirvana lento; Nirvana; Norvegia; Ti caccio via; Violenza privata; Palazzo; Facebook; Cosmo; Orco2; Orco; Che schifo; BusiAcuto; Marchesin; Rivoluzione; Bassi; Benvegnù; Cacciato via; Guerra; Marchesin vai via; Carta stracciata; Mi avete stufato; Vedovato traffica");
   if (msg.text.toString().toLowerCase().indexOf(trigger20) === 0)
     bot.sendMessage(msg.chat.id, "http://deaddrop.ftp.sh/CujnZBJRaRS9.mp3");
   if (msg.text.toString().toLowerCase().indexOf(trigger21) === 0)
@@ -137,7 +145,10 @@ bot.on('message', (msg) => {
   if (msg.text.toString().toLowerCase().indexOf(trigger42) === 0)
 	bot.sendMessage(msg.chat.id, "http://deaddrop.ftp.sh/SVMEfdg7yV2V.mp3");
   if (msg.text.toString().toLowerCase().indexOf(trigger43) === 0)
-	bot.sendMessage(msg.chat.id, "http://deaddrop.ftp.sh/t2a9IJtcvqWD.mp3");
+	if (msg.text.toString().toLowerCase().indexOf(trigger57) === 0)
+	  bot.sendMessage(msg.chat.id, "http://deaddrop.ftp.sh/v2FGaTXnhYoA.mp3");
+    else
+	  bot.sendMessage(msg.chat.id, "http://deaddrop.ftp.sh/t2a9IJtcvqWD.mp3");
   if (msg.text.toString().toLowerCase().indexOf(trigger44) === 0)
 	bot.sendMessage(msg.chat.id, "http://deaddrop.ftp.sh/UWhCnzcJps7h.mp3");
   if (msg.text.toString().toLowerCase().indexOf(trigger45) === 0)
@@ -158,4 +169,18 @@ bot.on('message', (msg) => {
 	  bot.sendMessage(msg.chat.id, "CHI È STO QUA? HO SENTITO UN CAGNOLINO PRECEDUTO DA QUALCOS'ALTROOOH!");
     else
 	  bot.sendMessage(msg.chat.id, "AH IO DEVO FARE LE INDAGINI, SÌ PERCHÉ LA GENTE BESTEMIAAAAH!");
+  if (msg.text.toString().toLowerCase().indexOf(trigger53) === 0)
+	bot.sendMessage(msg.chat.id, "http://deaddrop.ftp.sh/Z5FNub-4rnEC.mp3");
+  if (msg.text.toString().toLowerCase().indexOf(trigger54) === 0)
+	bot.sendMessage(msg.chat.id, "http://deaddrop.ftp.sh/BkD_psaw6nUb.mp3");
+  if (msg.text.toString().toLowerCase().indexOf(trigger55) === 0)
+	bot.sendMessage(msg.chat.id, "http://deaddrop.ftp.sh/_8BZYN9rxHtc.mp3");
+  if (msg.text.toString().toLowerCase().indexOf(trigger56) === 0)
+	bot.sendMessage(msg.chat.id, "http://deaddrop.ftp.sh/9DJk-rQW1X7x.mp3");
+  if (msg.text.toString().toLowerCase().indexOf(trigger58) === 0)
+	bot.sendMessage(msg.chat.id, "http://deaddrop.ftp.sh/wUwwPneHVcVT.mp3");
+  if (msg.text.toString().toLowerCase().indexOf(trigger59) === 0)
+	bot.sendMessage(msg.chat.id, "http://deaddrop.ftp.sh/tgKhWh5aaxM5.mp3");
+  if (msg.text.toString().toLowerCase().indexOf(trigger60) === 0)
+	bot.sendMessage(msg.chat.id, "http://deaddrop.ftp.sh/rYz_zqeMxbea.mp3");
 })
