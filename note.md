@@ -75,3 +75,9 @@ Versione 1.3.3
 - BusiTrigger ora mostra il numero di trigger
 
 - Sono stati aggiunti gli audio Bassi, Benvegnù, cacciato via, Guerra, Marchesin vai via, carta stracciata, mi avete stufato e Vedovato traffica
+
+Versione 1.3.4
+
+- È stato aggiunto il trigger "straccia la carta"
+
+- Ora viene visualizzato il testo di "Businfo" quando si avvia il bot con /start

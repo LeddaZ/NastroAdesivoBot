@@ -60,6 +60,8 @@ const trigger57 = 'marchesin vai via';
 const trigger58 = 'carta stracciata';
 const trigger59 = 'mi avete stufato';
 const trigger60 = 'vedovato traffica';
+const trigger61 = 'straccia la carta';
+const trigger62 = '/start'
 const bot = new Bot(token, {polling: true});
 bot.on('message', (msg) => {
   if (msg.text.toString().toLowerCase().indexOf(trigger1) === 0)
@@ -71,9 +73,9 @@ bot.on('message', (msg) => {
   if (msg.text.toString().toLowerCase().indexOf(trigger4) === 0)
     bot.sendMessage(msg.chat.id, 'MERJAAA VAI FUORI DALLA PORTAAAAAH!');
   if (msg.text.toString().toLowerCase().indexOf(trigger5) === 0)
-    bot.sendMessage(msg.chat.id, 'Il Busi 1.3.3 by @LeddaZ\nDigita BusiTrigger per la lista dei comandi\nCodice del bot: https://github.com/LeddaZ/NastroAdesivoBot\nTrigger: 60 (21 parole, 8 foto e 31 audio)');
+    bot.sendMessage(msg.chat.id, 'Il Busi 1.3.4 by @LeddaZ\nDigita BusiTrigger per la lista dei comandi\nCodice del bot: https://github.com/LeddaZ/NastroAdesivoBot\nTrigger: 61 (22 parole, 8 foto e 31 audio)');
   if (msg.text.toString().toLowerCase().indexOf(trigger6) === 0)
-    bot.sendMessage(msg.chat.id, 'Trigger del Busi\nLoddo; Non ho lo scotch; Buongiorno; Businfo; Popopopo; Merjaaa; Chi sei?; Salute; Punto Z; Paesaggio veneto; Farfalle; BioBusi; Non ho la tavola; Ma non ho fatto niente; BusiAudio; BusiFoto; Dio <qualsiasi cosa>');
+    bot.sendMessage(msg.chat.id, 'Trigger del Busi\nLoddo; Non ho lo scotch; Buongiorno; Businfo; Popopopo; Merjaaa; Chi sei?; Salute; Punto Z; Paesaggio veneto; Farfalle; BioBusi; Non ho la tavola; Ma non ho fatto niente; BusiAudio; BusiFoto; Dio <qualsiasi cosa>; Straccia la carta');
   if (msg.text.toString().toLowerCase().indexOf(trigger7) === 0)
     bot.sendMessage(msg.chat.id, 'CHI È QUESTO? AH È GUERAAAAAAH!');
   if (msg.text.toString().toLowerCase().indexOf(trigger8) === 0)
@@ -183,4 +185,8 @@ bot.on('message', (msg) => {
 	bot.sendMessage(msg.chat.id, "http://deaddrop.ftp.sh/tgKhWh5aaxM5.mp3");
   if (msg.text.toString().toLowerCase().indexOf(trigger60) === 0)
 	bot.sendMessage(msg.chat.id, "http://deaddrop.ftp.sh/rYz_zqeMxbea.mp3");
+  if (msg.text.toString().toLowerCase().indexOf(trigger61) === 0)
+	bot.sendMessage(msg.chat.id, "L'ALUNNO STRACCIA, DISTRUGGE, FA A PEZZI LA TAVOLA DA DISEGNOOOH!\nTI VA DI LUSSO, DI SOLITO PER QUESTE COSE METTO NOTA SUL REGISTROOOOOOH!");
+  if (msg.text.toString().toLowerCase().indexOf(trigger62) === 0)
+	bot.sendMessage(msg.chat.id, "Il Busi 1.3.4 by @LeddaZ\nDigita BusiTrigger per la lista dei comandi\nCodice del bot: https://github.com/LeddaZ/NastroAdesivoBot\nTrigger: 61 (22 parole, 8 foto e 31 audio)");
 })
