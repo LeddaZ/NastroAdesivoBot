@@ -81,3 +81,7 @@ Versione 1.3.4
 - È stato aggiunto il trigger "straccia la carta"
 
 - Ora viene visualizzato il testo di "Businfo" quando si avvia il bot con /start
+
+Versione 1.3.5
+
+- È stato aggiunto il trigger "non ho capito"

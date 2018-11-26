@@ -9,7 +9,7 @@ const trigger5 = 'businfo';
 const trigger6 = 'busitrigger';
 const trigger7 = 'merja';
 const trigger8 = 'tigre';
-const trigger10 = 'chi sei?';
+const trigger10 = 'chi sei';
 const trigger11 = 'salute';
 const trigger12 = 'punto z';
 const trigger13 = 'paesaggio veneto';
@@ -61,7 +61,9 @@ const trigger58 = 'carta stracciata';
 const trigger59 = 'mi avete stufato';
 const trigger60 = 'vedovato traffica';
 const trigger61 = 'straccia la carta';
-const trigger62 = '/start'
+const trigger62 = '/start';
+const trigger63 = 'non ho capito';
+const businfo_text = 'Il Busi 1.3.5 by @LeddaZ\nDigita BusiTrigger per la lista dei comandi\nCodice del bot: https://github.com/LeddaZ/NastroAdesivoBot\nTrigger: 62 (23 parole, 8 foto e 31 audio)'
 const bot = new Bot(token, {polling: true});
 bot.on('message', (msg) => {
   if (msg.text.toString().toLowerCase().indexOf(trigger1) === 0)
@@ -73,7 +75,7 @@ bot.on('message', (msg) => {
   if (msg.text.toString().toLowerCase().indexOf(trigger4) === 0)
     bot.sendMessage(msg.chat.id, 'MERJAAA VAI FUORI DALLA PORTAAAAAH!');
   if (msg.text.toString().toLowerCase().indexOf(trigger5) === 0)
-    bot.sendMessage(msg.chat.id, 'Il Busi 1.3.4 by @LeddaZ\nDigita BusiTrigger per la lista dei comandi\nCodice del bot: https://github.com/LeddaZ/NastroAdesivoBot\nTrigger: 61 (22 parole, 8 foto e 31 audio)');
+    bot.sendMessage(msg.chat.id, businfo_text);
   if (msg.text.toString().toLowerCase().indexOf(trigger6) === 0)
     bot.sendMessage(msg.chat.id, 'Trigger del Busi\nLoddo; Non ho lo scotch; Buongiorno; Businfo; Popopopo; Merjaaa; Chi sei?; Salute; Punto Z; Paesaggio veneto; Farfalle; BioBusi; Non ho la tavola; Ma non ho fatto niente; BusiAudio; BusiFoto; Dio <qualsiasi cosa>; Straccia la carta');
   if (msg.text.toString().toLowerCase().indexOf(trigger7) === 0)
@@ -188,5 +190,7 @@ bot.on('message', (msg) => {
   if (msg.text.toString().toLowerCase().indexOf(trigger61) === 0)
 	bot.sendMessage(msg.chat.id, "L'ALUNNO STRACCIA, DISTRUGGE, FA A PEZZI LA TAVOLA DA DISEGNOOOH!\nTI VA DI LUSSO, DI SOLITO PER QUESTE COSE METTO NOTA SUL REGISTROOOOOOH!");
   if (msg.text.toString().toLowerCase().indexOf(trigger62) === 0)
-	bot.sendMessage(msg.chat.id, "Il Busi 1.3.4 by @LeddaZ\nDigita BusiTrigger per la lista dei comandi\nCodice del bot: https://github.com/LeddaZ/NastroAdesivoBot\nTrigger: 61 (22 parole, 8 foto e 31 audio)");
+	bot.sendMessage(msg.chat.id, businfo_text);
+  if (msg.text.toString().toLowerCase().indexOf(trigger63) === 0)
+	bot.sendMessage(msg.chat.id, "EEH TI ARRANGI NON È POSSIBILE CHE DEVO SEMPRE SPIEGARE LE STESSE COSEEEH!");
 })
