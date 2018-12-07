@@ -63,7 +63,10 @@ const trigger60 = 'vedovato traffica';
 const trigger61 = 'straccia la carta';
 const trigger62 = '/start';
 const trigger63 = 'non ho capito';
-const businfo_text = 'Il Busi 1.3.5 by @LeddaZ\nDigita BusiTrigger per la lista dei comandi\nCodice del bot: https://github.com/LeddaZ/NastroAdesivoBot\nTrigger: 62 (23 parole, 8 foto e 31 audio)'
+const trigger64 = 'orario'
+const trigger65 = 'animalismo a scuola';
+const trigger66 = 'cani';
+const businfo_text = 'Il Busi 1.3.6 by @LeddaZ\nDigita BusiTrigger per la lista dei comandi\nCodice del bot: https://github.com/LeddaZ/NastroAdesivoBot\nTrigger: 66 (27 parole, 8 foto e 31 audio)'
 const bot = new Bot(token, {polling: true});
 bot.on('message', (msg) => {
   if (msg.text.toString().toLowerCase().indexOf(trigger1) === 0)
@@ -188,9 +191,15 @@ bot.on('message', (msg) => {
   if (msg.text.toString().toLowerCase().indexOf(trigger60) === 0)
 	bot.sendMessage(msg.chat.id, "http://deaddrop.ftp.sh/rYz_zqeMxbea.mp3");
   if (msg.text.toString().toLowerCase().indexOf(trigger61) === 0)
-	bot.sendMessage(msg.chat.id, "L'ALUNNO STRACCIA, DISTRUGGE, FA A PEZZI LA TAVOLA DA DISEGNOOOH!\nTI VA DI LUSSO, DI SOLITO PER QUESTE COSE METTO NOTA SUL REGISTROOOOOOH!");
+	bot.sendMessage(msg.chat.id, "L'ALUNNO STRACCIA, DISTRUGGE, FA A PEZZETTI LA TAVOLA DA DISEGNOOOH!\nTI VA DI LUSSO, DI SOLITO PER QUESTE COSE METTO NOTA SUL REGISTROOOOOOH!");
   if (msg.text.toString().toLowerCase().indexOf(trigger62) === 0)
 	bot.sendMessage(msg.chat.id, businfo_text);
   if (msg.text.toString().toLowerCase().indexOf(trigger63) === 0)
 	bot.sendMessage(msg.chat.id, "EEH TI ARRANGI NON È POSSIBILE CHE DEVO SEMPRE SPIEGARE LE STESSE COSEEEH!");
+  if (msg.text.toString().toLowerCase().indexOf(trigger64) === 0)
+	bot.sendMessage(msg.chat.id, "AH VEDOVATO HA L'OPUSCOLOOOH! LEGGE GLI ORARI DELL'AUTOBUUUUUS!");
+  if (msg.text.toString().toLowerCase().indexOf(trigger65) === 0)
+	bot.sendMessage(msg.chat.id, "https://it-it.facebook.com/pages/biz/community/Animalismo-a-scuola-169759173228670/\nANDATE A FARE LE RICERCHEEEEH!");
+  if (msg.text.toString().toLowerCase().indexOf(trigger66) === 0)
+	bot.sendMessage(msg.chat.id, "NON COMPRATE I CAPPOTTI CON LE PELLICCE DI MURMANSKI, PERCHÉ I CINESI FANNO SOFFRIRE I CANIIIIH!");
 })

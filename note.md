@@ -85,3 +85,8 @@ Versione 1.3.4
 Versione 1.3.5
 
 - È stato aggiunto il trigger "non ho capito"
+
+Versione 1.3.6
+
+- Sono stati aggiunti i trigger orario, animalismo a scuola e cani
+- È stato modificato il testo del trigger straccia la carta
