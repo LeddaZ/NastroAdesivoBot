@@ -110,9 +110,9 @@ bot.on("message", (msg) => {
   if (msg.text.toString().toLowerCase().indexOf(trigger10) === 0)
     bot.sendMessage(msg.chat.id, "SEI BELLABONA?");
   if (msg.text.toString().toLowerCase().indexOf(trigger11) === 0)
-    bot.sendMessage(msg.chat.id, "Dire "salute" quando si StErNutA è buona educazione, ma in alcuni casi, come nella 2IE, disturba la lezione, quindi non si dice, PENA... L"INFERNOOOOOOH! CI SIAMO CAPITIIIIH?");
+    bot.sendMessage(msg.chat.id, "Dire 'salute' quando si StErNutA è buona educazione, ma in alcuni casi, come nella 2IE, disturba la lezione, quindi non si dice, PENA... L'INFERNOOOOOOH! CI SIAMO CAPITIIIIH?");
   if (msg.text.toString().toLowerCase().indexOf(trigger12) === 0)
-    bot.sendMessage(msg.chat.id, "IL PUNTO Z È ALL"INFINITOOOH!");
+    bot.sendMessage(msg.chat.id, "IL PUNTO Z È ALL'INFINITOOOH!");
   if (msg.text.toString().toLowerCase().indexOf(trigger13) === 0)
     bot.sendMessage(msg.chat.id, "http://www.paesaggioveneto.it/");
   if (msg.text.toString().toLowerCase().indexOf(trigger14) === 0)
