@@ -6,7 +6,7 @@ Versione 1.0.0 (iniziale)
 
 Versione 1.0.1
 
-- Sono stati aggiunti i trigger BusiTrigger (mostra i trigger disponibili e businfo (mostra versione e autore del bot); buongiorno è stato rinominato in buongiorno prof
+- Sono stati aggiunti i trigger BusiTrigger (mostra i trigger disponibili) e businfo (mostra versione e autore del bot); buongiorno è stato rinominato in buongiorno prof
 
 Versione 1.1.0
 
@@ -90,3 +90,8 @@ Versione 1.3.6
 
 - Sono stati aggiunti i trigger orario, animalismo a scuola e cani
 - È stato modificato il testo del trigger straccia la carta
+
+Versione 1.4.0
+
+- BusiAudio è stato diviso in pagine da 20 audio ciascuna
+- Sono stati aggiunti gli audio orari, terrapiattisti, povero Guerra, moro, macchine, Falasco, Busi bestemmia, Merja fa andare Busi all'inferno, devo finire la tavola, denti, colpa di Guerra, Vedovato, ti tieni il 2, Mister Fantastico, Governo, il taglio di Guerra, Busi va all'inferno, soddisfa il Busi, andate via, Merja ha le mani giù
