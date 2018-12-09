@@ -124,20 +124,13 @@ bot.on("message", (msg) => {
   if (msg.text.toString().toLowerCase().indexOf(trigger18) === 0)
     bot.sendMessage(msg.chat.id, "VAI VIAAAAAAAAH!");
   if (msg.text.toString().toLowerCase().indexOf(trigger19) === 0)
-    bot.sendMessage(msg.chat.id, "Seleziona una pagina", {
-      "reply_markup": {
-    "keyboard": [["Pagina 1"], ["Pagina 2"], ["Pagina 3"]]
-    }
-    if (msg.text.toString().indexOf(trigger67) === 0) {
-      bot.sendMessage(msg.chat.id, "BusiAudio - Pagina 1\nAutoCAD; Brutto sto qua; Busata è un sapiente; Busirena; Compassione; Due; Gomma; Hai capito; Busi16; Insolente; Nirvana lento; Nirvana; Norvegia; Ti caccio via; Violenza privata; Palazzo; Facebook; Cosmo; Orco; Orco2");
-    }
-    if (msg.text.toString().indexOf(trigger68) === 0) {
-      bot.sendMessage(msg.chat.id, "BusiAudio - Pagina 2\nChe schifo; BusiAcuto; Marchesin; Rivoluzione; Bassi; Benvegnù; Cacciato via; Guerra; Marchesin vai via; Carta stracciata; Mi avete stufato; Vedovato traffica; Terrapiattisti; Orari; Povero Guerra; Moro; Macchine; Falasco; Busi Bestemmia; Merja fa andare Busi all'inferno");
-    }    
-    if (msg.text.toString().indexOf(trigger69) === 0) {
-      bot.sendMessage(msg.chat.id, "BusiAudio - Pagina 3\nDevo finire la tavola; Denti; Colpa di Guerra; Vedovato; Ti tieni il 2; Mister Fantastico; Governo; Il taglio di Guerra; Busi va all'inferno; Soddisfa il Busi; Andate via; Merja ha le mani giù");
-    }
-  );
+    bot.sendMessage(msg.chat.id, "Seleziona una pagina\nPagina 1\nPagina 2\nPagina 3");
+  if (msg.text.toString().indexOf(trigger67) === 0)
+    bot.sendMessage(msg.chat.id, "BusiAudio - Pagina 1\nAutoCAD; Brutto sto qua; Busata è un sapiente; Busirena; Compassione; Due; Gomma; Hai capito; Busi16; Insolente; Nirvana lento; Nirvana; Norvegia; Ti caccio via; Violenza privata; Palazzo; Facebook; Cosmo; Orco; Orco2");
+  if (msg.text.toString().indexOf(trigger68) === 0)
+    bot.sendMessage(msg.chat.id, "BusiAudio - Pagina 2\nChe schifo; BusiAcuto; Marchesin; Rivoluzione; Bassi; Benvegnù; Cacciato via; Guerra; Marchesin vai via; Carta stracciata; Mi avete stufato; Vedovato traffica; Terrapiattisti; Orari; Povero Guerra; Moro; Macchine; Falasco; Busi Bestemmia; Merja fa andare Busi all'inferno");    
+  if (msg.text.toString().indexOf(trigger69) === 0)
+    bot.sendMessage(msg.chat.id, "BusiAudio - Pagina 3\nDevo finire la tavola; Denti; Colpa di Guerra; Vedovato; Ti tieni il 2; Mister Fantastico; Governo; Il taglio di Guerra; Busi va all'inferno; Soddisfa il Busi; Andate via; Merja ha le mani giù");
   if (msg.text.toString().toLowerCase().indexOf(trigger20) === 0)
     bot.sendMessage(msg.chat.id, "http://deaddrop.ftp.sh/CujnZBJRaRS9.mp3");
   if (msg.text.toString().toLowerCase().indexOf(trigger21) === 0)
