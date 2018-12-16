@@ -95,3 +95,7 @@ Versione 1.4.0
 
 - BusiAudio è stato diviso in pagine da 20 audio ciascuna
 - Sono stati aggiunti gli audio orari, terrapiattisti, povero Guerra, moro, macchine, Falasco, Busi bestemmia, Merja fa andare Busi all'inferno, devo finire la tavola, denti, colpa di Guerra, Vedovato, ti tieni il 2, Mister Fantastico, Governo, il taglio di Guerra, Busi va all'inferno, soddisfa il Busi, andate via, Merja ha le mani giù
+
+Versione 1.4.1
+
+- Il link del codice può essere aperto cliccando su "Codice del bot" in Businfo
