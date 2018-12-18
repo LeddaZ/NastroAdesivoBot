@@ -88,7 +88,7 @@ const trigger85 = "busi va all'inferno";
 const trigger86 = "soddisfa il busi";
 const trigger87 = "andate via"
 const trigger88 = "merja ha le mani gi"
-const businfo_text = "Il Busi 1.4.1 by @LeddaZ\nDigita BusiTrigger per la lista dei trigger\n<a href=\"https://github.com/LeddaZ/NastroAdesivoBot/\">Codice del bot</a>\nTrigger: 88 (29 parole, 8 foto e 51 audio)"
+const businfo_text = "Il Busi 1.4.2 by @LeddaZ\nDigita BusiTrigger per la lista dei trigger\n<a href=\"https://github.com/LeddaZ/NastroAdesivoBot/\">Codice del bot</a>\nTrigger: 88 (29 parole, 8 foto e 51 audio)"
 const bot = new Bot(token, {polling: true});
 bot.on("message", (msg) => {
   if (msg.text.toString().toLowerCase().indexOf(trigger1) === 0)
@@ -100,7 +100,7 @@ bot.on("message", (msg) => {
   if (msg.text.toString().toLowerCase().indexOf(trigger4) === 0)
     bot.sendMessage(msg.chat.id, "MERJAAA VAI FUORI DALLA PORTAAAAAH!");
   if (msg.text.toString().toLowerCase().indexOf(trigger5) === 0)
-    bot.sendMessage(msg.chat.id, businfo_text);
+    bot.sendMessage(msg.chat.id, businfo_text, {parse_mode: "HTML"});
   if (msg.text.toString().toLowerCase().indexOf(trigger6) === 0)
     bot.sendMessage(msg.chat.id, "Trigger del Busi\nLoddo; Non ho lo scotch; Buongiorno; Businfo; Popopopo; Merjaaa; Chi sei?; Salute; Punto Z; Paesaggio veneto; Farfalle; BioBusi; Non ho la tavola; Ma non ho fatto niente; BusiAudio; BusiFoto; Dio <qualsiasi cosa>; Straccia la carta; Non ho capito; Orario; Animalismo a scuola; Cani");
   if (msg.text.toString().toLowerCase().indexOf(trigger7) === 0)
@@ -221,7 +221,7 @@ bot.on("message", (msg) => {
   if (msg.text.toString().toLowerCase().indexOf(trigger61) === 0)
 	bot.sendMessage(msg.chat.id, "L'ALUNNO STRACCIA, DISTRUGGE, FA A PEZZETTI LA TAVOLA DA DISEGNOOOH!\nTI VA DI LUSSO MERJA, DI SOLITO PER QUESTE COSE METTO NOTA SUL REGISTROOOOOOH!");
   if (msg.text.toString().toLowerCase().indexOf(trigger62) === 0)
-	bot.sendMessage(msg.chat.id, businfo_text);
+	bot.sendMessage(msg.chat.id, businfo_text, {parse_mode: "HTML"});
   if (msg.text.toString().toLowerCase().indexOf(trigger63) === 0)
 	bot.sendMessage(msg.chat.id, "EEH TI ARRANGI NON È POSSIBILE CHE DEVO SEMPRE SPIEGARE LE STESSE COSEEEH!");
   if (msg.text.toString().toLowerCase().indexOf(trigger64) === 0)

@@ -99,3 +99,7 @@ Versione 1.4.0
 Versione 1.4.1
 
 - Il link del codice può essere aperto cliccando su "Codice del bot" in Businfo
+
+Versione 1.4.2
+
+- Corretto un problema con la formattazione HTML in Businfo
