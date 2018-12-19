@@ -103,3 +103,9 @@ Versione 1.4.1
 Versione 1.4.2
 
 - Corretto un problema con la formattazione HTML in Businfo
+
+Versione 1.5.0
+
+- BusiAudio non è più diviso in pagine
+- Tutti i trigger che restituivano un link con del testo (ad es. le foto) ora restituiscono solo il testo. Cliccando sul testo si può accedere al link (grazie HTML e Telegram che supporta il Markdown).
+- È stato modificato il testo del trigger Animalismo a scuola

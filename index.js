@@ -66,9 +66,6 @@ const trigger63 = "non ho capito";
 const trigger64 = "orari"
 const trigger65 = "animalismo a scuola";
 const trigger66 = "cani";
-const trigger67 = "Pagina 1";
-const trigger68 = "Pagina 2";
-const trigger69 = "Pagina 3";
 const trigger70 = "terrapiattisti";
 const trigger71 = "povero guerra";
 const trigger72 = "moro";
@@ -88,7 +85,7 @@ const trigger85 = "busi va all'inferno";
 const trigger86 = "soddisfa il busi";
 const trigger87 = "andate via"
 const trigger88 = "merja ha le mani gi"
-const businfo_text = "Il Busi 1.4.2 by @LeddaZ\nDigita BusiTrigger per la lista dei trigger\n<a href=\"https://github.com/LeddaZ/NastroAdesivoBot/\">Codice del bot</a>\nTrigger: 88 (29 parole, 8 foto e 51 audio)"
+const businfo_text = "Il Busi 1.5.0 by @LeddaZ\nDigita BusiTrigger per la lista dei trigger\n<a href=\"https://github.com/LeddaZ/NastroAdesivoBot/\">Codice del bot</a>\nTrigger: 85 (26 parole, 8 foto e 51 audio)"
 const bot = new Bot(token, {polling: true});
 bot.on("message", (msg) => {
   if (msg.text.toString().toLowerCase().indexOf(trigger1) === 0)
@@ -106,7 +103,7 @@ bot.on("message", (msg) => {
   if (msg.text.toString().toLowerCase().indexOf(trigger7) === 0)
     bot.sendMessage(msg.chat.id, "CHI È QUESTO? AH È GUERAAAAAAH!");
   if (msg.text.toString().toLowerCase().indexOf(trigger8) === 0)
-    bot.sendMessage(msg.chat.id, "https://i.ytimg.com/vi/q2l06PW6Uts/maxresdefault.jpg\nLE TIGRI SOFFRONOOOOH!");
+    bot.sendMessage(msg.chat.id, "<a href=\"https://i.ytimg.com/vi/q2l06PW6Uts/maxresdefault.jpg/\">LE TIGRI SOFFRONOOOOH!</a>", {parse_mode: "HTML"});
   if (msg.text.toString().toLowerCase().indexOf(trigger10) === 0)
     bot.sendMessage(msg.chat.id, "SEI BELLABONA?");
   if (msg.text.toString().toLowerCase().indexOf(trigger11) === 0)
@@ -114,7 +111,7 @@ bot.on("message", (msg) => {
   if (msg.text.toString().toLowerCase().indexOf(trigger12) === 0)
     bot.sendMessage(msg.chat.id, "IL PUNTO Z È ALL'INFINITOOOH!");
   if (msg.text.toString().toLowerCase().indexOf(trigger13) === 0)
-    bot.sendMessage(msg.chat.id, "http://www.paesaggioveneto.it/");
+    bot.sendMessage(msg.chat.id, "<a href=\"http://www.paesaggioveneto.it/\">Paesaggio Veneto - Un'idea di Renato Busata</a>", {parse_mode: "HTML"});
   if (msg.text.toString().toLowerCase().indexOf(trigger14) === 0)
     bot.sendMessage(msg.chat.id, "Le farfalle fanno AAAAAHHHHHH!");
   if (msg.text.toString().toLowerCase().indexOf(trigger15) === 0)
@@ -124,13 +121,7 @@ bot.on("message", (msg) => {
   if (msg.text.toString().toLowerCase().indexOf(trigger18) === 0)
     bot.sendMessage(msg.chat.id, "VAI VIAAAAAAAAH!");
   if (msg.text.toString().toLowerCase().indexOf(trigger19) === 0)
-    bot.sendMessage(msg.chat.id, "Seleziona una pagina\nPagina 1\nPagina 2\nPagina 3");
-  if (msg.text.toString().indexOf(trigger67) === 0)
-    bot.sendMessage(msg.chat.id, "BusiAudio - Pagina 1\nAutoCAD; Brutto sto qua; Busata è un sapiente; Busirena; Compassione; Due; Gomma; Hai capito; Busi16; Insolente; Nirvana lento; Nirvana; Norvegia; Ti caccio via; Violenza privata; Palazzo; Facebook; Cosmo; Orco; Orco2");
-  if (msg.text.toString().indexOf(trigger68) === 0)
-    bot.sendMessage(msg.chat.id, "BusiAudio - Pagina 2\nChe schifo; BusiAcuto; Marchesin; Rivoluzione; Bassi; Benvegnù; Cacciato via; Guerra; Marchesin vai via; Carta stracciata; Mi avete stufato; Vedovato traffica; Terrapiattisti; Orari; Povero Guerra; Moro; Macchine; Falasco; Busi Bestemmia; Merja fa andare Busi all'inferno");    
-  if (msg.text.toString().indexOf(trigger69) === 0)
-    bot.sendMessage(msg.chat.id, "BusiAudio - Pagina 3\nDevo finire la tavola; Denti; Colpa di Guerra; Vedovato; Ti tieni il 2; Mister Fantastico; Governo; Il taglio di Guerra; Busi va all'inferno; Soddisfa il Busi; Andate via; Merja ha le mani giù");
+    bot.sendMessage(msg.chat.id, "Lista audio del Busi\nAutoCAD; Brutto sto qua; Busata è un sapiente; Busirena; Compassione; Due; Gomma; Hai capito; Busi16; Insolente; Nirvana lento; Nirvana; Norvegia; Ti caccio via; Violenza privata; Palazzo; Facebook; Cosmo; Orco; Orco2; Che schifo; BusiAcuto; Marchesin; Rivoluzione; Bassi; Benvegnù; Cacciato via; Guerra; Marchesin vai via; Carta stracciata; Mi avete stufato; Vedovato traffica; Terrapiattisti; Orari; Povero Guerra; Moro; Macchine; Falasco; Busi Bestemmia; Merja fa andare Busi all'inferno; Devo finire la tavola; Denti; Colpa di Guerra; Vedovato; Ti tieni il 2; Mister Fantastico; Governo; Il taglio di Guerra; Busi va all'inferno; Soddisfa il Busi; Andate via; Merja ha le mani giù");
   if (msg.text.toString().toLowerCase().indexOf(trigger20) === 0)
     bot.sendMessage(msg.chat.id, "http://deaddrop.ftp.sh/CujnZBJRaRS9.mp3");
   if (msg.text.toString().toLowerCase().indexOf(trigger21) === 0)
@@ -162,9 +153,9 @@ bot.on("message", (msg) => {
   if (msg.text.toString().toLowerCase().indexOf(trigger33) === 0)
     bot.sendMessage(msg.chat.id, "http://deaddrop.ftp.sh/EZj0Kk3pzC34.mp3");
   if (msg.text.toString().toLowerCase().indexOf(trigger34) === 0)
-    bot.sendMessage(msg.chat.id, "https://t1.ea.ltmcdn.com/it/images/5/2/4/img_il_cane_procione_come_animale_domestico_1425_paso_0_600.jpg\nI CANI PROCIONI SOFFRONOOOOH!");
+    bot.sendMessage(msg.chat.id, "<a href=\"https://t1.ea.ltmcdn.com/it/images/5/2/4/img_il_cane_procione_come_animale_domestico_1425_paso_0_600.jpg/\">I CANI PROCIONI SOFFRONOOOOH!</a>", {parse_mode: "HTML"});
   if (msg.text.toString().toLowerCase().indexOf(trigger35) === 0)
-    bot.sendMessage(msg.chat.id, "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Mink_coat_lunaraine.jpg/275px-Mink_coat_lunaraine.jpg\nNON COMPRATE I CAPPOTTI CON LE PELLICCIE CHE VI PORTATE DIETRO LA SOFFERENZA DEGLI ANIMALIIIIIH!");
+    bot.sendMessage(msg.chat.id, "<a href=\"https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Mink_coat_lunaraine.jpg/275px-Mink_coat_lunaraine.jpg/\">NON COMPRATE I CAPPOTTI CON LE PELLICCIE CHE VI PORTATE DIETRO LA SOFFERENZA DEGLI ANIMALIIIIIH!</a>", {parse_mode: "HTML"});
   if (msg.text.toString().toLowerCase().indexOf(trigger36) === 0)
 	bot.sendMessage(msg.chat.id, "http://deaddrop.ftp.sh/bNUb7iOEMkMn.mp3");
   if (msg.text.toString().toLowerCase().indexOf(trigger37) === 0)
@@ -187,23 +178,23 @@ bot.on("message", (msg) => {
   if (msg.text.toString().toLowerCase().indexOf(trigger44) === 0)
 	bot.sendMessage(msg.chat.id, "http://deaddrop.ftp.sh/UWhCnzcJps7h.mp3");
   if (msg.text.toString().toLowerCase().indexOf(trigger45) === 0)
-	bot.sendMessage(msg.chat.id, "Lista foto del Busi:\nTigre; Cane procione; Pelliccia; Oh no; Non sono parallele; Busecs; Busecs2; Triggered");
+	bot.sendMessage(msg.chat.id, "Lista foto del Busi\nTigre; Cane procione; Pelliccia; Oh no; Non sono parallele; Busecs; Busecs2; Triggered");
   if (msg.text.toString().toLowerCase().indexOf(trigger46) === 0)
-	bot.sendMessage(msg.chat.id, "http://deaddrop.ftp.sh/wrQSmPlj55IH.jpg\nOh no, non sono parallele...");
+	bot.sendMessage(msg.chat.id, "<a href=\"http://deaddrop.ftp.sh/wrQSmPlj55IH.jpg/\">Oh no, non sono parallele...</a>", {parse_mode: "HTML"});
   if (msg.text.toString().toLowerCase().indexOf(trigger47) === 0)
-	bot.sendMessage(msg.chat.id, "http://deaddrop.ftp.sh/YJa8N__BT0E4.jpg\nNON SONO PARALLELEEEEEEEEH!");
+	bot.sendMessage(msg.chat.id, "<a href=\"http://deaddrop.ftp.sh/YJa8N__BT0E4.jpg/\">NON SONO PARALLELEEEEEEEEH!</a>", {parse_mode: "HTML"});
   if (msg.text.toString().toLowerCase().indexOf(trigger48) === 0)
 	if (msg.text.toString().toLowerCase().indexOf(trigger49) === 0)
-      bot.sendMessage(msg.chat.id, "http://deaddrop.ftp.sh/NagriUpAqytQ.jpg\nBUONGIORNOH!");
+      bot.sendMessage(msg.chat.id, "<a href=\"http://deaddrop.ftp.sh/NagriUpAqytQ.jpg/\">BUONGIORNOH!</a>", {parse_mode: "HTML"});
     else
-	  bot.sendMessage(msg.chat.id, "http://deaddrop.ftp.sh/K5wZ-5klUlCz.jpg\nDUEEEEH!");
+	  bot.sendMessage(msg.chat.id, "<a href=\"http://deaddrop.ftp.sh/K5wZ-5klUlCz.jpg/\">DUEEEEH!</a>", {parse_mode: "HTML"});
   if (msg.text.toString().toLowerCase().indexOf(trigger50) === 0)
-	bot.sendMessage(msg.chat.id, "http://deaddrop.ftp.sh/E_FJlFM2gc0a.jpg\nNON SI SPRECA LA CARTAAAAAH!");
+	bot.sendMessage(msg.chat.id, "<a href=\"http://deaddrop.ftp.sh/E_FJlFM2gc0a.jpg/\">NON SI SPRECA LA CARTAAAAAH!</a>", {parse_mode: "HTML"});
   if (msg.text.toString().toLowerCase().indexOf(trigger51) === 0)
 	if (msg.text.toString().toLowerCase().indexOf(trigger52) === 0)
 	  bot.sendMessage(msg.chat.id, "CHI È STO QUA? HO SENTITO UN CAGNOLINO PRECEDUTO DA QUALCOS'ALTROOOH!");
     else
-	  bot.sendMessage(msg.chat.id, "AH IO DEVO FARE LE INDAGINI, SÌ PERCHÉ LA GENTE BESTEMIAAAAH!");
+	  bot.sendMessage(msg.chat.id, "AH IO DEVO FARE LE INDAGINI, SÌ PERCHÉ LA GENTE BESTEMMIAAAAH!");
   if (msg.text.toString().toLowerCase().indexOf(trigger53) === 0)
 	bot.sendMessage(msg.chat.id, "http://deaddrop.ftp.sh/Z5FNub-4rnEC.mp3");
   if (msg.text.toString().toLowerCase().indexOf(trigger54) === 0)
@@ -219,7 +210,7 @@ bot.on("message", (msg) => {
   if (msg.text.toString().toLowerCase().indexOf(trigger60) === 0)
 	bot.sendMessage(msg.chat.id, "http://deaddrop.ftp.sh/rYz_zqeMxbea.mp3");
   if (msg.text.toString().toLowerCase().indexOf(trigger61) === 0)
-	bot.sendMessage(msg.chat.id, "L'ALUNNO STRACCIA, DISTRUGGE, FA A PEZZETTI LA TAVOLA DA DISEGNOOOH!\nTI VA DI LUSSO MERJA, DI SOLITO PER QUESTE COSE METTO NOTA SUL REGISTROOOOOOH!");
+	bot.sendMessage(msg.chat.id, "L'ALUNNO STRACCIA, DISTRUGGE, FA A PEZZETTI LA TAVOLA DI DISEGNOOOH!\nTI VA DI LUSSO MERJA, DI SOLITO PER QUESTE COSE METTO NOTA SUL REGISTROOOOOOH!");
   if (msg.text.toString().toLowerCase().indexOf(trigger62) === 0)
 	bot.sendMessage(msg.chat.id, businfo_text, {parse_mode: "HTML"});
   if (msg.text.toString().toLowerCase().indexOf(trigger63) === 0)
@@ -227,7 +218,7 @@ bot.on("message", (msg) => {
   if (msg.text.toString().toLowerCase().indexOf(trigger64) === 0)
 	bot.sendMessage(msg.chat.id, "http://deaddrop.ftp.sh/nwVgAgxNtgUC.mp3");
   if (msg.text.toString().toLowerCase().indexOf(trigger65) === 0)
-	bot.sendMessage(msg.chat.id, "https://it-it.facebook.com/pages/biz/community/Animalismo-a-scuola-169759173228670/\nANDATE A FARE LE RICERCHEEEEH!");
+	bot.sendMessage(msg.chat.id, "<a href=\"https://it-it.facebook.com/pages/biz/community/Animalismo-a-scuola-169759173228670/\">ANDATE A VEDERE I MIEI POST SU ANIMALISMO A SCUOLA CHE VI INTERROGOOOOH!</a>", {parse_mode: "HTML"});
   if (msg.text.toString().toLowerCase().indexOf(trigger66) === 0)
 	bot.sendMessage(msg.chat.id, "NON COMPRATE I CAPPOTTI CON LE PELLICCE DI MURMANSKI, PERCHÉ I CINESI FANNO SOFFRIRE I CANIIIIH!");
   if (msg.text.toString().toLowerCase().indexOf(trigger70) === 0)
