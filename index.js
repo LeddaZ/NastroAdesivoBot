@@ -85,7 +85,7 @@ const trigger85 = "busi va all'inferno";
 const trigger86 = "soddisfa il busi";
 const trigger87 = "andate via"
 const trigger88 = "merja ha le mani gi"
-const businfo_text = "Il Busi 1.5.0 by @LeddaZ\nDigita BusiTrigger per la lista dei trigger\n<a href=\"https://github.com/LeddaZ/NastroAdesivoBot/\">Codice del bot</a>\nTrigger: 85 (26 parole, 8 foto e 51 audio)"
+const businfo_text = "Il Busi 1.5.1 by @advancedpigeon\nDigita BusiTrigger per la lista dei trigger\n<a href=\"https://github.com/LeddaZ/NastroAdesivoBot/\">Codice del bot</a>\nTrigger: 85 (26 parole, 8 foto e 51 audio)"
 const bot = new Bot(token, {polling: true});
 bot.on("message", (msg) => {
   if (msg.text.toString().toLowerCase().indexOf(trigger1) === 0)

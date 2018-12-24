@@ -107,5 +107,9 @@ Versione 1.4.2
 Versione 1.5.0
 
 - BusiAudio non è più diviso in pagine
-- Tutti i trigger che restituivano un link con del testo (ad es. le foto) ora restituiscono solo il testo. Cliccando sul testo si può accedere al link (grazie HTML e Telegram che supporta il Markdown).
+- Tutti i trigger che restituivano un link con del testo (ad es. le foto) ora restituiscono solo il testo. Cliccando sul testo si può accedere al link (grazie HTML e Telegram che supporta il Markdown)
 - È stato modificato il testo del trigger Animalismo a scuola
+
+Versione 1.5.1
+
+- Il nome del creatore del Bot in Businfo è stato aggiornato
