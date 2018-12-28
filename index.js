@@ -51,7 +51,7 @@ const trigger48 = "busecs";
 const trigger49 = "busecs2";
 const trigger50 = "triggered";
 const trigger51 = "dio";
-const trigger52 = "dio can";
+const trigger52 = "dio cane";
 const trigger53 = "bassi";
 const trigger54 = "benvegn";
 const trigger55 = "cacciato via";
@@ -85,13 +85,7 @@ const trigger85 = "busi va all'inferno";
 const trigger86 = "soddisfa il busi";
 const trigger87 = "andate via"
 const trigger88 = "merja ha le mani gi"
-const trigger89 = "busi è un po' tardo"
-const trigger90 = "guerra a 90"
-const trigger91 = "koreani mangiacani"
-const trigger92 = "ledda studia chimica"
-const trigger93 = "sfoglia il quaderno"
-const trigger94 = "stare al mondo"
-const businfo_text = "Il Busata by @LeddaZ\nVersione 1.5.2 del 28/12/2018\nDigita BusiTrigger per la lista dei trigger\n<a href=\"https://github.com/LeddaZ/NastroAdesivoBot/\">Codice del bot su GitHub</a>\nTrigger: 91 (26 parole, 8 foto e 57 audio)"
+const businfo_text = "Il Busi 1.5.1 by @LeddaZ\nDigita BusiTrigger per la lista dei trigger\n<a href=\"https://github.com/LeddaZ/NastroAdesivoBot/\">Codice del bot su GitHub</a>\nTrigger: 85 (26 parole, 8 foto e 51 audio)"
 const bot = new Bot(token, {polling: true});
 bot.on("message", (msg) => {
   if (msg.text.toString().toLowerCase().indexOf(trigger1) === 0)
@@ -268,16 +262,4 @@ bot.on("message", (msg) => {
 	bot.sendMessage(msg.chat.id, "http://deaddrop.ftp.sh/u-e1QXxaSZHR.mp3");
   if (msg.text.toString().toLowerCase().indexOf(trigger88) === 0)
 	bot.sendMessage(msg.chat.id, "http://deaddrop.ftp.sh/3osIzrc1zEj3.mp3");
-  if (msg.text.toString().toLowerCase().indexOf(trigger89) === 0)
-	bot.sendMessage(msg.chat.id, "http://deaddrop.ftp.sh/iOTQpRkYkDsB.mp3");
-  if (msg.text.toString().toLowerCase().indexOf(trigger90) === 0)
-	bot.sendMessage(msg.chat.id, "http://deaddrop.ftp.sh/9p0Z10a9-MO4.mp3");
-  if (msg.text.toString().toLowerCase().indexOf(trigger91) === 0)
-	bot.sendMessage(msg.chat.id, "http://deaddrop.ftp.sh/ScdPvRncuuBJ.mp3");
-  if (msg.text.toString().toLowerCase().indexOf(trigger92) === 0)
-	bot.sendMessage(msg.chat.id, "http://deaddrop.ftp.sh/Ju5ru3hcX48y.mp3");
-  if (msg.text.toString().toLowerCase().indexOf(trigger93) === 0)
-	bot.sendMessage(msg.chat.id, "http://deaddrop.ftp.sh/xX0PXKeHbZ_2.mp3");
-  if (msg.text.toString().toLowerCase().indexOf(trigger94) === 0)
-	bot.sendMessage(msg.chat.id, "http://deaddrop.ftp.sh/ef7lyZ_R4v8q.mp3");
 })
