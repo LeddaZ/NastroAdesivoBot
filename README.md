@@ -1,5 +1,5 @@
 # NastroAdesivoBot
-Il bot Telegram del Busi scritto in node.js (JavaScript con un nome più elegante).
+Il bot Telegram del Busata scritto in node.js (JavaScript con un nome più elegante).
 
 # Note di rilascio
 Per leggere i cambiamenti nelle varie versioni del bot, ci sono le [note di rilascio](https://github.com/LeddaZ/NastroAdesivoBot/blob/master/note.md).

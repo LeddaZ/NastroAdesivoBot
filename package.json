@@ -1,7 +1,7 @@
 {
-  "name": "nastroadesivo",
-  "version": "1.5.1",
-  "description": "The Real Busi",
+  "name": "NastroAdesivoBot",
+  "version": "1.5.2",
+  "description": "Il bot del Busata",
   "main": "index.js",
   "dependencies": {
     "node-telegram-bot-api": "^0.30.0"
