@@ -113,3 +113,7 @@ Versione 1.5.0
 Versione 1.5.1
 
 - Il nome del creatore del Bot in Businfo è stato aggiornato
+
+Versione 1.5.2
+
+- Sono stati aggiunti gli audio Busi è un po' tardo, Guerra a 90, Koreani mangiacani, Ledda studia chimica, sfoglia il quaderno, stare al mondo, basta battere, si diventa deficienti e metto 2 subito
