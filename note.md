@@ -117,3 +117,9 @@ Versione 1.5.1
 Versione 1.5.2
 
 - Sono stati aggiunti gli audio Busi è un po' tardo, Guerra a 90, Koreani mangiacani, Ledda studia chimica, sfoglia il quaderno, stare al mondo, basta battere, si diventa deficienti e metto 2 subito
+
+Versione 1.6.0
+
+- È stata migliorata la formattazione del testo in BusiTrigger, BusiAudio e BusiFoto
+- BusiAudio è stato diviso in pagine da 20 audio ciascuna con i pulsanti per cambiare pagina (tastiera inline)
+- È stato corretto il numero di trigger e audio
