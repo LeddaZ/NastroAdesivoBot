@@ -123,3 +123,7 @@ Versione 1.6.0
 - È stata migliorata la formattazione del testo in BusiTrigger, BusiAudio e BusiFoto
 - BusiAudio è stato diviso in pagine da 20 audio ciascuna con i pulsanti per cambiare pagina (tastiera inline)
 - È stato corretto il numero di trigger e audio
+
+Versione 1.6.1
+
+- È stato corretto un bug che mandava il messaggio di BusiAudio con qualsiasi messaggio inviato al bot che non era già incluso nei trigger

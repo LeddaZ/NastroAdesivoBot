@@ -18,7 +18,7 @@ const trigger15 = "biobusi";
 const trigger16 = "non ho la tavola";
 const trigger17 = "due";
 const trigger18 = "ma non ho fatto niente";
-const trigger19 = "busiaudio";
+const trigger19 = "BusiAudio";
 const trigger20 = "autocad";
 const trigger21 = "brutto sto qua";
 const trigger22 = "busata è un sapiente";
@@ -94,9 +94,20 @@ const trigger94 = "stare al mondo";
 const trigger95 = "basta battere";
 const trigger96 = "si diventa deficienti";
 const trigger97 = "metto 2 subito";
-const businfo_text = "Il Busata by @LeddaZ\nVersione 1.6.0 del 6/1/2019\nDigita BusiTrigger per la lista dei trigger\n<a href=\"https://github.com/LeddaZ/NastroAdesivoBot/\">Codice del bot su GitHub</a>\nTrigger: 92 (23 parole, 8 foto e 61 audio)"
+const businfo_text = "Il Busata by @LeddaZ\nVersione 1.6.1 del 6/1/2019\nDigita BusiTrigger per la lista dei trigger\n<a href=\"https://github.com/LeddaZ/NastroAdesivoBot/\">Codice del bot su GitHub</a>\nTrigger: 92 (23 parole, 8 foto e 61 audio)";
 const bot = new Bot(token, {polling: true});
 bot.on("message", (msg) => {
+	var opts = {
+		chat_id: msg.chat.id,
+		message_id: msg.message_id,
+		reply_markup: {
+			inline_keyboard: [
+				[{ text: 'Pagina 1', callback_data: '1' }],
+				[{ text: 'Pagina 2', callback_data: '2' }],
+				[{ text: 'Pagina 3', callback_data: '3' }]
+			]
+		}
+	};
   if (msg.text.toString().toLowerCase().indexOf(trigger1) === 0)
     bot.sendMessage(msg.chat.id, "LODDOOOOOOOOOO!");
   if (msg.text.toString().toLowerCase().indexOf(trigger2) === 0)
@@ -126,21 +137,10 @@ bot.on("message", (msg) => {
   if (msg.text.toString().toLowerCase().indexOf(trigger15) === 0)
     bot.sendMessage(msg.chat.id, "Renato Busata si laurea in architettura presso l'Istituto Universitario di Architettura di Venezia nel 1983. Dal 1989 è docente di disegno presso istituti e licei padovani. Tra le varie pubblicazioni si segnalano 'Testimonianze storiche e artistiche', edito dal Comune di Rubano; 'Piccolo manuale per affrontare un progetto di architettura' di Gangemi Editore, con l'introduzione di Franco Purini e Luigi Monetti; 'Architetture tra Roma e Milano nel secondo dopoguerra', Ed. Libreria Progetto. Nel 2006 è dottore di ricerca in Composizione architettonica presso l'Università IUAV di Venezia.");
   if (msg.text.toString().toLowerCase().indexOf(trigger16) === 0)
-    bot.sendMessage(msg.chat.id, "DUEEEEEEEEEE!");
+    bot.sendMessage(msg.chat.id, "DUEEEEEEEEEE!");	
   if (msg.text.toString().toLowerCase().indexOf(trigger18) === 0)
     bot.sendMessage(msg.chat.id, "VAI VIAAAAAAAAH!");
-  if (msg.text.toString().toLowerCase().indexOf(trigger19) === 0)
-	var opts = {
-		chat_id: msg.chat.id,
-		message_id: msg.message_id,
-		reply_markup: {
-			inline_keyboard: [
-				[{ text: 'Pagina 1', callback_data: '1' }],
-				[{ text: 'Pagina 2', callback_data: '2' }],
-				[{ text: 'Pagina 3', callback_data: '3' }]
-			]
-		}
-	};
+  if (msg.text.toString().indexOf(trigger19) === 0)
 	bot.sendMessage(msg.from.id, 'BusiAudio - Seleziona la pagina', opts);
   if (msg.text.toString().toLowerCase().indexOf(trigger20) === 0)
     bot.sendMessage(msg.chat.id, "http://deaddrop.ftp.sh/CujnZBJRaRS9.mp3");
@@ -300,6 +300,8 @@ bot.on("message", (msg) => {
 	bot.sendMessage(msg.chat.id, "http://deaddrop.ftp.sh/9vlhOmgwt3t4.mp3");
   if (msg.text.toString().toLowerCase().indexOf(trigger97) === 0)
 	bot.sendMessage(msg.chat.id, "http://deaddrop.ftp.sh/9HgttDKhk5kc.mp3");
+  if (msg.text.toString().toLowerCase().indexOf(trigger98) === 0)
+	bot.sendMessage(msg.chat.id, "http://deaddrop.ftp.sh/0GA2Xeg9sRd5.mp3");
 });
 
 bot.on('callback_query', function onCallbackQuery(callbackQuery) {
