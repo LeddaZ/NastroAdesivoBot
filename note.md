@@ -127,3 +127,7 @@ Versione 1.6.0
 Versione 1.6.1
 
 - È stato corretto un bug che mandava il messaggio di BusiAudio con qualsiasi messaggio inviato al bot che non era già incluso nei trigger
+
+Versione 1.6.2
+
+- BusiAudio ora funziona correttamente (è necessario scrivere BusiAudio in questo modo)
