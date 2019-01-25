@@ -2,11 +2,14 @@
 //Scritto in node.js
 
 //Dichiarazione variabili
+
 //Moduli npm richiesti
 const Bot = require("node-telegram-bot-api");
 const request = require("request");
+
 //Token del bot
 const token = "697036602:AAHwtJbcP7mp-nNzepGJibUUruUOksLOqXY";
+
 //Trigger
 const trigger1 = "loddo";
 const trigger2 = "buongiorno";
@@ -102,23 +105,28 @@ const trigger95 = "basta battere";
 const trigger96 = "si diventa deficienti";
 const trigger97 = "metto 2 subito";
 const trigger98 = "porta la cartellina";
+
 //Testo di Businfo e /start
 const businfo_text = "Il Busata by @LeddaZ\nVersione 1.6.3 del 25/1/2019\nDigita BusiTrigger per la lista dei trigger\n<a href=\"https://github.com/LeddaZ/NastroAdesivoBot/\">Codice del bot su GitHub</a>\nTrigger: 93 (23 parole, 8 foto e 62 audio)";
+
 //Attivazione del bot
 const bot = new Bot(token, { polling: true });
 
 //Codice del bot
 bot.on("message", (msg) => {
+
     //Pulsanti per BusiAudio
 	var opts = {
 		reply_markup: {
 			inline_keyboard: [
 				[{ text: 'Pagina 1', callback_data: '1' }],
 				[{ text: 'Pagina 2', callback_data: '2' }],
-				[{ text: 'Pagina 3', callback_data: '3' }]
+                [{ text: 'Pagina 3', callback_data: '3' }],
+                [{ text: 'Pagina 4', callback_data: '4' }]
 			]
 		}
     };
+
     //Risposte ai trigger
     if (msg.text.toString().toLowerCase().indexOf(trigger1) === 0)
         bot.sendMessage(msg.chat.id, "LODDOOOOOOOOOO!");
@@ -313,77 +321,36 @@ bot.on("message", (msg) => {
     if (msg.text.toString().toLowerCase().indexOf(trigger97) === 0)
 	    bot.sendMessage(msg.chat.id, "http://deaddrop.ftp.sh/9HgttDKhk5kc.mp3");
     if (msg.text.toString().toLowerCase().indexOf(trigger98) === 0)
-        bot.sendMessage(msg.chat.id, "http://deaddrop.ftp.sh/Z631CgcvNgqb.mp3");
+	    bot.sendMessage(msg.chat.id, "http://deaddrop.ftp.sh/Z631CgcvNgqb.mp3");
 });
 
 //Risposta alla pressione di un pulsante su BusiAudio
 bot.on('callback_query', function onCallbackQuery(callbackQuery) {
-    const action = callbackQuery.data;
-    const msg = callbackQuery.message;
-    let text;
-
-    //Lista audio pagina 1
-    if (action === '1') {
-        text = 'BusiAudio - Pagina 1\nAutoCAD, Brutto sto qua, Busata è un sapiente, Busirena, Compassione, Due, Gomma, Hai capito, Busi16, Insolente, Nirvana lento, Nirvana, Norvegia, Ti caccio via, Violenza privata, Palazzo, Facebook, Cosmo, Orco, Orco2';
-    }
-
-    //Lista audio pagina 2
-    if (action === '2') {
-        text = "BusiAudio - Pagina 2\nChe schifo, BusiAcuto, Marchesin, Viva la rivoluzione, Bassi, Benvegnù, Cacciato via, Guerra, Marchesin vai via, Carta stracciata, Mi avete stufato, Vedovato traffica, Terrapiattisti, Orari, Povero Guerra, Moro, Macchine, Falasco, Busi bestemmia, Merja fa andare Busi all'inferno";
-    }
-
-    //Lista audio pagina 3
-    if (action === '3') {
-        text = "BusiAudio - Pagina 3\nDevo finire la tavola, Denti, Colpa di Guerra, Vedovato, Ti tieni il 2, Mister Fantastico, Governo, Il taglio di Guerra, Busi va all'inferno, Soddisfa il Busi, Andate via, Merja ha le mani giù, Busi è un po' tardo, Guerra a 90, Koreani mangiacani, Ledda studia chimica, Sfoglia il quaderno, Stare al mondo, Basta battere, Si diventa deficienti";
-    }
-
-    //Lista audio pagina 4
-    if (action === '4') {
-        text = "BusiAudio - Pagina 4\nMetto 2 subito, Porta la cartellina";
-    }
-
-    //Visualizzazione dei pulsanti anche dopo l'attivazione
-    var opts = {
-        chat_id: msg.chat.id,
-        message_id: msg.message_id,
-        reply_markup: {
-            inline_keyboard: [
-                [{ text: 'Pagina 1', callback_data: '1' }],
-                [{ text: 'Pagina 2', callback_data: '2' }],
-                [{ text: 'Pagina 3', callback_data: '3' }],
-                [{ text: 'Pagina 4', callback_data: '4' }]
-            ]
-        }
-    };
-
-    //Modifica del messaggio per visualizzare la lista di audio
-    bot.editMessageText(text, opts);//Risposta alla pressione di un pulsante su BusiAudio
-bot.on('callback_query', function onCallbackQuery(callbackQuery) {
 	const action = callbackQuery.data;
 	const msg = callbackQuery.message;
-    let text;
+	let text;
 
-	//Lista audio pagina 1
+    //Testo pagina 1
 	if (action === '1') {
 		text = 'BusiAudio - Pagina 1\nAutoCAD, Brutto sto qua, Busata è un sapiente, Busirena, Compassione, Due, Gomma, Hai capito, Busi16, Insolente, Nirvana lento, Nirvana, Norvegia, Ti caccio via, Violenza privata, Palazzo, Facebook, Cosmo, Orco, Orco2';
     }
 
-    //Lista audio pagina 2
+    //Testo pagina 2
 	if (action === '2') {
 		text = "BusiAudio - Pagina 2\nChe schifo, BusiAcuto, Marchesin, Viva la rivoluzione, Bassi, Benvegnù, Cacciato via, Guerra, Marchesin vai via, Carta stracciata, Mi avete stufato, Vedovato traffica, Terrapiattisti, Orari, Povero Guerra, Moro, Macchine, Falasco, Busi bestemmia, Merja fa andare Busi all'inferno";
     }
 
-    //Lista audio pagina 3
+    //Testo pagina 3
 	if (action === '3') {
 		text = "BusiAudio - Pagina 3\nDevo finire la tavola, Denti, Colpa di Guerra, Vedovato, Ti tieni il 2, Mister Fantastico, Governo, Il taglio di Guerra, Busi va all'inferno, Soddisfa il Busi, Andate via, Merja ha le mani giù, Busi è un po' tardo, Guerra a 90, Koreani mangiacani, Ledda studia chimica, Sfoglia il quaderno, Stare al mondo, Basta battere, Si diventa deficienti";
     }
 
-    //Lista audio pagina 4
+    //Testo pagina 4
     if (action === '4') {
         text = "BusiAudio - Pagina 4\nMetto 2 subito, Porta la cartellina";
     }
 
-    //Visualizzazione dei pulsanti anche dopo l'attivazione
+    //Visualizzazione dei pulsanti anche dopo la pressione
 	var opts = {
 		chat_id: msg.chat.id,
 		message_id: msg.message_id,
@@ -397,7 +364,7 @@ bot.on('callback_query', function onCallbackQuery(callbackQuery) {
 		}
     };
 
-    //Modifica del messaggio per visualizzare la lista di audio
+    //Modifica del messaggio per far apparire la lista di audio
 	bot.editMessageText(text, opts);
 });
 //Fine del codice
