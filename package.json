@@ -1,5 +1,11 @@
 {
+  "now": {
+  "version": "2",
   "name": "NastroAdesivoBot",
+  "type": "npm",
+  "engines": {
+    "node": "10.11.0"
+  },
   "version": "1.6.3",
   "description": "Il bot del Busata",
   "main": "index.js",
@@ -22,3 +28,4 @@
   },
   "homepage": "https://github.com/LeddaZ/NastroAdesivoBot#readme"
 }
+
