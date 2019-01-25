@@ -131,3 +131,7 @@ Versione 1.6.1
 Versione 1.6.2
 
 - BusiAudio ora funziona correttamente (è necessario scrivere BusiAudio in questo modo)
+
+Versione 1.6.3
+
+- È stato aggiunto l'audio Porta la cartellina
