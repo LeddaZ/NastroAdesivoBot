@@ -139,3 +139,7 @@ Versione 1.6.3
 Versione 1.6.4
 
 - È stata modificata la formattazione del testo in alcuni trigger
+
+Versione 1.6.5:
+
+- Sono stati risolti alcuni problemi con BusiAudio
