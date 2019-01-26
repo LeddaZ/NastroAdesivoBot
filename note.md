@@ -135,3 +135,7 @@ Versione 1.6.2
 Versione 1.6.3
 
 - È stato aggiunto l'audio Porta la cartellina
+
+Versione 1.6.4
+
+- È stata modificata la formattazione del testo in alcuni trigger

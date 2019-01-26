@@ -1,6 +1,6 @@
 {
   "name": "NastroAdesivoBot",
-  "version": "1.6.3",
+  "version": "1.6.4",
   "description": "Il bot del Busata",
   "main": "index.js",
   "dependencies": {
