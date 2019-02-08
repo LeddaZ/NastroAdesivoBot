@@ -140,6 +140,12 @@ Versione 1.6.4
 
 - È stata modificata la formattazione del testo in alcuni trigger
 
-Versione 1.6.5:
+Versione 1.6.5
 
 - Sono stati risolti alcuni problemi con BusiAudio
+
+Versione 1.6.6
+
+- È stato aggiunto il trigger "Liliana Segre"
+- È stata modificata la formattazione del testo in BusiAudio
+- Sono stati aggiunti gli audio "Merja bocciato" e "Vedovato è un poeta"
