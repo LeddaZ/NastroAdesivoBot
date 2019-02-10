@@ -149,3 +149,7 @@ Versione 1.6.6
 - È stato aggiunto il trigger "Liliana Segre"
 - È stata modificata la formattazione del testo in BusiAudio
 - Sono stati aggiunti gli audio "Merja bocciato" e "Vedovato è un poeta"
+
+Versione 1.6.7
+
+- Ora i link delle foto e degli audio sono nascosti
