@@ -1,10 +1,10 @@
 # Note di rilascio
 
-## ## Versione 1.0.0 (iniziale)
+## Versione 1.0.0 (iniziale)
 
 - Quattro trigger disponibili: Loddo, non ho lo scotch, popopopo e buongiorno
 
-## ## Versione 1.0.1
+## Versione 1.0.1
 
 - Sono stati aggiunti i trigger BusiTrigger (mostra i trigger disponibili) e businfo (mostra versione e autore del bot); buongiorno è stato rinominato in buongiorno prof
 
