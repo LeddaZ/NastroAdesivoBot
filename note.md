@@ -6,7 +6,8 @@
 
 ## Versione 1.0.1
 
-- Sono stati aggiunti i trigger BusiTrigger (mostra i trigger disponibili) e businfo (mostra versione e autore del bot); buongiorno è stato rinominato in buongiorno prof
+- Sono stati aggiunti i trigger BusiTrigger (mostra i trigger disponibili) e businfo (mostra versione e autore del bot)
+- Buongiorno è stato rinominato in buongiorno prof
 
 ## Versione 1.1.0
 
@@ -14,7 +15,9 @@
 
 ## Versione 1.1.1
 
-- Il trigger businfo mostra anche il link del codice sorgente; sono stati aggiunti i trigger chi sei?, chi sei tu? e salute; buongiorno è stato riaggiunto insieme a buongiorno prof
+- Il trigger businfo mostra anche il link del codice sorgente
+- Sono stati aggiunti i trigger chi sei?, chi sei tu? e salute
+- Buongiorno è stato riaggiunto insieme a buongiorno prof
 
 ## Versione 1.1.2
 
