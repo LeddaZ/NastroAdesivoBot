@@ -156,3 +156,7 @@
 ## Versione 1.6.7
 
 - Ora i link delle foto e degli audio sono nascosti
+
+## Versione 1.6.8
+
+- Sono stati aggiunti gli audio "Busata perde tutto", "Ciuccia il tè", "Il filo" e "Previo terrorismo"

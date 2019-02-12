@@ -108,9 +108,13 @@ const trigger98 = "porta la cartellina";
 const trigger99 = "liliana segre";
 const trigger100 = "merja bocciato";
 const trigger101 = "vedovato è un poeta";
+const trigger102 = "busata perde tutto";
+const trigger103 = "ciuccia il t";
+const trigger104 = "il filo";
+const trigger105 = "previo terrorismo";
 
 //Testo di Businfo e /start
-const businfo_text = "<b>Il Busata</b> by @LeddaZ\nVersione <b>1.6.7</b> del 10/2/2019\nDigita <b>BusiTrigger</b> per la lista dei trigger\n<a href=\"https://github.com/LeddaZ/NastroAdesivoBot/\">Codice del bot su GitHub</a>\nTrigger: 96 (24 parole, 8 foto e 64 audio)";
+const businfo_text = "<b>Il Busata</b> by @LeddaZ\nVersione <b>1.6.8</b> del 12/2/2019\nDigita <b>BusiTrigger</b> per la lista dei trigger\n<a href=\"https://github.com/LeddaZ/NastroAdesivoBot/\">Codice del bot su GitHub</a>\nTrigger: 100 (24 parole, 8 foto e 68 audio)";
 
 //Attivazione del bot
 const bot = new Bot(token, { polling: true });
@@ -332,6 +336,14 @@ bot.on("message", (msg) => {
         bot.sendAudio(msg.chat.id, "http://deaddrop.ftp.sh/Z631CgcvNgqb.mp3");
     if (msg.text.toString().toLowerCase().indexOf(trigger99) === 0)
         bot.sendMessage(msg.chat.id, "LA LETTERA DI LILIANA SEGRE È INSULSA MA L'INTERVISTA HA UNA POTENZA INCREDIBILE, QUINDI ASCOLTATELA SU RAI PLAY CHE VI INTEROGOOOOH!!!");
+    if (msg.text.toString().toLowerCase().indexOf(trigger102) === 0)
+        bot.sendAudio(msg.chat.id, "http://deaddrop.ftp.sh/MgHib6OXaAd6.mp3");
+    if (msg.text.toString().toLowerCase().indexOf(trigger103) === 0)
+        bot.sendAudio(msg.chat.id, "http://deaddrop.ftp.sh/AmMZxta5Vcdx.mp3");
+    if (msg.text.toString().toLowerCase().indexOf(trigger104) === 0)
+        bot.sendAudio(msg.chat.id, "http://deaddrop.ftp.sh/8TOZ8fMLQ3Tc.mp3");
+    if (msg.text.toString().toLowerCase().indexOf(trigger105) === 0)
+        bot.sendAudio(msg.chat.id, "http://deaddrop.ftp.sh/hYPu-2IQFFqH.mp3");
 });
 
 //Risposta alla pressione di un pulsante su BusiAudio
@@ -357,7 +369,7 @@ bot.on('callback_query', function onCallbackQuery(callbackQuery) {
 
     //Lista audio pagina 4
     if (action === '4') {
-        text = "Lista audio del Busi\nPagina 4\nMetto 2 subito, Porta la cartellina, Merja bocciato, Vedovato è un poeta";
+        text = "Lista audio del Busi\nPagina 4\nMetto 2 subito, Porta la cartellina, Merja bocciato, Vedovato è un poeta, Busata perde tutto, Ciuccia il tè, Il filo, Previo terrorismo";
     }
 
     //Visualizzazione dei pulsanti anche dopo l'attivazione
