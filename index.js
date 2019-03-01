@@ -350,7 +350,7 @@ bot.on("message", (msg) => {
 bot.on('callback_query', function onCallbackQuery(callbackQuery) {
 	const action = callbackQuery.data;
 	const msg = callbackQuery.message;
-    let text;
+    	let text;
 
 	//Lista audio pagina 1
 	if (action === '1') {
@@ -380,8 +380,8 @@ bot.on('callback_query', function onCallbackQuery(callbackQuery) {
 			inline_keyboard: [
 				[{ text: 'Pagina 1', callback_data: '1' }],
 				[{ text: 'Pagina 2', callback_data: '2' }],
-                [{ text: 'Pagina 3', callback_data: '3' }],
-                [{ text: 'Pagina 4', callback_data: '4' }]
+                		[{ text: 'Pagina 3', callback_data: '3' }],
+                		[{ text: 'Pagina 4', callback_data: '4' }]
 			]
 		}
     };
