@@ -160,3 +160,7 @@
 ## Versione 1.6.8
 
 - Sono stati aggiunti gli audio "Busata perde tutto", "Ciuccia il tè", "Il filo" e "Previo terrorismo"
+
+## Versione 1.7.0
+
+- È stato aggiunto il comando "/voto". Genera un numero casuale da 1 a 8 e restituisce una valutazione del Busi.
