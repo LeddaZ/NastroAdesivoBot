@@ -164,3 +164,9 @@
 ## Versione 1.7.0
 
 - È stato aggiunto il comando "/voto". Genera un numero casuale da 1 a 8 e restituisce una valutazione del Busi.
+
+## Versione 1.7.1
+
+- Sono state aggiunte tre nuove frasi per /voto
+- È stata modificata la frase del voto 2
+- Sono stati aggiunti gli audio "Busi è perfido" e "Orco can"
