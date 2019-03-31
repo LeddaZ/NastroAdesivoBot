@@ -170,3 +170,8 @@
 - Sono state aggiunte tre nuove frasi per /voto
 - È stata modificata la frase del voto 2
 - Sono stati aggiunti gli audio "Busi è perfido" e "Orco can"
+
+## Versione 1.7.2
+
+- Sono stati aggiunti gli audio "Calma assoluta" e "Rivoluzionario"
+- È stato aggiunto il trigger "120 tavole"
