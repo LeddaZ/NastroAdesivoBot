@@ -175,3 +175,7 @@
 
 - Sono stati aggiunti gli audio "Calma assoluta" e "Rivoluzionario"
 - È stato aggiunto il trigger "120 tavole"
+
+## Versione 1.7.3
+
+- È stato aggiunto il trigger "Cattivo"
