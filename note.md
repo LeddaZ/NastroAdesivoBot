@@ -179,3 +179,8 @@
 ## Versione 1.7.3
 
 - È stato aggiunto il trigger "Cattivo"
+
+## Versione 1.7.4
+
+- È stato modificato il testo del trigger "Salute"
+- È stato aggunto il trigger Busascii
