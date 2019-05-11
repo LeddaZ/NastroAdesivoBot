@@ -124,7 +124,7 @@ const trigger114 = "/nota"
 const trigger115 = "paperette"
 
 //Testo di Businfo e /start
-const businfo_text = "<b>Il Busata</b> by @LeddaZ\nVersione <code>1.8.0</code> dell'11/5/2019\nDigita <code>BusiTrigger</code> per la lista dei trigger\n<a href=\"https://github.com/LeddaZ/NastroTestBot/\">Codice del bot su GitHub</a>\n110 trigger (30 parole, 8 foto e 72 audio)";
+const businfo_text = "<b>Il Busata</b> by @LeddaZ\nVersione <code>1.8.0</code> dell'11/5/2019\nDigita <code>BusiTrigger</code> per la lista dei trigger\n<a href=\"https://github.com/LeddaZ/NastroAdesivoBot/\">Codice del bot su GitHub</a>\n110 trigger (30 parole, 8 foto e 72 audio)";
 
 //Attivazione del bot
 const bot = new Bot(token, { polling: true });
