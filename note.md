@@ -184,3 +184,8 @@
 
 - È stato modificato il testo del trigger "Salute"
 - È stato aggunto il trigger Busascii
+
+## Versione 1.8.0
+
+- È stata modificata la formattazione del testo in Businfo
+- È stato aggiunto il comando /nota

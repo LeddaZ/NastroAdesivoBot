@@ -120,16 +120,16 @@ const trigger110 = "rivoluzionario"
 const trigger111 = "120 tavole"
 const trigger112 = "cattivo"
 const trigger113 = "busasci"
+const trigger114 = "/nota"
+const trigger115 = "paperette"
 
 //Testo di Businfo e /start
-const businfo_text = "<b>Il Busata</b> by @LeddaZ\nVersione <b>1.7.4</b> del 4/5/2019\nDigita <b>BusiTrigger</b> per la lista dei trigger\n<a href=\"https://github.com/LeddaZ/NastroAdesivoBot/\">Codice del bot su GitHub</a>\nTrigger: 108 (28 parole, 8 foto e 72 audio)";
+const businfo_text = "<b>Il Busata</b> by @LeddaZ\nVersione <code>1.8.0</code> dell'11/5/2019\nDigita <code>BusiTrigger</code> per la lista dei trigger\n<a href=\"https://github.com/LeddaZ/NastroTestBot/\">Codice del bot su GitHub</a>\n110 trigger (30 parole, 8 foto e 72 audio)";
 
 //Attivazione del bot
 const bot = new Bot(token, { polling: true });
 
 //Codice del bot
-
-//Numero per /voto
 
 bot.on("message", (msg) => {
 
@@ -157,7 +157,7 @@ bot.on("message", (msg) => {
     if (msg.text.toString().toLowerCase().indexOf(trigger5) === 0)
         bot.sendMessage(msg.chat.id, businfo_text, { parse_mode: "HTML" });
     if (msg.text.toString().toLowerCase().indexOf(trigger6) === 0)
-        bot.sendMessage(msg.chat.id, "<b>Trigger del Busi</b>\nLoddo, Non ho lo scotch, Buongiorno, Businfo, Popopopo, Merjaaa, Chi sei?, Salute, Punto Z, Paesaggio veneto, Farfalle, BioBusi, Non ho la tavola, Ma non ho fatto niente, BusiAudio, BusiFoto, Dio <code>qualsiasi cosa</code>, Straccia la carta, Non ho capito, Orario, Animalismo a scuola, Cani, Liliana Segre, /voto, 120 tavole, Cattivo, Busascii", { parse_mode: "HTML" });
+        bot.sendMessage(msg.chat.id, "<b>Trigger del Busi</b>\nLoddo, Non ho lo scotch, Buongiorno, Businfo, Popopopo, Merjaaa, Chi sei?, Salute, Punto Z, Paesaggio veneto, Farfalle, BioBusi, Non ho la tavola, Ma non ho fatto niente, BusiAudio, BusiFoto, Dio <code>qualsiasi cosa</code>, Straccia la carta, Non ho capito, Orario, Animalismo a scuola, Cani, Liliana Segre, /voto, 120 tavole, Cattivo, Busascii, /nota, Paperette", { parse_mode: "HTML" });
     if (msg.text.toString().toLowerCase().indexOf(trigger7) === 0)
         if (msg.text.toString().toLowerCase().indexOf(trigger100) === 0)
             bot.sendAudio(msg.chat.id, "http://deaddrop.ftp.sh/xYqnRB_VmHcP.mp3");
@@ -356,28 +356,28 @@ bot.on("message", (msg) => {
     if (msg.text.toString().toLowerCase().indexOf(trigger105) === 0)
         bot.sendAudio(msg.chat.id, "http://deaddrop.ftp.sh/hYPu-2IQFFqH.mp3");
     if (msg.text.toString().toLowerCase().indexOf(trigger106) === 0)
-        var randomnumber = Math.floor(Math.random() * 10)
-    if (randomnumber === 1)
+        var voto = Math.floor(Math.random()*(10-0+1)+0)
+    if (voto === 1)
         bot.sendMessage(msg.chat.id, "QUESTO NON HA FATTO NIENTEEEEH! TI METTO UNOOO!");
-    else if (randomnumber === 0)
+    else if (voto === 0)
         bot.sendMessage(msg.chat.id, "SIGNORI LA TAVOLA ERA IN SCADENZA UN MESE FA, CHI NON CE L'HA LA PROSSIMA VOLTA SI BECCA DUE! CI SIAMO CAPITIIIIH?!");
-    else if (randomnumber === 2)
+    else if (voto === 2)
         bot.sendMessage(msg.chat.id, "NO HO QUASI FINITO ADESSO TI METTO DUEEEH!");
-    else if (randomnumber === 3)
+    else if (voto === 3)
         bot.sendMessage(msg.chat.id, "QUESTI FANNO TROPPO CASINO, ADESSO TI MANDO AL POSTO E TI BECCHI TRE! RINGRAZIA I TUOI COMPAGNI!");
-    else if (randomnumber === 4)
+    else if (voto === 4)
         bot.sendMessage(msg.chat.id, "QUA È TUTTO SBAGLIATOOH! AH MI SONO STUFATO DI RIPETERE SEMPRE LE STESSE COSE, ADESSO TI BECCHI QUATTRO E TE LO TIENI! SEMPRE COSÌ CON VOI!");
-    else if (randomnumber === 5)
+    else if (voto === 5)
         bot.sendMessage(msg.chat.id, "QUESTA LINEA È STORTAAAH! FAI I SEGNI PIÙ OMOGENEIIIIH! CINQUEEEH!");
-    else if (randomnumber === 6)
+    else if (voto === 6)
         bot.sendMessage(msg.chat.id, "AH GUARDA TI METTO SEI REGALATOOOH! CHI È CHE TIENE LA CONTABILITÀ DEI VOTI? SCRIVI BASTA SEIIIH!");
-    else if (randomnumber === 7)
+    else if (voto === 7)
         bot.sendMessage(msg.chat.id, "LA TAVOLA SI PRESENTA ABBASTANZA BENE... I DISEGNI SONO GIUSTI... SETTEEH!");
-    else if (randomnumber === 8)
+    else if (voto === 8)
         bot.sendMessage(msg.chat.id, "OTTO? IMPOSSIBILE, IL BUSATA NON METTE VOTI COSÌ ALTI, FATE SEMPRE DUECENTO ERRORI VOI!");
-    else if (randomnumber === 9)
+    else if (voto === 9)
         bot.sendMessage(msg.chat.id, "ADESSO TI BECCHI QUATTRO! NON TIRATEMI FUORI LA STORIA 'EH MA AGLI ALTRI NON L'HA DETTO', FATE SEMPRE UN SACCO DI ERRORI E AL BUSATA NE SFUGGE QUALCUNO!");
-    else if (randomnumber === 10)
+    else if (voto === 10)
         bot.sendMessage(msg.chat.id, "QUESTO DISEGNO È SBAGLIATO DAL FONDOOOH! METTO CINQUE INVECE DI TRE PERCHÉ CI HAI LAVORATO!");
     if (msg.text.toString().toLowerCase().indexOf(trigger107) === 0)
         bot.sendAudio(msg.chat.id, "http://deaddrop.ftp.sh/wAI8xEGIjEgl.mp3");
@@ -393,6 +393,22 @@ bot.on("message", (msg) => {
         bot.sendMessage(msg.chat.id, "IL BUSATA È CATTIVOOOOOH!");
 	if (msg.text.toString().toLowerCase().indexOf(trigger113) === 0)
         bot.sendMessage(msg.chat.id, "<code>|||||||||||||||\n|||||||||||||||\nDUEDUEDUEDU||||\nEDUEDUEDUED||||\n|||||||||||||||\n|||||||||||||||\n||||UEDUEDUEDUE\n||||DUEDUEDUEDU\n|||||||||||||||\n|||||||||||||||</code>", { parse_mode: "HTML" });
+	if (msg.text.toString().toLowerCase().indexOf(trigger114) === 0)
+        var nota = Math.floor(Math.random()*(6-1+1)+1)
+    if (nota === 1)
+        bot.sendMessage(msg.chat.id, msg.from.first_name + ", in laboratorio, sfoglia appunti di chimica invece di disegnare.");
+    else if (nota === 2)
+        bot.sendMessage(msg.chat.id, msg.from.first_name + " in laboratorio non si applica.");
+    else if (nota === 3)
+        bot.sendMessage(msg.chat.id, msg.from.first_name + ", per suscitare l'ilarità dei compagni, straccia la tavola di disegno dando colpi con la testa.");
+    else if (nota === 4)
+        bot.sendMessage(msg.chat.id, msg.from.first_name + " in laboratorio non disegna e non fa nulla.");
+	else if (nota === 5)
+		bot.sendMessage(msg.chat.id, msg.from.first_name + " svuota lo zaino per pulirlo, poi chiede di avere il materiale per pulire il banco.");
+	else if (nota === 6)
+		bot.sendMessage(msg.chat.id, msg.from.first_name + " disturba continuamente la lezione chiaccherando.");
+	if (msg.text.toString().toLowerCase().indexOf(trigger115) === 0)
+        bot.sendMessage(msg.chat.id, "OOH! LE PAPERETTE! LEDDA DOVREMO ISCRIVERLO A QUALCHE ASSOCIAZIONE, LUI CI TIENE A QUESTE COSE!");
 });
 
 //Risposta alla pressione di un pulsante su BusiAudio
