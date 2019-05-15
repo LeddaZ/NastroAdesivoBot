@@ -12,4 +12,4 @@ Per utilizzare le versioni Beta del bot avviare [NastroTestBot](https://github.c
 
 # Codice
 È possibile scaricare il codice del bot cliccando sul pulsante `Clone or download`, quindi su `Download ZIP`.
-https://raw.githubusercontent.com/LeddaZ/NastroAdesivoBot/master/codice.png
+https://github.com/LeddaZ/NastroAdesivoBot/blob/master/codice.png
