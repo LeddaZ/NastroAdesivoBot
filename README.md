@@ -7,8 +7,9 @@ Per leggere i cambiamenti nelle varie versioni del bot ci sono le [note di rilas
 # Foto e audio
 A [questo](https://github.com/LeddaZ/NastroAdesivoBot/blob/master/link.txt) link si trovano tutte le foto utilizzate nel bot nell'ordine in cui appaiono in BusiFoto e i file audio utilizzati nel bot.
 
-# Bot basati su questo codice
-Da [qui](https://github.com/LeddaZ/NastroAdesivoBot/releases) è possibile scaricare il codice di tutte le versioni del bot dalla 1.2.1 in poi per crearne altri basati su questo codice.
-
 # Versioni Beta
 Per utilizzare le versioni Beta del bot avviare [NastroTestBot](https://github.com/LeddaZ/NastroTestBot). Queste versioni potrebbero essere incomplete o non funzionare correttamente e il bot per le versioni beta potrebbe non essere sempre online.
+
+# Codice
+È possibile scaricare il codice del bot cliccando sul pulsante `Clone or download`, quindi su `Download ZIP`.
+https://raw.githubusercontent.com/LeddaZ/NastroAdesivoBot/master/codice.png
