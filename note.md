@@ -189,3 +189,8 @@
 
 - È stata modificata la formattazione del testo in Businfo
 - È stato aggiunto il comando /nota
+
+## Versione 1.9.0
+
+- Sono stati aggiunti i trigger `BusiAmazon` e `BusiCasa`
+- Sono stati aggiunti gli audio `Ferragosto`, `Telecamera`, `Tigri stecchite`, `Ventiquattrore` e `Via`
