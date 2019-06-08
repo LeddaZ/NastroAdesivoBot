@@ -194,3 +194,8 @@
 
 - Sono stati aggiunti i trigger `BusiAmazon` e `BusiCasa`
 - Sono stati aggiunti gli audio `Ferragosto`, `Telecamera`, `Tigri stecchite`, `Ventiquattrore` e `Via`
+
+## Versione 1.9.1
+
+- Sono stati aggiunti i trigger `Voti` e `Nota`
+- È stato aggiunto l'audio `Titoli`
