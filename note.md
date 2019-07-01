@@ -199,3 +199,7 @@
 
 - Sono stati aggiunti i trigger `Voti` e `Nota`
 - È stato aggiunto l'audio `Titoli`
+
+## Versione 1.9.2
+
+- La token del bot è stata nascosta per motivi di sicurezza
