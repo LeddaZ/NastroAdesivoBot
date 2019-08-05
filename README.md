@@ -10,6 +10,5 @@ A [questo](https://github.com/LeddaZ/NastroAdesivoBot/blob/master/link.txt) link
 # Versioni Beta
 Per utilizzare le versioni Beta del bot avviare [NastroTestBot](https://github.com/LeddaZ/NastroTestBot). Queste versioni potrebbero essere incomplete o non funzionare correttamente e il bot per le versioni beta potrebbe non essere sempre online.
 
-# Codice
-È possibile scaricare il codice del bot cliccando sul pulsante `Clone or download`, quindi su `Download ZIP`.
-![Codice](https://github.com/LeddaZ/NastroAdesivoBot/blob/master/codice.png)
+# Codice sorgente
+Il codice sorgente del bot può essere scaricato dalla [pagina delle pubblicazioni](https://github.com/LeddaZ/NastroAdesivoBot/releases).
