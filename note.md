@@ -203,3 +203,7 @@
 ## Versione 1.9.2
 
 - La token del bot è stata nascosta per motivi di sicurezza
+
+## Versione 1.9.3
+
+- È stato corretto il link del codice sorgente in Businfo
