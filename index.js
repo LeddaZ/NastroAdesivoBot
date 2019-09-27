@@ -279,8 +279,8 @@ bot.on("message", (msg) => {
     if (msg.text.toString().toLowerCase().indexOf(t50) === 0)
         bot.sendPhoto(msg.chat.id, "http://deaddrop.ftp.sh/E_FJlFM2gc0a.jpg", { caption: "NON SI SPRECA LA CARTAAAAAH!" });
         
-    if (msg.text.toString().toLowerCase().includes(t51) || msg.text.toString().toLowerCase().includes(t126) || msg.text.toString().toLowerCase().includes(t127))
-        if (msg.text.toString().toLowerCase().includes(t52))
+    if (msg.text.toString().toLowerCase().indexOf(t51) === 0 || msg.text.toString().toLowerCase().indexOf(t126) === 0 || msg.text.toString().toLowerCase().indexOf(t127) === 0)
+        if (msg.text.toString().toLowerCase().indexOf(t52) === 0)
 	        bot.sendMessage(msg.chat.id, "CHI È STO QUA? HO SENTITO UN CAGNOLINO PRECEDUTO DA QUALCOS'ALTROOOH!");
         else
             bot.sendMessage(msg.chat.id, "AH IO DEVO FARE LE INDAGINI, SÌ PERCHÉ LA GENTE BESTEMMIAAAAH!");
