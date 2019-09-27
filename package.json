@@ -1,18 +1,36 @@
 {
   "name": "nastroadesivobot",
-  "version": "1.9.2",
+  "version": "2.0.0",
   "description": "Il bot del Busata",
   "main": "index.js",
-  "dependencies": {
-    "node-telegram-bot-api": "^0.30.0",
-    "dotenv": "^8.0.0"
+  "engines": {
+    "node": ">=10.0.0"
   },
-  "devDependencies": {},
+  "dependencies": {
+    "child_process": "^1.0.2",
+    "dotenv": "^8.0.0",
+    "fs-extra": "^8.1.0",
+    "lodash": "^4.17.14",
+    "node-telegram-bot-api": "^0.30.0",
+    "now": "^16.1.2"
+  },
+  "devDependencies": {
+    "release-it": "^12.3.5"
+  },
+  "release-it": {
+    "git": {
+      "tagName": "v${version}"
+    },
+    "github": {
+      "release": true,
+      "releaseName": "${version}"
+    }
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js"
   },
-  "author": "@LeddaZ su Telegram",
+  "author": "@LeddaZ on Telegram",
   "license": "ISC",
   "repository": {
     "type": "git",

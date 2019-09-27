@@ -207,3 +207,25 @@
 ## Versione 1.9.3
 
 - È stato corretto il link del codice sorgente in Businfo
+
+## Versione 2.0.0 (finale)
+Il Busi ha cambiato scuola, quindi questo sarà l'ultimo aggiornamento del bot.
+
+- `/voto` è stato sostituito da `/consegna`; simula la consegna di una tavola e in alcuni casi c'è anche il mezzo voto
+- L'audio `Orco` funziona di nuovo
+- Sono stati aggiunti i comandi `/caccia` e `/ritorna` per bannare e unbannare qualcuno in un gruppo
+- È stata aggiunta una nuova nota
+- Il trigger `Loddo` funziona di nuovo
+- È stato aggiunto il trigger `Prospettiva`
+- Il bot ora reagisce a qualsiasi bestemmia
+- È stato rimosso il nome da `popopopo`
+- BusiAudio è stato sostituito da `/audio` e non è più diviso in pagine
+- BusiTrigger è stato sostituito da `/trigger`
+- BusiFoto è stato sostituito da `/foto`
+- BioBusi è stato sostituito da `/biobusi`
+- Businfo è stato sostituito da `/businfo` e sono stati rimossi la data della versione e il numero di trigger
+- `Paesaggio veneto` è stato sostituito dal comando `/trovabusi` con dei link relativi al Busi; di conseguenza `BusiAmazon` è stato rimosso
+- È stato aggiunto il comando `/comandi` con le descrizioni di tutti i comandi del bot
+- `/nota` utilizza gli username al posto dei nomi
+- Modificato il testo di `Liliana Segre`
+- Corretto un bug con gli audio di Guerra
