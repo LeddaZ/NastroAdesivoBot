@@ -209,7 +209,7 @@
 - È stato corretto il link del codice sorgente in Businfo
 
 ## Versione 2.0.0 (finale)
-Il Busi ha cambiato scuola, quindi questo sarà l'ultimo aggiornamento del bot.
+Il Busi ha cambiato scuola, quindi questo sarà l'ultimo aggiornamento del bot che aggiunge nuove funzioni.
 
 - `/voto` è stato sostituito da `/consegna`; simula la consegna di una tavola e in alcuni casi c'è anche il mezzo voto
 - L'audio `Orco` funziona di nuovo
@@ -229,3 +229,6 @@ Il Busi ha cambiato scuola, quindi questo sarà l'ultimo aggiornamento del bot.
 - `/nota` utilizza gli username al posto dei nomi
 - Modificato il testo di `Liliana Segre`
 - Corretto un bug con gli audio di Guerra
+
+## Versione 2.0.1
+- `/caccia` e `/ritorna` sono stati rimossi

@@ -492,13 +492,13 @@ bot.onText(/\/businfo/, (msg) => {
 
 //Codice di /trigger
 bot.onText(/\/trigger/, (msg) => {
-    bot.sendMessage(msg.chat.id, "<b>Trigger del Busi</b>\nLoddo, Non ho lo scotch, Buongiorno, Popopopo, Merjaaa, Chi sei?, Salute, Punto Z Farfalle, BioBusi, Non ho la tavola, Ma non ho fatto niente, Qualsiasi bestemmia, Straccia la carta, Non ho capito, Orario, Animalismo a scuola, Cani, Liliana Segre, 120 tavole, Cattivo, Busascii, Paperette, BusiAmazon, Voti, Nota, Prospettiva", { parse_mode: "HTML" });
+    bot.sendMessage(msg.chat.id, "<b>Trigger del Busi</b>\nLoddo, Non ho lo scotch, Buongiorno, Popopopo, Merjaaa, Chi sei?, Salute, Punto Z Farfalle, BioBusi, Non ho la tavola, Ma non ho fatto niente, Qualsiasi bestemmia, Straccia la carta, Non ho capito, Orario, Animalismo a scuola, Cani, Liliana Segre, 120 tavole, Cattivo, Busascii, Paperette, Voti, Nota, Prospettiva", { parse_mode: "HTML" });
 });
 
 
 //Codice di /comandi
 bot.onText(/\/comandi/, (msg) => {
-    bot.sendMessage(msg.chat.id, "<b>Comandi del Busi</b>\n/start - Avvia il bot\n/businfo - Visualizza versione e autore del bot\n/audio - Visualizza la lista di audio del Busi\n/foto - Visualizza la lista di foto del Busi\n/nota - Genera una nota del Busi\n/consegna - Simula la consegna di una tavola. Chi non ce l'ha si becca DUE!\n/caccia - Rispondere a un messaggio con questo comando per bannare la persona interessata\n/ritorna - Rispondere a un messaggio con questo comando per unbannare la persona interessata\n/trigger - Visualizza la lista di trigger\n/comandi - Visualizza la lista di comandi\n/trovabusi - Mostra alcuni link riguardanti il Busi", { parse_mode: "HTML" });
+    bot.sendMessage(msg.chat.id, "<b>Comandi del Busi</b>\n/start - Avvia il bot\n/businfo - Visualizza versione e autore del bot\n/audio - Visualizza la lista di audio del Busi\n/foto - Visualizza la lista di foto del Busi\n/nota - Genera una nota del Busi\n/consegna - Simula la consegna di una tavola. Chi non ce l'ha si becca DUE!\n/trigger - Visualizza la lista di trigger\n/comandi - Visualizza la lista di comandi\n/trovabusi - Mostra alcuni link riguardanti il Busi", { parse_mode: "HTML" });
 });
 
 
@@ -599,61 +599,6 @@ bot.on('callback_query', function onCallbackQuery(callbackQuery) {
 
     //Invio del testo del mezzo voto
     bot.sendMessage(msg.chat.id, text);
-});
-
-
-//Codice di /caccia
-bot.onText(/\/caccia/, (msg) => {
-    var chatId = msg.chat.id;
-    var userId = msg.from.id;
-    var replyId = msg.reply_to_message.from.id;
-    var replyName = msg.reply_to_message.from.first_name;
-    var messageId = msg.message_id;
-
-    if (msg.reply_to_message == undefined){
-        return;
-    }
-    
-    bot.getChatMember(chatId, userId).then(function(data){
-        if((data.status == 'creator') || (data.status == 'administrator')){
-        bot.kickChatMember(chatId, replyId)
-            .then(function(result){
-                bot.deleteMessage(chatId, messageId);
-                bot.sendMessage(chatId, replyName + " ADESSO TI CACCIO VIAAH!");
-                bot.sendMessage(chatId, replyName + "<i> è stato cacciato via malamente</i>", { parse_mode: "HTML" });
-            })
-        }
-        else {
-        bot.sendMessage(chatId, "CHI È STO QUA? VAI VIA, SOLO GLI AMMINISTRATORI POSSONO DIRE AL BUSATA CHI VA CACCIATO!");
-        }
-    })
-});
-
-
-//Codice di /ritorna
-bot.onText(/\/ritorna/, (msg) => {
-    
-    var chatId = msg.chat.id;
-    var replyId = msg.reply_to_message.from.id;
-    var userId = msg.from.id;
-    var replyName = msg.reply_to_message.from.first_name;
-    var messageId = msg.message_id;
-    
-   if(msg.reply_to_message == undefined){
-   return;
-   }
-   
-  bot.getChatMember(chatId, userId).then(function(data){
-       if((data.status == 'creator') || (data.status == 'administrator')){
-            bot.unbanChatMember(chatId, replyId).then(function(result){
-                bot.deleteMessage(chatId, messageId);
-                bot.sendMessage(chatId, replyName + " TORNA DENTRO E VEDI DI COMPORTARTI BENE, ALTRIMENTI IL BUSATA VA ALL'INFERNO PER COLPA VOSTRAAAH!");
-            })
-        }
-        else {
-            bot.sendMessage(chatId, "CHI È STO QUA? VAI VIA, SOLO GLI AMMINISTRATORI POSSONO DIRE AL BUSATA CHI DEVE TORNARE!");
-        }
-    })
 });
 
 
