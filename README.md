@@ -39,6 +39,6 @@ Per avviare il codice su un proprio bot seguire queste istruzioni:
 - [Notepad++](https://notepad-plus-plus.org/): quello che usavo prima di VS Code
 - [GitHub](https://github.com/): questo sito
 
-**Dopo 3 anni (2016-2019) il Busi ha cambiato scuola, quindi il bot non verrà più aggiornato (ma continuerà a funzionare)**
+**Dopo 3 anni (2016-2019) il Busi ha cambiato scuola, quindi non verranno più aggiunti nuovi trigger/foto/audio al bot (ma continuerà a funzionare)**
 
 _Online dal 27 settembre 2018_
