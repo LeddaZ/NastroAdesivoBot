@@ -232,3 +232,9 @@ Il Busi ha cambiato scuola, quindi questo sarà l'ultimo aggiornamento del bot c
 
 ## Versione 2.0.1
 - `/caccia` e `/ritorna` sono stati rimossi
+
+## Versione 2.0.2
+- `/trigger` e `/comandi` sono stati uniti in `/trigger`
+- `/foto` è stato rinominato in `/busifoto`
+- `/audio` è stato rinominato in `/busiaudio`
+- Sono stati rimossi i trigger non funzionanti o trasformati in comandi da `/trigger`
