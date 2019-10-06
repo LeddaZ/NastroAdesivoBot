@@ -490,15 +490,9 @@ bot.onText(/\/businfo/, (msg) => {
 });
 
 
-//Codice di /trigger
-bot.onText(/\/trigger/, (msg) => {
-    bot.sendMessage(msg.chat.id, "<b>Trigger del Busi</b>\nLoddo, Non ho lo scotch, Buongiorno, Popopopo, Merjaaa, Chi sei?, Salute, Punto Z Farfalle, BioBusi, Non ho la tavola, Ma non ho fatto niente, Qualsiasi bestemmia, Straccia la carta, Non ho capito, Orario, Animalismo a scuola, Cani, Liliana Segre, 120 tavole, Cattivo, Busascii, Paperette, Voti, Nota, Prospettiva", { parse_mode: "HTML" });
-});
-
-
-//Codice di /comandi
-bot.onText(/\/comandi/, (msg) => {
-    bot.sendMessage(msg.chat.id, "<b>Comandi del Busi</b>\n/start - Avvia il bot\n/businfo - Visualizza versione e autore del bot\n/audio - Visualizza la lista di audio del Busi\n/foto - Visualizza la lista di foto del Busi\n/nota - Genera una nota del Busi\n/consegna - Simula la consegna di una tavola. Chi non ce l'ha si becca DUE!\n/trigger - Visualizza la lista di trigger\n/comandi - Visualizza la lista di comandi\n/trovabusi - Mostra alcuni link riguardanti il Busi", { parse_mode: "HTML" });
+//Codice di /busitrigger
+bot.onText(/\/busitrigger/, (msg) => {
+    bot.sendMessage(msg.chat.id, "<b>Trigger del Busi</b>\nLoddo, Non ho lo scotch, Buongiorno, Popopopo, Merjaaa, Chi sei?, Salute, Punto Z Farfalle, Non ho la tavola, Ma non ho fatto niente, Qualsiasi bestemmia, Straccia la carta, Non ho capito, Orario, Animalismo a scuola, Cani, Liliana Segre, 120 tavole, Cattivo, Busascii, Paperette, Voti, Nota, Prospettiva\n\n<b>Comandi del Busi</b>\n/start - Avvia il bot\n/businfo - Visualizza versione e autore del bot\n/busiaudio - Visualizza la lista di audio del Busi\n/busifoto - Visualizza la lista di foto del Busi\n/nota - Genera una nota del Busi\n/consegna - Simula la consegna di una tavola. Chi non ce l'ha si becca DUE!\n/busitrigger - Visualizza la lista di trigger\n/trovabusi - Mostra alcuni link riguardanti il Busi", { parse_mode: "HTML" });
 });
 
 
@@ -508,14 +502,14 @@ bot.onText(/\/biobusi/, (msg) => {
 });
 
 
-//Codice di /audio
-bot.onText(/\/audio/, (msg) => {   
+//Codice di /busiaudio
+bot.onText(/\/busiaudio/, (msg) => {   
     bot.sendMessage(msg.chat.id, "<b>Lista di audio del Busi</b>\nAutoCAD, Brutto sto qua, Busata è un sapiente, Busirena, Compassione, Due, Gomma, Hai capito, Busi16, Insolente, Nirvana lento, Nirvana, Norvegia, Ti caccio via, Violenza privata, Palazzo, Facebook, Cosmo, Orco, Orco2, Che schifo, BusiAcuto, Marchesin, Viva la rivoluzione, Bassi, Benvegnù, Cacciato via, Guerra, Marchesin vai via, Carta stracciata, Mi avete stufato, Vedovato traffica, Terrapiattisti, Orari, Povero Guerra, Moro, Macchine, Falasco, Busi bestemmia, Merja fa andare Busi all'inferno, Devo finire la tavola, Denti, Colpa di Guerra, Vedovato, Ti tieni il 2, Mister Fantastico, Governo, Il taglio di Guerra, Busi va all'inferno, Soddisfa il Busi, Andate via, Merja ha le mani giù, Busi è un po' tardo, Guerra a 90, Koreani mangiacani, Ledda studia chimica, Sfoglia il quaderno, Stare al mondo, Basta battere, Si diventa deficienti, Metto 2 subito, Porta la cartellina, Merja bocciato, Vedovato è un poeta, Busata perde tutto, Ciuccia il tè, Il filo, Previo terrorismo, Busi è perfido, Orco can, Calma assoluta, Rivoluzionario, Ferragosto, Telecamera, Tigri stecchite, Ventiquattrore, Via, Titoli", { parse_mode: "HTML" });
 });
 
 
-//Codice di /foto
-bot.onText(/\/foto/, (msg) => {
+//Codice di /busifoto
+bot.onText(/\/busifoto/, (msg) => {
 	bot.sendMessage(msg.chat.id, "<b>Lista di foto del Busi</b>\nTigre, Cane procione, Pelliccia, Oh no, Non sono parallele, Busecs, Busecs2, Triggered", { parse_mode: "HTML" });
 });
 
