@@ -237,3 +237,6 @@
 - `/foto` è stato rinominato in `/busifoto`
 - `/audio` è stato rinominato in `/busiaudio`
 - Sono stati rimossi i trigger non funzionanti o trasformati in comandi da `/trigger`
+
+## Versione 2.0.3
+- È stato aggiunto l'audio `Foglia`
