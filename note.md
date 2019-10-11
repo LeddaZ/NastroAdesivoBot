@@ -208,8 +208,7 @@
 
 - È stato corretto il link del codice sorgente in Businfo
 
-## Versione 2.0.0 (finale)
-Il Busi ha cambiato scuola, quindi questo sarà l'ultimo aggiornamento del bot che aggiunge nuove funzioni.
+## Versione 2.0.0
 
 - `/voto` è stato sostituito da `/consegna`; simula la consegna di una tavola e in alcuni casi c'è anche il mezzo voto
 - L'audio `Orco` funziona di nuovo
