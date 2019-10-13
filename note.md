@@ -240,3 +240,7 @@
 
 ## Versione 2.0.3
 - È stato aggiunto l'audio `Foglia`
+
+## Versione 2.0.4
+- È stato ripristinato il nome in `Popopopo`
+- `/trigger` è stato modificato in `/busitrigger`
