@@ -134,7 +134,7 @@ var package = require('./package.json');
 var ver = package.version;
 
 //Testo di /businfo e /start
-var start = "<b>NastroAdesivoBot</b> <code>v" + ver + "</code>\nDigita /trigger per la lista dei trigger\n<a href=\"https://github.com/LeddaZ/NastroAdesivoBot/\">Codice del bot su GitHub</a>\nBot creato da @LeddaZ\nIspirato a <b>Renato Busata</b>"
+var start = "<b>NastroAdesivoBot</b> <code>v" + ver + "</code>\nDigita /busitrigger per la lista di trigger e comandi\n<a href=\"https://github.com/LeddaZ/NastroAdesivoBot/\">Codice del bot su GitHub</a>\nBot creato da @LeddaZ\nIspirato a <b>Renato Busata</b>"
    
 
 //Codice del bot
