@@ -153,7 +153,7 @@ bot.on("message", (msg) => {
         bot.sendMessage(msg.chat.id, "AAAH NON HA LO SCOTCH! E IO METTO DUE E NOTA SUL REGISTROOOOOOH!");
 
     if (msg.text.toString().toLowerCase().indexOf(t4) === 0)
-        bot.sendMessage(msg.chat.id, "VAI FUORI DALLA PORTAAAAAH!");
+        bot.sendMessage(msg.chat.id, "MERJA VAI FUORI DALLA PORTAAAAAH!");
 
     if (msg.text.toString().toLowerCase().indexOf(t7) === 0)
         if (msg.text.toString().toLowerCase().indexOf(t100) === 0)
