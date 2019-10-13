@@ -493,9 +493,9 @@ bot.onText(/\/businfo/, (msg) => {
 });
 
 
-//Codice di /trigger
-bot.onText(/\/trigger/, (msg) => {
-    bot.sendMessage(msg.chat.id, "<b>Trigger del Busi</b>\nLoddo, Non ho lo scotch, Buongiorno, Popopopo, Merjaaa, Chi sei?, Salute, Punto Z Farfalle, Non ho la tavola, Ma non ho fatto niente, Qualsiasi bestemmia, Straccia la carta, Non ho capito, Orario, Animalismo a scuola, Cani, Liliana Segre, 120 tavole, Cattivo, Busascii, Paperette, Voti, Nota, Prospettiva\n\n<b>Comandi del Busi</b>\n/start - Avvia il bot\n/businfo - Visualizza versione e autore del bot\n/busiaudio - Visualizza la lista di audio del Busi\n/busifoto - Visualizza la lista di foto del Busi\n/nota - Genera una nota del Busi\n/consegna - Simula la consegna di una tavola. Chi non ce l'ha si becca DUE!\n/trigger - Visualizza la lista di trigger\n/trovabusi - Mostra alcuni link riguardanti il Busi", { parse_mode: "HTML" });
+//Codice di /busitrigger
+bot.onText(/\/busitrigger/, (msg) => {
+    bot.sendMessage(msg.chat.id, "<b>Trigger del Busi</b>\nLoddo, Non ho lo scotch, Buongiorno, Popopopo, Merjaaa, Chi sei?, Salute, Punto Z Farfalle, Non ho la tavola, Ma non ho fatto niente, Qualsiasi bestemmia, Straccia la carta, Non ho capito, Orario, Animalismo a scuola, Cani, Liliana Segre, 120 tavole, Cattivo, Busascii, Paperette, Voti, Nota, Prospettiva\n\n<b>Comandi del Busi</b>\n/start - Avvia il bot\n/businfo - Visualizza versione e autore del bot\n/busiaudio - Visualizza la lista di audio del Busi\n/busifoto - Visualizza la lista di foto del Busi\n/nota - Genera una nota del Busi\n/consegna - Simula la consegna di una tavola. Chi non ce l'ha si becca DUE!\n/busitrigger - Visualizza la lista di trigger\n/trovabusi - Mostra alcuni link riguardanti il Busi", { parse_mode: "HTML" });
 });
 
 
