@@ -244,3 +244,6 @@
 ## Versione 2.0.4
 - È stato ripristinato il nome in `Popopopo`
 - `/trigger` è stato modificato in `/busitrigger`
+
+## Versione 2.0.5
+- `/businfo` è stato aggiornato correttamente
