@@ -9,7 +9,9 @@ A [questo](https://github.com/LeddaZ/NastroAdesivoBot/blob/master/link.txt) link
 
 # Codice del bot
 È possibile scaricare la versione più recente del codice di **NastroAdesivoBot** cliccando sul pulsante verde `Clone or download`, quindi su `Download ZIP`.
+
 ![Codice](https://github.com/LeddaZ/NastroAdesivoBot/blob/master/codice.png)
+
 Per scaricare una versione precedente andare nella sezione [Releases](https://github.com/LeddaZ/NastroAdesivoBot/releases), cercare la versione desiderata e cliccare su `Source code (zip)` sotto ad `Assets`
 
 # Avviare il bot
