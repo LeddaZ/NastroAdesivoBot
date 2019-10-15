@@ -247,3 +247,6 @@
 
 ## Versione 2.0.5
 - `/businfo` è stato aggiornato correttamente
+
+## Versione 2.0.6
+- È stato aggiunto il trigger `Collina`
