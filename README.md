@@ -32,14 +32,14 @@ Per avviare il codice su un proprio bot seguire queste istruzioni:
 
 # Programmi utilizzati per creare il bot
 - [Node.js](https://nodejs.org/it/): il linguaggio di programmazione
-- [node-telegram-bot-api](https://github.com/yagop/node-telegram-bot-api): l'API che fa funzionare il bot
-- [Telegram](https://telegram.org/): la piattaforma di messaggistica istantanea utilizzata dal bot
+- [node-telegram-bot-api](https://github.com/yagop/node-telegram-bot-api): l'API utilizzata dal bot
+- [Telegram](https://telegram.org/): meglio di WhatsApp
 - [BotFather](https://t.me/BotFather): il bot per creare i bot
-- [Deaddrop](https://t.me/dead_drop_bot): il servizio in cui sono caricati tutti gli audio e alcune foto del bot
+- [Deaddrop](https://t.me/dead_drop_bot): un servizio che fornisce link diretti per qualsiasi file
 - [Now](https://zeit.co/): la piattaforma utilizzata per il deploy del bot, ossia per farlo restare online su un server senza usare il mio computer
-- [Visual Studio Code](https://code.visualstudio.com/): l'editor di codice che ho usato per scrivere il bot
+- [Visual Studio Code](https://code.visualstudio.com/): l'editor di codice che uso/ho usato per scrivere il bot
 - [Notepad++](https://notepad-plus-plus.org/): quello che usavo prima di VS Code
-- [GitHub](https://github.com/): questo sito
+- [GitHub](https://github.com/): questo sito per caricare il codice sorgente del bot
 
 **Dopo 3 anni (2016-2019) il Busi ha cambiato scuola, quindi è improbabile che vengano aggiunti nuovi trigger/audio/foto al bot (comunque continuerà a funzionare)**
 
