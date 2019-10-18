@@ -517,7 +517,7 @@ bot.onText(/\/busiaudio/, (msg) => {
 
 //Codice di /busifoto
 bot.onText(/\/busifoto/, (msg) => {
-	bot.sendMessage(msg.chat.id, "<b>Lista di foto del Busi</b>\nTigre, Cane procione, Pelliccia, Oh no, Non sono parallele, Busecs, Busecs2, Triggered", { parse_mode: "HTML" });
+	bot.sendMessage(msg.chat.id, "<b>Lista di foto del Busi</b>\nBusecs, Busecs2, Cane procione, Non sono parallele, Oh no, Pelliccia, Tigre, Triggered", { parse_mode: "HTML" });
 });
 
 
