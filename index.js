@@ -128,7 +128,7 @@ var t129 = "foglia";
 var t130 = "collina";
 
 //Lettura della token del bot da .env
-var token = process.env.STABLE_TOKEN;
+var token = process.env.TOKEN;
 
 //Letura della versione del bot da package.json
 var package = require('./package.json');
