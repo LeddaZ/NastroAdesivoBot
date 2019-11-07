@@ -250,3 +250,7 @@
 
 ## Versione 2.0.6
 - È stato aggiunto il trigger `Collina`
+
+## Versione 2.0.7
+- I comandi `/busitrigger`, `/busiaudio` e `/busifoto` sono stati riordinati in ordine alfabetico
+- "Gesù" viene rilevato anche senza accento
