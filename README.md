@@ -26,7 +26,7 @@ Per avviare il codice su un proprio bot seguire queste istruzioni:
 - Installare i moduli npm necessari con `npm install` (se si verificano errori utilzzare `sudo npm install` su Linux/macOS o un prompt con permessi di amministratore su Windows)
 - Creare un file chiamato `.env` (`touch .env` su Linux/macOS e `type nul > .env` su Windows)
 - Aprire il file con un editor di testo (consiglio [Notepad++](https://notepad-plus-plus.org/))
-- Copiare e incollare `STABLE_TOKEN = token` nel file, quindi sostituire `token` con la token del bot generata da BotFather
+- Copiare e incollare `TOKEN = token` nel file, quindi sostituire `token` con la token del bot generata da BotFather
 - Salvare il file e chiudere l'editor
 - Eseguire `node index.js` per avviare il bot
 
