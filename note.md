@@ -254,3 +254,7 @@
 ## Versione 2.0.7
 - I comandi `/busitrigger`, `/busiaudio` e `/busifoto` sono stati riordinati in ordine alfabetico
 - "Gesù" viene rilevato anche senza accento
+
+## Versione 2.0.8
+- `/nota` utilizza il nickname se l'utente che lo attiva non ha uno username
+- `/businfo` è stato migliorato
