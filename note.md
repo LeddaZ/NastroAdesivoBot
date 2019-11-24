@@ -1,5 +1,8 @@
 # Note di rilascio
 
+## Versione 2.0.9
+- `/nota` utilizza solo il nome
+
 ## Versione 2.0.8
 - `/nota` utilizza il nickname se l'utente che lo attiva non ha uno username
 - `/businfo` è stato migliorato
