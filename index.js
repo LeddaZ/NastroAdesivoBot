@@ -126,6 +126,7 @@ var t127 = "ges";
 var t128 = "prospettiva";
 var t129 = "foglia";
 var t130 = "collina";
+var t131 = "quanto manca";
 
 //Lettura della token del bot da .env
 var token = process.env.TOKEN;
@@ -485,6 +486,9 @@ bot.on("message", (msg) => {
 
     if (msg.text.toString().toLowerCase().indexOf(t130) === 0)
         bot.sendMessage(msg.chat.id, "ALBERELLOOOOOH!");
+
+    if (msg.text.toString().toLowerCase().indexOf(t131) === 0)
+        bot.sendMessage(msg.chat.id, "MANCANO CINQUE MINUTI, METTERE VIAAAAH! PULIRE I TAVOLI CHE ARRIVA UN'ALTRA CLASSEEEEEEEEH!");
 });
 
 
@@ -499,7 +503,7 @@ bot.onText(/\/businfo/, (msg) => {
 
 //Codice di /busitrigger
 bot.onText(/\/busitrigger/, (msg) => {
-    bot.sendMessage(msg.chat.id, "<b>Trigger del Busi</b>\n120 tavole, Animalismo a scuola, Buongiorno, Busascii, Cani, Cattivo, Chi sei?, Collina, Farfalle, Liliana Segre, Loddo, Ma non ho fatto niente, Merjaaa, Non ho capito, Non ho la tavola, Non ho lo scotch, Nota, Orario, Paperette, Popopopo, Prospettiva, Punto Z, Qualsiasi bestemmia, Salute, Straccia la carta, Voti\n\n<b>Comandi del Busi</b>\n/start - Avvia il bot\n/busiaudio - Visualizza la lista di audio del Busi\n/busifoto - Visualizza la lista di foto del Busi\n/businfo - Visualizza versione e autore del bot\n/busitrigger - Visualizza la lista di trigger\n/nota - Genera una nota del Busi\n/consegna - Simula la consegna di una tavola. Chi non ce l'ha si becca DUE!\n/trovabusi - Mostra alcuni link riguardanti il Busi", { parse_mode: "HTML" });
+    bot.sendMessage(msg.chat.id, "<b>Trigger del Busi</b>\n120 tavole, Animalismo a scuola, Buongiorno, Busascii, Cani, Cattivo, Chi sei?, Collina, Farfalle, Liliana Segre, Loddo, Ma non ho fatto niente, Merjaaa, Non ho capito, Non ho la tavola, Non ho lo scotch, Nota, Orario, Paperette, Popopopo, Prospettiva, Punto Z, Qualsiasi bestemmia, Quanto manca?, Salute, Straccia la carta, Voti\n\n<b>Comandi del Busi</b>\n/start - Avvia il bot\n/busiaudio - Visualizza la lista di audio del Busi\n/busifoto - Visualizza la lista di foto del Busi\n/businfo - Visualizza versione e autore del bot\n/busitrigger - Visualizza la lista di trigger\n/nota - Genera una nota del Busi\n/consegna - Simula la consegna di una tavola. Chi non ce l'ha si becca DUE!\n/trovabusi - Mostra alcuni link riguardanti il Busi", { parse_mode: "HTML" });
 });
 
 
