@@ -4,7 +4,7 @@
   "description": "Il bot del Busata",
   "main": "index.js",
   "engines": {
-    "node": ">=10.0.0"
+    "node": ">=12.0.0"
   },
   "dependencies": {
     "child_process": "^1.0.2",
