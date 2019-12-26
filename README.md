@@ -2,7 +2,7 @@
 Il bot Telegram del Busi scritto in Node.js.
 
 # Note di rilascio
-Per leggere i cambiamenti nelle varie versioni del bot ci sono le [note di rilascio](https://github.com/LeddaZ/NastroAdesivoBot/blob/master/note.md).
+Per leggere le modifiche fatte con gli aggiornamenti del bot ci sono le [note di rilascio](https://github.com/LeddaZ/NastroAdesivoBot/blob/master/note.md).
 
 # Foto e audio
 A [questo](https://github.com/LeddaZ/NastroAdesivoBot/blob/master/link.txt) link si trovano tutte le foto e i file audio utilizzati nel bot.
