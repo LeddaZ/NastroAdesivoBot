@@ -1,5 +1,8 @@
 # Note di rilascio
 
+## Versione 2.0.11
+- È stata migliorata la descrizione di `/busitrigger`
+
 ## Versione 2.0.10
 - È stato aggiunto il trigger `Quanto manca?`
 - Ora il bot richiede Node.js 12.0.0 o una versione successiva
