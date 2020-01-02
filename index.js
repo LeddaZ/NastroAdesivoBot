@@ -2,8 +2,6 @@
 //Scritto in node.js con https://github.com/yagop/node-telegram-bot-api
 
 
-//Dichiarazione variabili
-
 //Moduli npm richiesti
 var TelegramBot = require("node-telegram-bot-api");
 var request = require("request");
@@ -131,17 +129,38 @@ var t131 = "quanto manca";
 //Lettura della token del bot da .env
 var token = process.env.TOKEN;
 
-//Letura della versione del bot da package.json
+//Lettura della versione del bot da package.json
 var package = require('./package.json');
 var ver = package.version;
 
+/*
+Lettura della data della versione (data in cui package.json è stato
+modificato per l'ultima volta). Il codice fa schifo ma non ho
+trovato soluzioni migliori, mannaggia a Node.js!
+*/
+var fs = require('fs');
+var stats = fs.statSync("package.json");
+var mtime = stats.mtime;
+var optionsd = { day: 'numeric' };
+var optionsm = { month: 'numeric' };
+var optionsy = { year: 'numeric' };
+var day = mtime.toLocaleDateString('it-IT', optionsd);
+var month = mtime.toLocaleDateString('it-IT', optionsm);
+var year = mtime.toLocaleDateString('it-IT', optionsy);
+console.log(day + "/" + month + "/" + year);
+
 //Testo di /businfo e /start
-var start = "<b>NastroAdesivoBot</b> <code>v" + ver + "</code> by @LeddaZ\nDigita /busitrigger per la lista di trigger e comandi\n<a href=\"https://github.com/LeddaZ/NastroAdesivoBot/\">Codice sorgente del bot</a>\nIspirato a <b>Renato Busata</b>"
+var start = "<b>NastroAdesivoBot</b>\nVersione <code>" + ver + "</code> del "+ day + "/" + month + "/" + year + "\nDigita /busitrigger per la lista di trigger e comandi\n<a href=\"https://github.com/LeddaZ/NastroAdesivoBot/\">Codice sorgente del bot</a>\nIspirato a <b>Renato Busata</b> e creato da @LeddaZ"
    
 
 //Codice del bot
-console.log("Il Busi " + ver + " è stato avviato correttamente :)"); //Se il codice non arriva a questo punto il bot non si è avviato
-const bot = new TelegramBot(token, {polling: true}); //Il polling serve per evitare che il bot si "spenga" se non riceve messaggi per qualche minuto
+//Se il codice non arriva a questo punto il bot non si è avviato
+console.log("Il Busi " + ver + " è stato avviato correttamente :)");
+/*
+Il polling serve per evitare che il bot si "spenga" se non riceve
+messaggi per qualche minuto
+*/
+const bot = new TelegramBot(token, {polling: true});
 bot.on("message", (msg) => {
 
     //Risposte ai trigger
@@ -489,66 +508,90 @@ bot.on("message", (msg) => {
 
     if (msg.text.toString().toLowerCase().indexOf(t131) === 0)
         bot.sendMessage(msg.chat.id, "MANCANO CINQUE MINUTI, METTERE VIAAAAH! PULIRE I TAVOLI CHE ARRIVA UN'ALTRA CLASSEEEEEEEEH!");
+
 });
 
 
 //Codice di /start e /businfo
 bot.onText(/\/start/, (msg) => {
-	bot.sendMessage(msg.chat.id, start, { parse_mode: "HTML" });
+
+    bot.sendMessage(msg.chat.id, start, { parse_mode: "HTML" });
+    
 });
+
 bot.onText(/\/businfo/, (msg) => {
-	bot.sendMessage(msg.chat.id, start, { parse_mode: "HTML" });
+
+    bot.sendMessage(msg.chat.id, start, { parse_mode: "HTML" });
+    
 });
 
 
 //Codice di /busitrigger
 bot.onText(/\/busitrigger/, (msg) => {
+
     bot.sendMessage(msg.chat.id, "<b>Trigger del Busi</b>\n120 tavole, Animalismo a scuola, Buongiorno, Busascii, Cani, Cattivo, Chi sei?, Collina, Farfalle, Liliana Segre, Loddo, Ma non ho fatto niente, Merjaaa, Non ho capito, Non ho la tavola, Non ho lo scotch, Nota, Orario, Paperette, Popopopo, Prospettiva, Punto Z, Qualsiasi bestemmia, Quanto manca?, Salute, Straccia la carta, Voti\n\n<b>Comandi del Busi</b>\n/start - Avvia il bot\n/busiaudio - Visualizza la lista di audio del Busi\n/busifoto - Visualizza la lista di foto del Busi\n/businfo - Visualizza versione e autore del bot\n/busitrigger - Visualizza la lista di trigger e comandi\n/nota - Genera una nota del Busi\n/consegna - Simula la consegna di una tavola. Chi non ce l'ha si becca DUE!\n/trovabusi - Mostra alcuni link riguardanti il Busi", { parse_mode: "HTML" });
+
 });
 
 
 //Codice di /biobusi
 bot.onText(/\/biobusi/, (msg) => {
+
     bot.sendMessage(msg.chat.id, "<b>Renato Busata</b> si laurea in architettura presso l'Istituto Universitario di Architettura di Venezia nel 1983. Dal 1989 è docente di disegno presso istituti e licei padovani. Tra le varie pubblicazioni si segnalano 'Testimonianze storiche e artistiche', edito dal Comune di Rubano; 'Piccolo manuale per affrontare un progetto di architettura' di Gangemi Editore, con l'introduzione di Franco Purini e Luigi Monetti; 'Architetture tra Roma e Milano nel secondo dopoguerra', Ed. Libreria Progetto. Nel 2006 è dottore di ricerca in Composizione architettonica presso l'Università IUAV di Venezia.", { parse_mode: "HTML" });
+
 });
 
 
 //Codice di /busiaudio
-bot.onText(/\/busiaudio/, (msg) => {   
+bot.onText(/\/busiaudio/, (msg) => {
+
     bot.sendMessage(msg.chat.id, "<b>Lista di audio del Busi</b>\nAndate via, AutoCAD, Bassi, Basta battere, Benvegnù, Brutto sto qua, Busata è un sapiente, Busata perde tutto, Busi bestemmia, Busi è perfido, Busi è un po’ tardo, Busi va all’inferno, Busi16, BusiAcuto, Busirena, Cacciato via, Calma assoluta, Carta stracciata, Che schifo, Ciuccia il tè, Colpa di Guerra, Compassione, Cosmo, Denti, Devo finire la tavola, Due, Facebook, Falasco, Ferragosto, Foglia, Gomma, Governo, Guerra, Guerra a 90, Hai capito, Il filo, Il taglio di Guerra, Insolente, Koreani mangiacani, Ledda studia chimica, Macchine, Marchesin, Marchesin vai via, Merja bocciato, Merja fa andare Busi all’inferno, Merja ha le mani giù, Metto 2 subito, Mi avete stufato, Mister Fantastico, Moro, Nirvana, Nirvana lento, Norvegia, Orari, Orco, Orco can, Orco2, Palazzo, Porta la cartellina, Povero Guerra, Previo terrorismo, Rivoluzionario, Sfoglia il quaderno, Si diventa deficienti, Soddisfa il Busi, Stare al mondo, Telecamera, Terrapiattisti, Ti caccio via, Ti tieni il 2, Tigri stecchite, Titoli, Vedovato, Vedovato è un poeta, Vedovato traffica, Ventiquattrore, Via, Violenza privata, Viva la rivoluzione", { parse_mode: "HTML" });
+
 });
 
 
 //Codice di /busifoto
 bot.onText(/\/busifoto/, (msg) => {
-	bot.sendMessage(msg.chat.id, "<b>Lista di foto del Busi</b>\nBusecs, Busecs2, Cane procione, Non sono parallele, Oh no, Pelliccia, Tigre, Triggered", { parse_mode: "HTML" });
+
+    bot.sendMessage(msg.chat.id, "<b>Lista di foto del Busi</b>\nBusecs, Busecs2, Cane procione, Non sono parallele, Oh no, Pelliccia, Tigre, Triggered", { parse_mode: "HTML" });
+    
 });
 
 
 //Codice di /trovabusi
-bot.onText(/\/trovabusi/, (msg) => {   
+bot.onText(/\/trovabusi/, (msg) => {
+
     bot.sendMessage(msg.chat.id, "<b>Dove trovare il Busi</b>\n<a href=\"https://www.amazon.it/s?i=stripbooks&rh=p_27%3ARenato+Busata&ref=dp_byline_sr_book_1/\">Amazon</a>\n<a href=\"https://it-it.facebook.com/renato.busata/\">Facebook</a>\n<a href=\"https://www.ibs.it/libri/autori/Renato%20Busata/\">IBS</a>\n<a href=\"https://it.linkedin.com/in/renato-busata-1862856b/\">LinkedIn</a>\n<a href=\"https://www.paginebianche.it/padova/renato-busata.aejihcgfii/\">PagineBianche</a>\n<a href=\"https://didattica.unipd.it/off/docente/6B85B690A4276AB18048CD49115FA3CC/\">Università degli Studi di Padova</a>", { parse_mode: "HTML" });
+
 });
 
 
 //Codice di /nota
 bot.onText(/\/nota/, (msg) => {
+
     //Numero di note
     var nota = Math.floor(Math.random() * ( 7 - 1 + 1 ) + 1 )
     if (nota === 1)
         bot.sendMessage(msg.chat.id, msg.from.first_name + ", in laboratorio, sfoglia appunti di chimica invece di disegnare.");
+
     else if (nota === 2)
         bot.sendMessage(msg.chat.id, msg.from.first_name + " in laboratorio non si applica.");
+
     else if (nota === 3)
         bot.sendMessage(msg.chat.id, msg.from.first_name + ", per suscitare l'ilarità dei compagni, straccia la tavola di disegno dando colpi con la testa.");
+
     else if (nota === 4)
         bot.sendMessage(msg.chat.id, msg.from.first_name + " in laboratorio non disegna e non fa nulla.");
+
 	else if (nota === 5)
-		bot.sendMessage(msg.chat.id, msg.from.first_name + " svuota lo zaino per pulirlo, poi chiede di avere il materiale per pulire il banco.");
+        bot.sendMessage(msg.chat.id, msg.from.first_name + " svuota lo zaino per pulirlo, poi chiede di avere il materiale per pulire il banco.");
+        
 	else if (nota === 6)
         bot.sendMessage(msg.chat.id, msg.from.first_name + " disturba continuamente la lezione chiaccherando.");
+
     else if (nota === 7)
         bot.sendMessage(msg.chat.id, msg.from.first_name + " gira per la classe chiedendo il materiale da disegno.");
+
 });
 
 
@@ -560,6 +603,7 @@ bot.onText(/\/consegna/, (msg) => {
 
     //Numero di possibili correzioni
     var esito = Math.floor(Math.random() * (5 - 1 + 1) + 1)
+
     if (esito === 1)
         bot.sendMessage(msg.chat.id, "Allora, questa è la tavola " + tav + "...\nLa tavola non si presenta neanche male... BRUTTO STO QUA! I SEGNI DEVONO ESSERE PIÙ OMOGENEI, POSSIBILE CHE NON L'ABBIATE ANCORA CAPITOOH!? TI METTO SEI E MEZZO RE-GA-LA-TO, CHI È CHE TIENE LA CONTABILITÀ DEI VOTI? SCRIVI BASTA SEIIIH!\nHai mezzi voti?", {
             reply_markup: {
@@ -575,19 +619,25 @@ bot.onText(/\/consegna/, (msg) => {
               ]]
             }
           });
+
     if (esito === 2)
         bot.sendMessage(msg.chat.id, "Allora, questa è la tavola " + tav + "...\nMA NON È POSSIBILE CHE UNA MEDIANA SIA A 17 DA UNA PARTE E A 12 DALL'ALTRA! È TUTTO STORTOOOH! ADESSO VAI AL POSTO E TI BECCHI CINQUEEEH!");
+
     if (esito === 3)
         bot.sendMessage(msg.chat.id, "Allora, questa è la tavola " + tav + "...\nVE L'HO DETTO MILLE VOLTE, IL CARTIGLIO SI FA DA METÀ FOGLIO, DEVO SEMPRE RIPETERE LE STESSE COSEEEEH! PER STAVOLTA METTIAMO SEI, MA È REGALATOOOH!");
+
     if (esito === 4)
         bot.sendMessage(msg.chat.id, "Allora, questa è la tavola " + tav + "...\nLa tavola si presenta bene... I segni sono omogenei e non ci sono errori gravi, anche i titoli sono fatti bene... Tutto sommato è una bella tavola, mettiamo sette.");
+
     if (esito === 5)
         bot.sendMessage(msg.chat.id, "Allora, questa è la tavola " + tav + "...\nCOS'È STO SEGNO ORRIBILE?! VAI AL POSTO E SISTEMALO ALTRIMENTI TI BECCHI TRE E TE LO TIENIIIH!");
+
 });
 
 
 //Risposta al mezzo voto su /consegna
 bot.on('callback_query', function onCallbackQuery(callbackQuery) {
+
 	var action = callbackQuery.data;
 	var msg = callbackQuery.message;
     let text;
@@ -604,9 +654,10 @@ bot.on('callback_query', function onCallbackQuery(callbackQuery) {
 
     //Invio del testo del mezzo voto
     bot.sendMessage(msg.chat.id, text);
+
 });
 
 
 //Fine del codice
 
-//R. B.
+//R. B. & L. L.
