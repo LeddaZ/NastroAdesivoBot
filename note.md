@@ -1,5 +1,10 @@
 # Note di rilascio
 
+## Versione 2.0.12
+- È stata riaggiunta la data della versione in `/businfo`
+- Sono stati apportati altri miglioramenti a `/businfo`
+- Il codice del bot è stato reso più leggibile
+
 ## Versione 2.0.11
 - È stata migliorata la descrizione di `/busitrigger`
 
