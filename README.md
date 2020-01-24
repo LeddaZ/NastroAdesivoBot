@@ -12,7 +12,7 @@ A [questo](https://github.com/LeddaZ/NastroAdesivoBot/blob/master/link.txt) link
 
 ![Codice](https://github.com/LeddaZ/NastroAdesivoBot/blob/master/codice.png)
 
-Per scaricare una versione precedente andare nella sezione [Releases](https://github.com/LeddaZ/NastroAdesivoBot/releases), cercare la versione desiderata e cliccare su `Source code (zip)` sotto ad `Assets`
+Per scaricare una versione precedente visitare la sezione [Releases](https://github.com/LeddaZ/NastroAdesivoBot/releases), cercare la versione desiderata e cliccare su `Source code (zip)` sotto ad `Assets`
 
 # Avviare il bot
 Per avviare il codice su un proprio bot seguire queste istruzioni:
@@ -35,13 +35,13 @@ Per avviare il codice su un proprio bot seguire queste istruzioni:
 - [node-telegram-bot-api](https://github.com/yagop/node-telegram-bot-api): l'API utilizzata dal bot
 - [Telegram](https://telegram.org/): meglio di WhatsApp
 - [BotFather](https://t.me/BotFather): il bot per creare i bot
-- [Deaddrop](https://t.me/dead_drop_bot): un servizio che fornisce link diretti per qualsiasi file
+- [Deaddrop](https://t.me/dead_drop_bot): un servizio che fornisce link diretti per qualsiasi file caricato su Telegram
 - [Now](https://zeit.co/): la piattaforma utilizzata per il deploy del bot, ossia per farlo restare online su un server senza usare il mio computer
 - [Visual Studio Code](https://code.visualstudio.com/): l'editor di codice che uso/ho usato per scrivere il bot
 - [Notepad++](https://notepad-plus-plus.org/): quello che usavo prima di VS Code
 - [GitHub](https://github.com/): questo sito per caricare il codice sorgente del bot
 - [release-it](https://github.com/release-it/release-it): modulo npm per generare automaticamente il changelog delle nuove versioni basandosi sui commit di GitHub
 
-**Dopo 3 anni (2016-2019) il Busi ha cambiato scuola, quindi è improbabile che vengano aggiunti nuovi trigger/audio/foto al bot (comunque continuerà a funzionare)**
+**Nel 2019 il Busi ha cambiato scuola, quindi è improbabile che vengano aggiunti nuovi trigger/audio/foto; comunque il bot rimarrà online**
 
 _Online dal 27 settembre 2018_
