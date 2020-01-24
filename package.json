@@ -19,11 +19,12 @@
   },
   "release-it": {
     "git": {
-      "tagName": "v${version}"
+      "tagName": "v${version}",
+      "requireCleanWorkingDir": "false"
     },
     "github": {
       "release": true,
-      "releaseName": "${version}"
+      "releaseName": "NastroAdesivoBot ${version}"
     }
   },
   "scripts": {
