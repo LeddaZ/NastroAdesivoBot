@@ -125,6 +125,8 @@ var t128 = "prospettiva";
 var t129 = "foglia";
 var t130 = "collina";
 var t131 = "quanto manca";
+var t132 = "calci";
+var t133 = "luce";
 
 //Lettura della token del bot da .env
 var token = process.env.TOKEN;
@@ -147,7 +149,6 @@ var optionsy = { year: 'numeric' };
 var day = mtime.toLocaleDateString('it-IT', optionsd);
 var month = mtime.toLocaleDateString('it-IT', optionsm);
 var year = mtime.toLocaleDateString('it-IT', optionsy);
-console.log(day + "/" + month + "/" + year);
 
 //Testo di /businfo e /start
 var start = "<b>NastroAdesivoBot</b>\nVersione <code>" + ver + "</code> del "+ day + "/" + month + "/" + year + "\nDigita /busitrigger per la lista di trigger e comandi\n<a href=\"https://github.com/LeddaZ/NastroAdesivoBot/\">Codice sorgente del bot</a>\nIspirato a <b>Renato Busata</b> e creato da @LeddaZ"
@@ -509,6 +510,12 @@ bot.on("message", (msg) => {
     if (msg.text.toString().toLowerCase().indexOf(t131) === 0)
         bot.sendMessage(msg.chat.id, "MANCANO CINQUE MINUTI, METTERE VIAAAAH! PULIRE I TAVOLI CHE ARRIVA UN'ALTRA CLASSEEEEEEEEH!");
 
+    if (msg.text.toString().toLowerCase().indexOf(t132) === 0)
+        bot.sendMessage(msg.chat.id, "QUA SI È SPENTO TUTTOOH! SÌ PERCHÉ IL BUSATA SCALCIA, ED È COLPA VOSTRA CHE MI FATE ANDARE ALL'INFERNOOOH!");
+
+    if (msg.text.toString().toLowerCase().indexOf(t133) === 0)
+        bot.sendMessage(msg.chat.id, "SPOSTATI CHE NON PASSA LA LUCEEEH!");
+
 });
 
 
@@ -529,7 +536,7 @@ bot.onText(/\/businfo/, (msg) => {
 //Codice di /busitrigger
 bot.onText(/\/busitrigger/, (msg) => {
 
-    bot.sendMessage(msg.chat.id, "<b>Trigger del Busi</b>\n120 tavole, Animalismo a scuola, Buongiorno, Busascii, Cani, Cattivo, Chi sei?, Collina, Farfalle, Liliana Segre, Loddo, Ma non ho fatto niente, Merjaaa, Non ho capito, Non ho la tavola, Non ho lo scotch, Nota, Orario, Paperette, Popopopo, Prospettiva, Punto Z, Qualsiasi bestemmia, Quanto manca?, Salute, Straccia la carta, Voti\n\n<b>Comandi del Busi</b>\n/start - Avvia il bot\n/busiaudio - Visualizza la lista di audio del Busi\n/busifoto - Visualizza la lista di foto del Busi\n/businfo - Visualizza versione e autore del bot\n/busitrigger - Visualizza la lista di trigger e comandi\n/nota - Genera una nota del Busi\n/consegna - Simula la consegna di una tavola. Chi non ce l'ha si becca DUE!\n/trovabusi - Mostra alcuni link riguardanti il Busi", { parse_mode: "HTML" });
+    bot.sendMessage(msg.chat.id, "<b>Trigger del Busi</b>\n120 tavole, Animalismo a scuola, Buongiorno, Busascii, Calci, Cani, Cattivo, Chi sei?, Collina, Farfalle, Liliana Segre, Loddo, Luce, Ma non ho fatto niente, Merjaaa, Non ho capito, Non ho la tavola, Non ho lo scotch, Nota, Orario, Paperette, Popopopo, Prospettiva, Punto Z, Qualsiasi bestemmia, Quanto manca?, Salute, Straccia la carta, Voti\n\n<b>Comandi del Busi</b>\n/start - Avvia il bot\n/busiaudio - Visualizza la lista di audio del Busi\n/busifoto - Visualizza la lista di foto del Busi\n/businfo - Visualizza versione e autore del bot\n/busitrigger - Visualizza la lista di trigger e comandi\n/nota - Genera una nota del Busi\n/consegna - Simula la consegna di una tavola. Chi non ce l'ha si becca DUE!\n/trovabusi - Mostra alcuni link riguardanti il Busi", { parse_mode: "HTML" });
 
 });
 
