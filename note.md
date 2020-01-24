@@ -1,5 +1,9 @@
 # Note di rilascio
 
+## Versione 2.0.13
+- Sono stati aggiunti i trigger `Calci` e `Luce`
+- Miglioramenti minori al codice
+
 ## Versione 2.0.12
 - È stata riaggiunta la data della versione in `/businfo`
 - Sono stati apportati altri miglioramenti a `/businfo`
