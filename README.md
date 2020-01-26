@@ -30,7 +30,7 @@ Per avviare il codice su un proprio bot seguire queste istruzioni:
 - Salvare il file e chiudere l'editor
 - Eseguire `node index.js` per avviare il bot
 
-# Programmi utilizzati per creare il bot
+# Software utilizzati per creare il bot
 - [Node.js](https://nodejs.org/it/): il linguaggio di programmazione
 - [node-telegram-bot-api](https://github.com/yagop/node-telegram-bot-api): l'API utilizzata dal bot
 - [Telegram](https://telegram.org/): meglio di WhatsApp
