@@ -146,12 +146,10 @@ var mtime = stats.mtime;
 var optionsd = { day: 'numeric' };
 var optionsm = { month: 'numeric' };
 var optionsy = { year: 'numeric' };
-var day = mtime.toLocaleDateString('it-IT', optionsd);
-var month = mtime.toLocaleDateString('it-IT', optionsm);
-var year = mtime.toLocaleDateString('it-IT', optionsy);
+var data = mtime.toLocaleDateString('it-IT', optionsd) + "/" + mtime.toLocaleDateString('it-IT', optionsm) + "/" + mtime.toLocaleDateString('it-IT', optionsy);
 
 //Testo di /businfo e /start
-var start = "<b>NastroAdesivoBot</b>\nVersione <code>" + ver + "</code> del "+ day + "/" + month + "/" + year + "\nDigita /busitrigger per la lista di trigger e comandi\n<a href=\"https://github.com/LeddaZ/NastroAdesivoBot/\">Codice sorgente del bot</a>\nIspirato a <b>Renato Busata</b> e creato da @LeddaZ"
+var start = "<b>NastroAdesivoBot</b>\nVersione <code>" + ver + "</code> del "+ data + "\nDigita /busitrigger per la lista di trigger e comandi\n<a href=\"https://github.com/LeddaZ/NastroAdesivoBot/\">Codice sorgente del bot</a>\nIspirato a <b>Renato Busata</b> e creato da @LeddaZ"
    
 
 //Codice del bot
