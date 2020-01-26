@@ -1,5 +1,8 @@
 # Note di rilascio
 
+## Versione 2.0.14
+- Miglioramenti minori al codice
+
 ## Versione 2.0.13
 - Sono stati aggiunti i trigger `Calci` e `Luce`
 - Miglioramenti minori al codice
