@@ -143,9 +143,11 @@ trovato soluzioni migliori, mannaggia a Node.js!
 var fs = require('fs');
 var stats = fs.statSync("package.json");
 var mtime = stats.mtime;
+//Formato della data (g/m/a)
 var optionsd = { day: 'numeric' };
 var optionsm = { month: 'numeric' };
 var optionsy = { year: 'numeric' };
+//Creazione della stringa con la data
 var data = mtime.toLocaleDateString('it-IT', optionsd) + "/" + mtime.toLocaleDateString('it-IT', optionsm) + "/" + mtime.toLocaleDateString('it-IT', optionsy);
 
 //Testo di /businfo e /start
