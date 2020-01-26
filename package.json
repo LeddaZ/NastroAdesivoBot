@@ -26,7 +26,7 @@
     "github": {
       "release": true,
       "releaseName": "NastroAdesivoBot ${version}",
-      "changelog": "npx auto-changelog --stdout --commit-limit false -u --template https://raw.githubusercontent.com/release-it/release-it/master/conf/changelog-compact.hbs"
+      "changelog": "npx auto-changelog --stdout --commit-limit false -u --template https://raw.githubusercontent.com/release-it/release-it/master/conf/changelog-compact.hbs --sort-commits date"
     }
   },
   "scripts": {
