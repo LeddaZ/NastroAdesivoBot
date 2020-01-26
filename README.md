@@ -26,7 +26,7 @@ Per avviare il codice su un proprio bot seguire queste istruzioni:
 - Installare i moduli npm necessari con `npm install` (se si verificano errori utilzzare `sudo npm install` su Linux/macOS o un prompt con permessi di amministratore su Windows)
 - Creare un file chiamato `.env` (`touch .env` su Linux/macOS e `type nul > .env` su Windows)
 - Aprire il file con un editor di testo (consiglio [Notepad++](https://notepad-plus-plus.org/))
-- Copiare e incollare `TOKEN = token` nel file, quindi sostituire `token` con la token del bot generata da BotFather
+- Copiare e incollare `TOKEN = xyz` nel file, quindi sostituire `xyz` con la token del bot generata da BotFather
 - Salvare il file e chiudere l'editor
 - Eseguire `node index.js` per avviare il bot
 
@@ -40,7 +40,8 @@ Per avviare il codice su un proprio bot seguire queste istruzioni:
 - [Visual Studio Code](https://code.visualstudio.com/): l'editor di codice che uso/ho usato per scrivere il bot
 - [Notepad++](https://notepad-plus-plus.org/): quello che usavo prima di VS Code
 - [GitHub](https://github.com/): questo sito per caricare il codice sorgente del bot
-- [release-it](https://github.com/release-it/release-it): modulo npm per generare automaticamente il changelog delle nuove versioni basandosi sui commit di GitHub
+- [release-it](https://github.com/release-it/release-it): modulo npm per generare automaticamente le pubblicazioni su GitHub
+- [auto-changelog](https://github.com/CookPete/auto-changelog): genera il changelog delle pubblicazioni automaticamente dai commit
 
 **Nel 2019 il Busi ha cambiato scuola, quindi è improbabile che vengano aggiunti nuovi trigger/audio/foto; comunque il bot rimarrà online**
 
