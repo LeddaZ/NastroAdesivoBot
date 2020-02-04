@@ -137,8 +137,7 @@ var ver = package.version;
 
 /*
 Lettura della data della versione (data in cui package.json è stato
-modificato per l'ultima volta). Il codice fa schifo ma non ho
-trovato soluzioni migliori, mannaggia a Node.js!
+modificato per l'ultima volta)
 */
 var fs = require('fs');
 var stats = fs.statSync("package.json");
@@ -155,8 +154,6 @@ var start = "<b>NastroAdesivoBot</b>\nVersione <code>" + ver + "</code> del "+ d
    
 
 //Codice del bot
-//Se il codice non arriva a questo punto il bot non si è avviato
-console.log("Il Busi " + ver + " è stato avviato correttamente :)");
 /*
 Il polling serve per evitare che il bot si "spenga" se non riceve
 messaggi per qualche minuto
