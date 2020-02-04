@@ -603,7 +603,7 @@ bot.onText(/\/nota/, (msg) => {
 bot.onText(/\/consegna/, (msg) => {
 
     //Numero di tavole
-    var tav = Math.floor(Math.random() * (15 - 1 + 1) + 1)
+    var tav = Math.floor(Math.random() * (14 - 1 + 1) + 1)
 
     //Numero di possibili correzioni
     var esito = Math.floor(Math.random() * (5 - 1 + 1) + 1)
