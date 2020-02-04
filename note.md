@@ -3,6 +3,7 @@
 ## Versione 2.0.15
 - Le tavole sono state diminuite da 15 a 14
 - Il codice è stato migliorato
+- Le dipendenze sono statae aggiornate alle ultime versioni disponibili
 
 ## Versione 2.0.14
 - Miglioramenti minori al codice
