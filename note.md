@@ -1,5 +1,9 @@
 # Note di rilascio
 
+## Versione 2.0.15
+- Le tavole sono state diminuite da 15 a 14
+- Il codice è stato migliorato
+
 ## Versione 2.0.14
 - Miglioramenti minori al codice
 
