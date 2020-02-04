@@ -614,11 +614,11 @@ bot.onText(/\/consegna/, (msg) => {
               inline_keyboard: [[
                 {
                   text: 'Sì',
-                  callback_data: 'yep'
+                  callback_data: 'si'
                 },
                 {
                   text: 'No',
-                  callback_data: 'nope'
+                  callback_data: 'no'
                 }
               ]]
             }
@@ -647,12 +647,12 @@ bot.on('callback_query', function onCallbackQuery(callbackQuery) {
     let text;
 
     //Con mezzo voto
-    if (action === 'yep') {
+    if (action === 'si') {
         text = 'VAI A PRENDERE LA TAVOLA, NON MI FIDO DI VOI!';
     }
 
     //Senza mezzo voto
-    if (action === 'nope') {
+    if (action === 'no') {
         text = "E ALLORA TI TIENI SEI E VAI AL POSTO!";
     }
 
