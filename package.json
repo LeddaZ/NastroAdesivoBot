@@ -12,8 +12,7 @@
     "dotenv": "^8.2.0",
     "fs-extra": "^8.1.0",
     "lodash": "^4.17.15",
-    "node-telegram-bot-api": "^0.40.0",
-    "now": "^16.7.3"
+    "node-telegram-bot-api": "^0.40.0"
   },
   "devDependencies": {
     "release-it": "^12.4.3"
