@@ -1,5 +1,9 @@
 # Note di rilascio
 
+## Versione 2.1.0
+- Il deploy del bot viene fatto con Heroku e non più con Now, ora il bot non dovrebbe più andare offline
+- Dato che Heroku usa sempre l'ultima versione di Node.js il bot ora richiede almeno Node 13.9.0
+
 ## Versione 2.0.15
 - Le tavole sono state diminuite da 15 a 14
 - Il codice è stato migliorato
