@@ -2,7 +2,7 @@
 Il bot Telegram del Busi scritto in Node.js.
 
 # Note di rilascio
-Per leggere le modifiche fatte con gli aggiornamenti del bot ci sono le [note di rilascio](https://github.com/LeddaZ/NastroAdesivoBot/blob/master/note.md).
+Per leggere le modifiche introdotte con gli aggiornamenti del bot ci sono le [note di rilascio](https://github.com/LeddaZ/NastroAdesivoBot/blob/master/note.md).
 
 # Foto e audio
 A [questo](https://github.com/LeddaZ/NastroAdesivoBot/blob/master/link.txt) link si trovano tutte le foto e i file audio utilizzati nel bot.
@@ -36,7 +36,7 @@ Per avviare il codice su un proprio bot seguire queste istruzioni:
 - [Telegram](https://telegram.org/): meglio di WhatsApp
 - [BotFather](https://t.me/BotFather): il bot per creare i bot
 - [Deaddrop](https://t.me/dead_drop_bot): un servizio che fornisce link diretti per qualsiasi file caricato su Telegram
-- [Now](https://zeit.co/): la piattaforma utilizzata per il deploy del bot, ossia per farlo restare online su un server senza usare il mio computer
+- [Heroku](https://www.heroku.com): la piattaforma utilizzata per il deploy del bot, ossia per farlo restare online su un server senza usare il mio computer
 - [Visual Studio Code](https://code.visualstudio.com/): l'editor di codice che uso/ho usato per scrivere il bot
 - [Notepad++](https://notepad-plus-plus.org/): quello che usavo prima di VS Code
 - [GitHub](https://github.com/): questo sito per caricare il codice sorgente del bot
