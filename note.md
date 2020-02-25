@@ -1,5 +1,8 @@
 # Note di rilascio
 
+## Versione 2.1.3
+- Il bot può nuovamente essere avviato su Node.js 12.x
+
 ## Versione 2.1.2
 - È stato aggiunto il link al changelog in `/businfo`
 - Le dipendenze sono state aggiornate
