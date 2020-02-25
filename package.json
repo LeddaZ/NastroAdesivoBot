@@ -4,7 +4,7 @@
   "description": "Il bot del Busata",
   "main": "index.js",
   "engines": {
-    "node": ">=13.9.0"
+    "node": "12.x"
   },
   "dependencies": {
     "auto-changelog": "^1.16.2",
