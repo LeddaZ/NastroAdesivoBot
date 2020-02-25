@@ -150,7 +150,7 @@ var optionsy = { year: 'numeric' };
 var data = mtime.toLocaleDateString('it-IT', optionsd) + "/" + mtime.toLocaleDateString('it-IT', optionsm) + "/" + mtime.toLocaleDateString('it-IT', optionsy);
 
 //Testo di /businfo e /start
-var start = "<b>NastroAdesivoBot</b>\nVersione <code>" + ver + "</code> del "+ data + "\nDigita /busitrigger per la lista di trigger e comandi\n<a href=\"https://github.com/LeddaZ/NastroAdesivoBot/\">Codice sorgente del bot</a>\nIspirato a <b>Renato Busata</b> e creato da @LeddaZ"
+var start = "<b>NastroAdesivoBot</b>\nVersione <code>" + ver + "</code> del " + data + "\nDigita /busitrigger per la lista di trigger e comandi\n<a href=\"https://github.com/LeddaZ/NastroAdesivoBot/\">Codice sorgente del bot</a>\n<a href=\"https://github.com/LeddaZ/NastroAdesivoBot/releases/tag/v" + ver + "\">Novità di questa versione</a>\nIspirato a <b>Renato Busata</b> e creato da @LeddaZ"
    
 
 //Codice del bot
