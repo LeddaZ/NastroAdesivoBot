@@ -1,5 +1,9 @@
 # Note di rilascio
 
+## Versione 2.1.2
+- È stato aggiunto il link al changelog in `/businfo`
+- Le dipendenze sono state aggiornate
+
 ## Versione 2.1.1
 - Ritorno a Now
 
