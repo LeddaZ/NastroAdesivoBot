@@ -1,5 +1,8 @@
 # Note di rilascio
 
+## Versione 2.1.4
+- Il bot non è più hostato su Now
+
 ## Versione 2.1.3
 - Il bot può nuovamente essere avviato su Node.js 12.x
 
