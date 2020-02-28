@@ -1,5 +1,8 @@
 # Note di rilascio
 
+## Versione 2.1.5
+- Rimossa una dipendenza non necessaria
+
 ## Versione 2.1.4
 - Il bot non è più hostato su Now
 
