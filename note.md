@@ -1,5 +1,8 @@
 # Note di rilascio
 
+## Versione 2.2.0
+- È stato aggiunto il comando `/bustats` per visualizzare alcune statistiche sul bot
+
 ## Versione 2.1.5
 - Rimossa una dipendenza non necessaria
 
