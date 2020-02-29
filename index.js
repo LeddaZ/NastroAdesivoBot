@@ -666,6 +666,7 @@ bot.onText(/\/bustats/, (msg) => {
 
     //RAM utilizzata
     var mem=process.memoryUsage().heapUsed / 1024 / 1024;
+
     //Tempo di attività
     var uptime=Math.round(process.uptime()) + " secondi";
     /*
@@ -676,6 +677,7 @@ bot.onText(/\/bustats/, (msg) => {
         uptime=Math.round(uptime/60) + " minuti";
     else if (uptime > 3600)
         uptime=Math.round(uptime/3600) + " ore";
+        
     //Dimensione index.js
     var fs = require("fs");
     var stats = fs.statSync("index.js")
