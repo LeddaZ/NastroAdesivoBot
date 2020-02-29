@@ -668,7 +668,10 @@ bot.onText(/\/bustats/, (msg) => {
     var mem=process.memoryUsage().heapUsed / 1024 / 1024;
     //Tempo di attività
     var uptime=Math.round(process.uptime()) + " secondi";
-    //Se il tempo è > 60s visualizza i minuti, se è > 60m visualizza in ore
+    /*
+    Se il tempo è > 60s visualizza i minuti, se è > 60m
+    visualizza in ore
+    */
     if (uptime > 60)
         uptime=Math.round(uptime/60) + " minuti";
     else if (uptime > 3600)
