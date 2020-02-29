@@ -42,6 +42,7 @@ Per avviare il codice su un proprio bot seguire queste istruzioni:
 - [GitHub](https://github.com/): questo sito per caricare il codice sorgente del bot
 - [release-it](https://github.com/release-it/release-it): modulo npm per generare automaticamente le pubblicazioni su GitHub
 - [auto-changelog](https://github.com/CookPete/auto-changelog): genera il changelog delle pubblicazioni automaticamente dai commit
+- [Stack Overflow](https://stackoverflow.com/) e tutti quelli che fanno domande e rispondono: senza "prendere in presto" codice da loro il bot non sarebbe a questo punto
 
 **Nel 2019 il Busi ha cambiato scuola, quindi è improbabile che vengano aggiunti nuovi trigger/audio/foto; comunque il bot rimarrà online**
 
