@@ -661,6 +661,27 @@ bot.on('callback_query', function onCallbackQuery(callbackQuery) {
 
 });
 
+//Codice di /bustats
+bot.onText(/\/bustats/, (msg) => {
+
+    //RAM utilizzata
+    var mem=process.memoryUsage().heapUsed / 1024 / 1024;
+    //Tempo di attività
+    var uptime=Math.round(process.uptime()) + " secondi";
+    //Se il tempo è > 60s visualizza i minuti, se è > 60m visualizza in ore
+    if (uptime > 60)
+        uptime=Math.round(uptime/60) + " minuti";
+    else if (uptime > 3600)
+        uptime=Math.round(uptime/3600) + " ore";
+    //Dimensione index.js
+    var fs = require("fs");
+    var stats = fs.statSync("index.js")
+    var dim_B = stats["size"]
+    var dim_KB = Math.round(dim_B / 1024.0 * 100) / 100
+    
+    bot.sendMessage(msg.chat.id, "<b>Statistiche del Busi</b>\n<b>RAM utilizzata: </b>" + Math.round(mem * 100) / 100 + " MB\n<b>Tempo di attività: </b>" + uptime + "\n<b>Dimensione del codice (<code>index.js</code>): </b>" + dim_KB + " KB", { parse_mode: "HTML" });
+    
+});
 
 //Fine del codice
 
