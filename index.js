@@ -673,10 +673,10 @@ bot.onText(/\/bustats/, (msg) => {
     Se il tempo è > 60s visualizza i minuti, se è > 60m
     visualizza in ore
     */
-    if (uptime > 60)
-        uptime=Math.round(uptime/60) + " minuti";
-    else if (uptime > 3600)
-        uptime=Math.round(uptime/3600) + " ore";
+    if (process.uptime() > 60)
+        uptime=Math.round(process.uptime()/60) + " minuti";
+    else if (process.uptime() > 3600)
+        uptime=Math.round(process.uptime()/3600) + " ore";
 
     //Dimensione index.js
     var fs = require("fs");
