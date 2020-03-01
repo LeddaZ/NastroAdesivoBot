@@ -132,8 +132,8 @@ var t133 = "luce";
 var token = process.env.TOKEN;
 
 //Lettura della versione del bot da package.json
-var package = require('./package.json');
-var ver = package.version;
+var pjson = require('./package.json');
+var ver = pjson.version;
 
 /*
 Lettura della data della versione (data in cui package.json è stato
