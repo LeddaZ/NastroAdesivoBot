@@ -668,15 +668,15 @@ bot.onText(/\/bustats/, (msg) => {
     var mem=process.memoryUsage().heapUsed / 1024 / 1024;
 
     //Tempo di attività
-    var uptime=Math.round(process.uptime()) + " secondi";
+    var uptime=Math.round(process.uptime()) + " secondo/i";
     /*
     Se il tempo è > 60s visualizza i minuti, se è > 60m
     visualizza in ore
     */
     if (process.uptime() > 60)
-        uptime=Math.round(process.uptime()/60) + " minuti";
+        uptime=Math.round(process.uptime()/60) + " minuto/i";
     else if (process.uptime() > 3600)
-        uptime=Math.round(process.uptime()/3600) + " ore";
+        uptime=Math.round(process.uptime()/3600) + " ora/e";
 
     //Dimensione index.js
     var fs = require("fs");
