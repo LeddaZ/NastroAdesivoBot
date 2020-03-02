@@ -1,5 +1,8 @@
 # Note di rilascio
 
+## Versione 2.2.2
+- La visualizzazione del tempo di attività è stata migliorata
+
 ## Versione 2.2.1
 - Il tempo di attività viene visualizzato in minuti se > 60 s o in ore se > 3600 s (avrebbe dovuto farlo anche prima ma il codice non funzionava)
 - Altri miglioramenti minori al codice
