@@ -1,5 +1,8 @@
 # Note di rilascio
 
+## Versione 2.2.3
+- La visualizzazione del tempo di attività in ore funziona (finalmente)
+
 ## Versione 2.2.2
 - La visualizzazione del tempo di attività è stata migliorata
 
