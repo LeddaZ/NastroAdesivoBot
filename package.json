@@ -7,15 +7,15 @@
     "node": "12.x"
   },
   "dependencies": {
-    "dotenv": "^8.2.0",
-    "fs-extra": "^8.1.0",
-    "node-telegram-bot-api": "^0.40.0"
+    "dotenv": "8.2.0",
+    "fs-extra": "9.0.0",
+    "node-telegram-bot-api": "0.40.0"
   },
   "devDependencies": {
-    "auto-changelog": "^1.16.2",
-    "release-it": "12.4.3",
-    "lodash": "^4.17.15",
-    "minimist": ">=1.2.3"
+    "auto-changelog": "1.16.4",
+    "release-it": "13.5.1",
+    "lodash": "4.17.15",
+    "minimist": "1.2.5"
   },
   "release-it": {
     "git": {
