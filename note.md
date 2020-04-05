@@ -1,5 +1,8 @@
 # Note di rilascio
 
+## Versione 2.2.4
+- Dipendenze aggiornate (risolto anche un problema di sicurezza)
+
 ## Versione 2.2.3
 - La visualizzazione del tempo di attività in ore funziona (finalmente)
 
