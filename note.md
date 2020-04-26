@@ -1,5 +1,8 @@
 # Note di rilascio
 
+## Versione 2.2.5
+- Miglioramenti generali al codice
+
 ## Versione 2.2.4
 - Dipendenze aggiornate (risolto anche un problema di sicurezza)
 
