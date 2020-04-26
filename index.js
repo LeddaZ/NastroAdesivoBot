@@ -1,13 +1,15 @@
-//Il Busata by @LeddaZ
-//Scritto in node.js con https://github.com/yagop/node-telegram-bot-api
+/*
+Il Busata by @LeddaZ
+Scritto in Node.js con https://github.com/yagop/node-telegram-bot-api
+*/
 
 
-//Moduli npm richiesti
+// Moduli npm richiesti
 var TelegramBot = require("node-telegram-bot-api");
 var request = require("request");
 var dotenv = require('dotenv').config();
 
-//Trigger
+// Trigger
 var t1 = "loddo";
 var t2 = "buongiorno";
 var t3 = "non ho lo scotch";
@@ -128,10 +130,10 @@ var t131 = "quanto manca";
 var t132 = "calci";
 var t133 = "luce";
 
-//Lettura della token del bot da .env
+// Lettura della token del bot da .env
 var token = process.env.TOKEN;
 
-//Lettura della versione del bot da package.json
+// Lettura della versione del bot da package.json
 var pjson = require('./package.json');
 var ver = pjson.version;
 
@@ -142,18 +144,18 @@ modificato per l'ultima volta)
 var fs = require('fs');
 var stats = fs.statSync("package.json");
 var mtime = stats.mtime;
-//Formato della data (g/m/a)
-var optionsd = { day: 'numeric' };
-var optionsm = { month: 'numeric' };
-var optionsy = { year: 'numeric' };
-//Creazione della stringa con la data
-var data = mtime.toLocaleDateString('it-IT', optionsd) + "/" + mtime.toLocaleDateString('it-IT', optionsm) + "/" + mtime.toLocaleDateString('it-IT', optionsy);
+// Formato della data (g/m/a)
+var d = { day: 'numeric' };
+var m = { month: 'numeric' };
+var y = { year: 'numeric' };
+// Creazione della stringa con la data
+var data = mtime.toLocaleDateString('it-IT', d) + "/" + mtime.toLocaleDateString('it-IT', m) + "/" + mtime.toLocaleDateString('it-IT', y);
 
-//Testo di /businfo e /start
+// Testo di /businfo e /start
 var start = "<b>NastroAdesivoBot</b>\nVersione <code>" + ver + "</code> del " + data + "\nDigita /busitrigger per la lista di trigger e comandi\n<a href=\"https://github.com/LeddaZ/NastroAdesivoBot/\">Codice sorgente del bot</a>\n<a href=\"https://github.com/LeddaZ/NastroAdesivoBot/blob/master/note.md\">Note di rilascio</a>\nIspirato a <b>Renato Busata</b> e creato da @LeddaZ"
    
 
-//Codice del bot
+// Codice del bot
 /*
 Il polling serve per evitare che il bot si "spenga" se non riceve
 messaggi per qualche minuto
@@ -161,7 +163,7 @@ messaggi per qualche minuto
 const bot = new TelegramBot(token, {polling: true});
 bot.on("message", (msg) => {
 
-    //Risposte ai trigger
+    // Risposte ai trigger
     if (msg.text.toString().toLowerCase().indexOf(t1) === 0)
         bot.sendMessage(msg.chat.id, "LODDOOOOOOOOOO!");
 
@@ -516,7 +518,7 @@ bot.on("message", (msg) => {
 });
 
 
-//Codice di /start e /businfo
+// Codice di /start e /businfo
 bot.onText(/\/start/, (msg) => {
 
     bot.sendMessage(msg.chat.id, start, { parse_mode: "HTML" });
@@ -530,7 +532,7 @@ bot.onText(/\/businfo/, (msg) => {
 });
 
 
-//Codice di /busitrigger
+// Codice di /busitrigger
 bot.onText(/\/busitrigger/, (msg) => {
 
     bot.sendMessage(msg.chat.id, "<b>Trigger del Busi</b>\n120 tavole, Animalismo a scuola, Buongiorno, Busascii, Calci, Cani, Cattivo, Chi sei?, Collina, Farfalle, Liliana Segre, Loddo, Luce, Ma non ho fatto niente, Merjaaa, Non ho capito, Non ho la tavola, Non ho lo scotch, Nota, Orario, Paperette, Popopopo, Prospettiva, Punto Z, Qualsiasi bestemmia, Quanto manca?, Salute, Straccia la carta, Voti\n\n<b>Comandi del Busi</b>\n/start - Avvia il bot\n/busiaudio - Visualizza la lista di audio del Busi\n/busifoto - Visualizza la lista di foto del Busi\n/businfo - Visualizza versione e autore del bot\n/busitrigger - Visualizza la lista di trigger e comandi\n/bustats - Visualizza statistiche sul bot\n/nota - Genera una nota del Busi\n/consegna - Simula la consegna di una tavola. Chi non ce l'ha si becca DUE!\n/trovabusi - Mostra alcuni link riguardanti il Busi", { parse_mode: "HTML" });
@@ -538,7 +540,7 @@ bot.onText(/\/busitrigger/, (msg) => {
 });
 
 
-//Codice di /biobusi
+// Codice di /biobusi
 bot.onText(/\/biobusi/, (msg) => {
 
     bot.sendMessage(msg.chat.id, "<b>Renato Busata</b> si laurea in architettura presso l'Istituto Universitario di Architettura di Venezia nel 1983. Dal 1989 è docente di disegno presso istituti e licei padovani. Tra le varie pubblicazioni si segnalano 'Testimonianze storiche e artistiche', edito dal Comune di Rubano; 'Piccolo manuale per affrontare un progetto di architettura' di Gangemi Editore, con l'introduzione di Franco Purini e Luigi Monetti; 'Architetture tra Roma e Milano nel secondo dopoguerra', Ed. Libreria Progetto. Nel 2006 è dottore di ricerca in Composizione architettonica presso l'Università IUAV di Venezia.", { parse_mode: "HTML" });
@@ -546,7 +548,7 @@ bot.onText(/\/biobusi/, (msg) => {
 });
 
 
-//Codice di /busiaudio
+// Codice di /busiaudio
 bot.onText(/\/busiaudio/, (msg) => {
 
     bot.sendMessage(msg.chat.id, "<b>Lista di audio del Busi</b>\nAndate via, AutoCAD, Bassi, Basta battere, Benvegnù, Brutto sto qua, Busata è un sapiente, Busata perde tutto, Busi bestemmia, Busi è perfido, Busi è un po’ tardo, Busi va all’inferno, Busi16, BusiAcuto, Busirena, Cacciato via, Calma assoluta, Carta stracciata, Che schifo, Ciuccia il tè, Colpa di Guerra, Compassione, Cosmo, Denti, Devo finire la tavola, Due, Facebook, Falasco, Ferragosto, Foglia, Gomma, Governo, Guerra, Guerra a 90, Hai capito, Il filo, Il taglio di Guerra, Insolente, Koreani mangiacani, Ledda studia chimica, Macchine, Marchesin, Marchesin vai via, Merja bocciato, Merja fa andare Busi all’inferno, Merja ha le mani giù, Metto 2 subito, Mi avete stufato, Mister Fantastico, Moro, Nirvana, Nirvana lento, Norvegia, Orari, Orco, Orco can, Orco2, Palazzo, Porta la cartellina, Povero Guerra, Previo terrorismo, Rivoluzionario, Sfoglia il quaderno, Si diventa deficienti, Soddisfa il Busi, Stare al mondo, Telecamera, Terrapiattisti, Ti caccio via, Ti tieni il 2, Tigri stecchite, Titoli, Vedovato, Vedovato è un poeta, Vedovato traffica, Ventiquattrore, Via, Violenza privata, Viva la rivoluzione", { parse_mode: "HTML" });
@@ -554,7 +556,7 @@ bot.onText(/\/busiaudio/, (msg) => {
 });
 
 
-//Codice di /busifoto
+// Codice di /busifoto
 bot.onText(/\/busifoto/, (msg) => {
 
     bot.sendMessage(msg.chat.id, "<b>Lista di foto del Busi</b>\nBusecs, Busecs2, Cane procione, Non sono parallele, Oh no, Pelliccia, Tigre, Triggered", { parse_mode: "HTML" });
@@ -562,7 +564,7 @@ bot.onText(/\/busifoto/, (msg) => {
 });
 
 
-//Codice di /trovabusi
+// Codice di /trovabusi
 bot.onText(/\/trovabusi/, (msg) => {
 
     bot.sendMessage(msg.chat.id, "<b>Dove trovare il Busi</b>\n<a href=\"https://www.amazon.it/s?i=stripbooks&rh=p_27%3ARenato+Busata&ref=dp_byline_sr_book_1/\">Amazon</a>\n<a href=\"https://it-it.facebook.com/renato.busata/\">Facebook</a>\n<a href=\"https://www.ibs.it/libri/autori/Renato%20Busata/\">IBS</a>\n<a href=\"https://it.linkedin.com/in/renato-busata-1862856b/\">LinkedIn</a>\n<a href=\"https://www.paginebianche.it/padova/renato-busata.aejihcgfii/\">PagineBianche</a>\n<a href=\"https://didattica.unipd.it/off/docente/6B85B690A4276AB18048CD49115FA3CC/\">Università degli Studi di Padova</a>", { parse_mode: "HTML" });
@@ -570,11 +572,13 @@ bot.onText(/\/trovabusi/, (msg) => {
 });
 
 
-//Codice di /nota
+// Codice di /nota
 bot.onText(/\/nota/, (msg) => {
 
-    //Numero di note
+    // Numero di note
     var nota = Math.floor(Math.random() * ( 7 - 1 + 1 ) + 1 )
+
+    // Testo delle note
     if (nota === 1)
         bot.sendMessage(msg.chat.id, msg.from.first_name + ", in laboratorio, sfoglia appunti di chimica invece di disegnare.");
 
@@ -599,13 +603,13 @@ bot.onText(/\/nota/, (msg) => {
 });
 
 
-//Codice di /consegna
+// Codice di /consegna
 bot.onText(/\/consegna/, (msg) => {
 
-    //Numero di tavole
-    var tav = Math.floor(Math.random() * (14 - 1 + 1) + 1)
+    // Numero di tavole
+    var tav = Math.floor(Math.random() * (15 - 1 + 1) + 1)
 
-    //Numero di possibili correzioni
+    // Numero di possibili correzioni
     var esito = Math.floor(Math.random() * (5 - 1 + 1) + 1)
 
     if (esito === 1)
@@ -639,55 +643,57 @@ bot.onText(/\/consegna/, (msg) => {
 });
 
 
-//Risposta al mezzo voto su /consegna
+// Risposta al mezzo voto su /consegna
 bot.on('callback_query', function onCallbackQuery(callbackQuery) {
 
 	var action = callbackQuery.data;
 	var msg = callbackQuery.message;
     let text;
 
-    //Con mezzo voto
+    // Con mezzo voto
     if (action === 'si') {
         text = 'VAI A PRENDERE LA TAVOLA, NON MI FIDO DI VOI!';
     }
 
-    //Senza mezzo voto
+    // Senza mezzo voto
     if (action === 'no') {
         text = "E ALLORA TI TIENI SEI E VAI AL POSTO!";
     }
 
-    //Invio del testo del mezzo voto
+    // Invio del testo del mezzo voto
     bot.sendMessage(msg.chat.id, text);
 
 });
 
-//Codice di /bustats
+// Codice di /bustats
 bot.onText(/\/bustats/, (msg) => {
 
-    //RAM utilizzata
-    var mem=process.memoryUsage().heapUsed / 1024 / 1024;
+    // RAM utilizzata
+    var mem = process.memoryUsage().heapUsed / 1024 / 1024;
 
-    //Tempo di attività
-    var uptime=Math.round(process.uptime()) + " secondo/i";
+    // Tempo di attività
+    var uptime = Math.round(process.uptime()) + " secondo/i";
     /*
     Se il tempo è > 60s visualizza i minuti, se è > 60m
     visualizza in ore
     */
     if (process.uptime() > 3600)
-        uptime=Math.round(process.uptime()/3600) + " ora/e";
+        uptime = Math.round(process.uptime()/3600) + " ora/e";
     else if (process.uptime() > 60)
-        uptime=Math.round(process.uptime()/60) + " minuto/i";
+        uptime = Math.round(process.uptime()/60) + " minuto/i";
 
-    //Dimensione index.js
+    // Dimensione index.js
     var fs = require("fs");
     var stats = fs.statSync("index.js")
-    var dim_B = stats["size"]
-    var dim_KB = Math.round(dim_B / 1024.0 * 100) / 100
+    var dim_KB = Math.round(stats["size"] / 1024.0 * 100) / 100
     
+    // Visualizzazione statistiche
     bot.sendMessage(msg.chat.id, "<b>Statistiche del Busi</b>\n<b>RAM utilizzata: </b>" + Math.round(mem * 100) / 100 + " MB\n<b>Tempo di attività: </b>" + uptime + "\n<b>Dimensione del codice (<code>index.js</code>): </b>" + dim_KB + " KB", { parse_mode: "HTML" });
     
 });
 
-//Fine del codice
+/*
+Fine del codice
 
-//R. B. & L. L.
+R. B. & L. L.
+*/
