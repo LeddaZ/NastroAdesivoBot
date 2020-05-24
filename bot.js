@@ -734,7 +734,7 @@ bot.onText(/\/bustats/, (msg) => {
 
     // Dimensione index.js
     var fs = require("fs");
-    var stats = fs.statSync("index.js")
+    var stats = fs.statSync("bot.js")
     var dim_KB = Math.round(stats["size"] / 1024.0 * 100) / 100
 
     // Visualizzazione statistiche
