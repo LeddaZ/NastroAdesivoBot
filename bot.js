@@ -5,7 +5,8 @@ Scritto in Node.js con https://github.com/yagop/node-telegram-bot-api
 
 
 // Moduli npm richiesti
-var TelegramBot = require("node-telegram-bot-api");
+var Bot = require("node-telegram-bot-api");
+let bot;
 var request = require("request");
 var dotenv = require('dotenv').config();
 
@@ -13,14 +14,14 @@ var dotenv = require('dotenv').config();
 var token = process.env.TOKEN;
 
 // Impostazione webhook per heroku
-if(process.env.NODE_ENV === 'production') {
-    bot = new TelegramBot(token);
+if (process.env.NODE_ENV === 'production') {
+    bot = new Bot(token);
     bot.setWebHook(process.env.HEROKU_URL + bot.token);
-  }
-  else {
-    bot = new TelegramBot(token, { polling: true });
-  }
-
+}
+else {
+    bot = new Bot(token, { polling: true });
+}
+module.exports = bot;
 console.log('Bot avviato in modalità ' + process.env.NODE_ENV);
 
 // Trigger
