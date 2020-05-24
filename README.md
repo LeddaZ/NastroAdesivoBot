@@ -28,7 +28,7 @@ Per avviare il codice su un proprio bot seguire queste istruzioni:
 - Aprire il file con un editor di testo (consiglio [Notepad++](https://notepad-plus-plus.org/) su Windows)
 - Scrivere `TOKEN = xyz` nel file, sostituendo `xyz` con la token del bot generata da BotFather
 - Salvare il file e chiudere l'editor
-- Eseguire `node index.js` per avviare il bot
+- Eseguire `npm start` per avviare il bot
 
 # Software utilizzati per creare il bot
 - [Node.js](https://nodejs.org/it/): il linguaggio di programmazione
@@ -36,13 +36,14 @@ Per avviare il codice su un proprio bot seguire queste istruzioni:
 - [Telegram](https://telegram.org/): meglio di WhatsApp
 - [BotFather](https://t.me/BotFather): il bot per creare i bot
 - [Deaddrop](https://t.me/dead_drop_bot): un servizio che fornisce link diretti per qualsiasi file caricato su Telegram
-- [Glitch](https://glitch.com/): la piattaforma utilizzata per il deploy del bot, ossia per farlo restare online su un server senza usare il mio computer
+- [Heroku](https://heroku.com/): la piattaforma utilizzata per il deploy del bot, ossia per farlo restare online su un server senza usare il mio computer
 - [Visual Studio Code](https://code.visualstudio.com/): l'editor di codice che uso/ho usato per scrivere il bot
 - [Notepad++](https://notepad-plus-plus.org/): quello che usavo prima di VS Code
 - [GitHub](https://github.com/): questo sito per caricare il codice sorgente del bot
 - [release-it](https://github.com/release-it/release-it): modulo npm per generare automaticamente le pubblicazioni su GitHub
 - [auto-changelog](https://github.com/CookPete/auto-changelog): genera il changelog delle pubblicazioni automaticamente dai commit
 - [Stack Overflow](https://stackoverflow.com/) e tutti quelli che fanno domande e rispondono: senza "prendere in presto" codice da loro il bot non sarebbe a questo punto
+- [heroku-node-telegram-bot](https://github.com/odditive/heroku-node-telegram-bot): grazie a questo esempio ho finalmente capito come hostare il bot su Heroku
 
 **Nel 2019 il Busi ha cambiato scuola, quindi è improbabile che vengano aggiunti nuovi trigger/audio/foto; comunque il bot rimarrà online**
 
