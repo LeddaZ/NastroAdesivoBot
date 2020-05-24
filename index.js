@@ -283,9 +283,9 @@ bot.on("message", (msg) => {
         if (msg.text.toString().toLowerCase().indexOf(t39) === 0)
             bot.sendAudio(msg.chat.id, "http://deaddrop.ftp.sh/90d2gas3dwQa.mp3");
         else if (msg.text.toString().toLowerCase().indexOf(t108) === 0)
-        bot.sendAudio(msg.chat.id, "http://deaddrop.ftp.sh/TaVCIJF-hx8K.mp3");
-    else
-        bot.sendAudio(msg.chat.id, "http://deaddrop.ftp.sh/EcF4bCUdfWiL.mp3");
+            bot.sendAudio(msg.chat.id, "http://deaddrop.ftp.sh/TaVCIJF-hx8K.mp3");
+        else
+            bot.sendAudio(msg.chat.id, "http://deaddrop.ftp.sh/EcF4bCUdfWiL.mp3");
 
     if (msg.text.toString().toLowerCase().indexOf(t41) === 0)
         bot.sendAudio(msg.chat.id, "http://deaddrop.ftp.sh/qIdbEkxljQHX.mp3");
@@ -345,8 +345,8 @@ bot.on("message", (msg) => {
     if (msg.text.toString().toLowerCase().indexOf(t56) === 0)
         if (msg.text.toString().toLowerCase().indexOf(t90) === 0)
             bot.sendAudio(msg.chat.id, "http://deaddrop.ftp.sh/9p0Z10a9-MO4.mp3")
-    else
-        bot.sendAudio(msg.chat.id, "http://deaddrop.ftp.sh/9DJk-rQW1X7x.mp3");
+        else
+            bot.sendAudio(msg.chat.id, "http://deaddrop.ftp.sh/9DJk-rQW1X7x.mp3");
 
     if (msg.text.toString().toLowerCase().indexOf(t58) === 0)
         bot.sendAudio(msg.chat.id, "http://deaddrop.ftp.sh/wUwwPneHVcVT.mp3");
@@ -407,9 +407,9 @@ bot.on("message", (msg) => {
         if (msg.text.toString().toLowerCase().indexOf(t60) === 0)
             bot.sendAudio(msg.chat.id, "http://deaddrop.ftp.sh/rYz_zqeMxbea.mp3");
         else if (msg.text.toString().toLowerCase().indexOf(t101) === 0)
-        bot.sendAudio(msg.chat.id, "http://deaddrop.ftp.sh/QOMX04E_5Ojz.mp3");
-    else
-        bot.sendAudio(msg.chat.id, "http://deaddrop.ftp.sh/x68Lmdlf3Tct.mp3");
+            bot.sendAudio(msg.chat.id, "http://deaddrop.ftp.sh/QOMX04E_5Ojz.mp3");
+        else
+            bot.sendAudio(msg.chat.id, "http://deaddrop.ftp.sh/x68Lmdlf3Tct.mp3");
 
     if (msg.text.toString().toLowerCase().indexOf(t81) === 0)
         bot.sendAudio(msg.chat.id, "http://deaddrop.ftp.sh/jVW5DHcGRCe6.mp3");
@@ -661,13 +661,13 @@ bot.onText(/\/consegna/, (msg) => {
             reply_markup: {
                 inline_keyboard: [
                     [{
-                            text: 'Sì',
-                            callback_data: 'si'
-                        },
-                        {
-                            text: 'No',
-                            callback_data: 'no'
-                        }
+                        text: 'Sì',
+                        callback_data: 'si'
+                    },
+                    {
+                        text: 'No',
+                        callback_data: 'no'
+                    }
                     ]
                 ]
             }
