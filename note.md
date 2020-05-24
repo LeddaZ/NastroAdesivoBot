@@ -1,5 +1,8 @@
 # Note di rilascio
 
+## Versione 2.3.0
+- Il bot è nuovamente hostato su Heroku (adesso non andrà più offline a caso, o almeno lo spero)
+
 ## Versione 2.2.5
 - Miglioramenti generali al codice
 
