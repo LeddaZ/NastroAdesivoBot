@@ -21,8 +21,9 @@ if (process.env.NODE_ENV === 'production') {
 else {
     bot = new Bot(token, { polling: true });
 }
+
+// Dichiarazione del bot
 module.exports = bot;
-console.log('Bot avviato in modalità ' + process.env.NODE_ENV);
 
 // Trigger
 var t1 = "loddo";
