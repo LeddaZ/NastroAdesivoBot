@@ -1,5 +1,9 @@
 # Note di rilascio
 
+## Versione 2.3.1
+- Il tempo di attività è stato rimosso da `/bustats` perché essendo su Heroku ogni tanto si resettava, quindi era inutile
+- Miglioramenti minori al codice
+
 ## Versione 2.3.0
 - Il bot è nuovamente hostato su Heroku (adesso non andrà più offline a caso, o almeno lo spero)
 
