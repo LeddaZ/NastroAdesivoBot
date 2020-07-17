@@ -719,10 +719,10 @@ bot.on('callback_query', function onCallbackQuery(callbackQuery) {
 // Codice di /bustats
 bot.onText(/\/bustats/, (msg) => {
 
-    // RAM utilizzata
+    // RAM utilizzata in MB
     var mem = process.memoryUsage().heapUsed / 1024 / 1024;
 
-    // Dimensione index.js
+    // Dimensione index.js in KB
     var fs = require("fs");
     var stats = fs.statSync("bot.js")
     var dim_KB = Math.round(stats["size"] / 1024.0 * 100) / 100
