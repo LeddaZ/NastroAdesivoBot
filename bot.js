@@ -727,8 +727,22 @@ bot.onText(/\/bustats/, (msg) => {
     var stats = fs.statSync("bot.js")
     var dim = Math.round(stats["size"] / 1024.0 * 100) / 100
 
+    // Sistema operativo
+    var os = require("os");
+    var platform = os.platform();
+
+    // Nome più bello
+    if (platform = "win32")
+        platform = "Windows"
+    else if (platform = "linux")
+        platform = "Linux"
+
+    var release = os.release()
+    var arch = os.arch();
+    var os_string = "<b>Sistema operativo:</b> " + platform + " " + release + " " + arch
+
     // Visualizzazione statistiche
-    bot.sendMessage(msg.chat.id, "<b>Statistiche del Busi</b>\n<b>RAM utilizzata: </b>" + Math.round(mem * 100) / 100 + " MB\n<b>Dimensione del codice (<code>index.js</code>): </b>" + dim + " KB", {
+    bot.sendMessage(msg.chat.id, "<b>Statistiche del Busi</b>\n<b>RAM utilizzata: </b>" + Math.round(mem * 100) / 100 + " MB\n<b>Dimensione del codice (<code>index.js</code>): </b>" + dim + " KB\n" + os_string, {
         parse_mode: "HTML"
     });
 
