@@ -626,7 +626,7 @@ bot.onText(/\/trovabusi/, (msg) => {
 bot.onText(/\/nota/, (msg) => {
 
     // Numero di note
-    var nota = Math.floor(Math.random() * (7 - 1 + 1) + 1)
+    var nota = Math.floor(Math.random() * (8 - 1 + 1) + 1)
 
     // Testo delle note
     if (nota === 1)
@@ -649,6 +649,9 @@ bot.onText(/\/nota/, (msg) => {
 
     else if (nota === 7)
         bot.sendMessage(msg.chat.id, msg.from.first_name + " gira per la classe chiedendo il materiale da disegno.");
+
+    else if (nota === 8)
+        bot.sendMessage(msg.chat.id, "L'alunno " + msg.from.first_name + " si pulisce i pantaloni.");
 
 });
 
