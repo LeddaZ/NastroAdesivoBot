@@ -1,5 +1,10 @@
 # Note di rilascio
 
+## Versione 2.3.2
+- È stato aggiunto il sistema operativo in `/bustats`
+- È stata aggiunta una nuova nota
+- Dipendenze aggiornate
+
 ## Versione 2.3.1
 - Il tempo di attività è stato rimosso da `/bustats` perché essendo su Heroku ogni tanto si resettava, quindi era inutile
 - Miglioramenti minori al codice
