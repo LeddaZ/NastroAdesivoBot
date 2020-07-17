@@ -15,7 +15,7 @@
   "devDependencies": {
     "auto-changelog": "1.16.4",
     "release-it": "13.5.1",
-    "lodash": "4.17.15",
+    "lodash": "4.17.19",
     "minimist": "1.2.5"
   },
   "release-it": {
