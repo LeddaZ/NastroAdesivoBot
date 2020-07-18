@@ -1,5 +1,8 @@
 # Note di rilascio
 
+## Versione 2.3.3
+- Corretta la stringa della dimensione del codice (`bot.js` invece di `index.js`)
+
 ## Versione 2.3.2
 - È stato aggiunto il sistema operativo in `/bustats`
 - È stata aggiunta una nuova nota
