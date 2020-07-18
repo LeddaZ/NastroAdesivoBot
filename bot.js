@@ -745,7 +745,7 @@ bot.onText(/\/bustats/, (msg) => {
     var os_string = "<b>Sistema operativo:</b> " + platform + " " + release + " " + arch
 
     // Visualizzazione statistiche
-    bot.sendMessage(msg.chat.id, "<b>Statistiche del Busi</b>\n<b>RAM utilizzata: </b>" + Math.round(mem * 100) / 100 + " MB\n<b>Dimensione del codice (<code>index.js</code>): </b>" + dim + " KB\n" + os_string, {
+    bot.sendMessage(msg.chat.id, "<b>Statistiche del Busi</b>\n<b>RAM utilizzata: </b>" + Math.round(mem * 100) / 100 + " MB\n<b>Dimensione del codice (<code>bot.js</code>): </b>" + dim + " KB\n" + os_string, {
         parse_mode: "HTML"
     });
 
