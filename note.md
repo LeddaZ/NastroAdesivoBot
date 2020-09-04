@@ -1,5 +1,9 @@
 # Note di rilascio
 
+## Versione 2.3.4
+- Rimosso il sistema operativo da `/bustats`
+- Aggiornate le dipendenze (in particolare `bl` per risolvere una falla di sicurezza)
+
 ## Versione 2.3.3
 - Corretta la stringa della dimensione del codice (`bot.js` invece di `index.js`)
 
