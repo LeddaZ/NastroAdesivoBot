@@ -1,5 +1,8 @@
 # Note di rilascio
 
+## Versione 2.3.6
+- È stato corretto il link delle note di rilascio in `/businfo`
+
 ## Versione 2.3.5
 - È stato modificato il trigger `Animalismo a scuola`
 - Il trigger `Cani` è stato modificato e rinominato in `Sofferenza`
