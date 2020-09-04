@@ -16,7 +16,8 @@
     "auto-changelog": "^2.2.0",
     "release-it": "^13.6.5",
     "lodash": "^4.17.19",
-    "minimist": "^1.2.5"
+    "minimist": "^1.2.5",
+    "bl": "^2.2.1"
   },
   "release-it": {
     "git": {
