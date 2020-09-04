@@ -372,12 +372,12 @@ bot.on("message", (msg) => {
         bot.sendMessage(msg.chat.id, "http://deaddrop.ftp.sh/nwVgAgxNtgUC.mp3");
 
     if (msg.text.toString().toLowerCase().indexOf(t65) === 0)
-        bot.sendMessage(msg.chat.id, "<a href=\"https://it-it.facebook.com/pages/biz/community/Animalismo-a-scuola-169759173228670/\">ANDATE A VEDERE I MIEI POST SU ANIMALISMO A SCUOLA CHE VI INTEROGOOOOH!</a>", {
+        bot.sendMessage(msg.chat.id, "<a href=\"https://it-it.facebook.com/pages/biz/community/Animalismo-a-scuola-169759173228670/\">ANDATE A VEDERE I MIEI POST SU ANIMALISMO A SCUOLA SU FEISBUC CHE VI INTEROGOOOOH!</a>", {
             parse_mode: "HTML"
         });
 
     if (msg.text.toString().toLowerCase().indexOf(t66) === 0)
-        bot.sendMessage(msg.chat.id, "NON COMPRATE I CAPPOTTI CON LE PELLICCE DI MURMANSKI, PERCHÉ I CINESI FANNO SOFFRIRE I CANIIIIH!");
+        bot.sendMessage(msg.chat.id, "NON COMPRATE I CAPPOTTI CON LE PELLICCE DI MURMANSKI, PERCHÉ VI PORTATE DIETRO LA SOFFERENZA DEGLI ANIMALI MALTRATTATI DAI CINESIIIIH!");
 
     if (msg.text.toString().toLowerCase().indexOf(t70) === 0)
         bot.sendAudio(msg.chat.id, "http://deaddrop.ftp.sh/hBCOhFQAAJZk.mp3");
