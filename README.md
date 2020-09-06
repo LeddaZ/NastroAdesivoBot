@@ -8,7 +8,7 @@ Per leggere le modifiche introdotte con gli aggiornamenti del bot ci sono le [no
 A [questo](https://github.com/LeddaZ/NastroAdesivoBot/blob/master/extra/link.txt) link si trovano tutte le foto e i file audio utilizzati nel bot.
 
 # Codice del bot
-È possibile scaricare la versione più recente del codice di **NastroAdesivoBot** cliccando sul pulsante verde `Clone or download`, quindi su `Download ZIP`.
+È possibile scaricare la versione più recente del codice di **NastroAdesivoBot** cliccando sul pulsante verde `Code`, quindi su `Download ZIP`.
 
 ![Codice](https://github.com/LeddaZ/NastroAdesivoBot/blob/master/extra/codice.png)
 
