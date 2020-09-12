@@ -1,5 +1,8 @@
 # Note di rilascio
 
+## Versione 2.3.7
+- Aggiorato `node-fetch` per risolvere una falla di sicurezza
+
 ## Versione 2.3.6
 - È stato corretto il link delle note di rilascio in `/businfo`
 
