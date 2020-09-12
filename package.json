@@ -21,8 +21,8 @@
   },
   "release-it": {
     "git": {
-      "tagName": "v${version}",
-      "requireCleanWorkingDir": "false"
+      "tagName": "${version}",
+      "requireCleanWorkingDir": "true"
     },
     "github": {
       "release": true,
