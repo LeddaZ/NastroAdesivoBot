@@ -197,7 +197,7 @@ bot.on("message", (msg) => {
             bot.sendMessage(msg.chat.id, "CHI È QUESTO? AH È GUERAAAAAAH!");
 
     if (msg.text.toString().toLowerCase().indexOf(t8) === 0)
-        bot.sendPhoto(msg.chat.id, "https://i.ytimg.com/vi/q2l06PW6Uts/maxresdefault.jpg", {
+        bot.sendPhoto(msg.chat.id, "http://deaddrop.ftp.sh/dhwt3sdqh0yi.jpg", {
             caption: "LE TIGRI SOFFRONOOOH!"
         });
 
@@ -267,12 +267,12 @@ bot.on("message", (msg) => {
         bot.sendAudio(msg.chat.id, "http://deaddrop.ftp.sh/EZj0Kk3pzC34.mp3");
 
     if (msg.text.toString().toLowerCase().indexOf(t34) === 0)
-        bot.sendPhoto(msg.chat.id, "https://t1.ea.ltmcdn.com/it/images/5/2/4/img_il_cane_procione_come_animale_domestico_1425_paso_0_600.jpg", {
+        bot.sendPhoto(msg.chat.id, "http://deaddrop.ftp.sh/w3re5eCSKAZH.jpg", {
             caption: "I CANI PROCIONI SOFFRONOOOOH!"
         });
 
     if (msg.text.toString().toLowerCase().indexOf(t35) === 0)
-        bot.sendPhoto(msg.chat.id, "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Mink_coat_lunaraine.jpg/275px-Mink_coat_lunaraine.jpg", {
+        bot.sendPhoto(msg.chat.id, "http://deaddrop.ftp.sh/bGhGBE9Lphly.jpg", {
             caption: "NON COMPRATE I CAPPOTTI CON LE PELLICCIE CHE VI PORTATE DIETRO LA SOFFERENZA DEGLI ANIMALIIIIIH!"
         });
 
@@ -309,27 +309,27 @@ bot.on("message", (msg) => {
         bot.sendAudio(msg.chat.id, "http://deaddrop.ftp.sh/UWhCnzcJps7h.mp3");
 
     if (msg.text.toString().toLowerCase().indexOf(t46) === 0)
-        bot.sendPhoto(msg.chat.id, "http://deaddrop.ftp.sh/wrQSmPlj55IH.jpg", {
+        bot.sendPhoto(msg.chat.id, "http://deaddrop.ftp.sh/OrMKeQznAg7I.jpg", {
             caption: "Oh no, non sono parallele..."
         });
 
     if (msg.text.toString().toLowerCase().indexOf(t47) === 0)
-        bot.sendPhoto(msg.chat.id, "http://deaddrop.ftp.sh/YJa8N__BT0E4.jpg", {
+        bot.sendPhoto(msg.chat.id, "http://deaddrop.ftp.sh/Te-eVs1x7Heu.jpg", {
             caption: "NON SONO PARALLELEEEEEEEEH!"
         });
 
     if (msg.text.toString().toLowerCase().indexOf(t48) === 0)
         if (msg.text.toString().toLowerCase().indexOf(t49) === 0)
-            bot.sendPhoto(msg.chat.id, "http://deaddrop.ftp.sh/NagriUpAqytQ.jpg", {
+            bot.sendPhoto(msg.chat.id, "http://deaddrop.ftp.sh/iOhBd72rorCk.jpg", {
                 caption: "BUONGIORNOH!"
             });
         else
-            bot.sendPhoto(msg.chat.id, "http://deaddrop.ftp.sh/K5wZ-5klUlCz.jpg", {
+            bot.sendPhoto(msg.chat.id, "http://deaddrop.ftp.sh/9EWnUFVLww8J.jpg", {
                 caption: "DUEEEEH!"
             });
 
     if (msg.text.toString().toLowerCase().indexOf(t50) === 0)
-        bot.sendPhoto(msg.chat.id, "http://deaddrop.ftp.sh/E_FJlFM2gc0a.jpg", {
+        bot.sendPhoto(msg.chat.id, "http://deaddrop.ftp.sh/fsE3xvStWuDi.jpg", {
             caption: "NON SI SPRECA LA CARTAAAAAH!"
         });
 
