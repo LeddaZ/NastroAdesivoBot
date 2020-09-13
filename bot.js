@@ -309,9 +309,7 @@ bot.on("message", (msg) => {
         bot.sendAudio(msg.chat.id, "http://deaddrop.ftp.sh/UWhCnzcJps7h.mp3");
 
     if (msg.text.toString().toLowerCase().indexOf(t46) === 0)
-        bot.sendPhoto(msg.chat.id, "http://deaddrop.ftp.sh/OrMKeQznAg7I.jpg", {
-            caption: "Oh no, non sono parallele..."
-        });
+        bot.sendPhoto(msg.chat.id, "http://deaddrop.ftp.sh/OrMKeQznAg7I.jpg");
 
     if (msg.text.toString().toLowerCase().indexOf(t47) === 0)
         bot.sendPhoto(msg.chat.id, "http://deaddrop.ftp.sh/Te-eVs1x7Heu.jpg", {
