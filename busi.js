@@ -746,7 +746,7 @@ bot.onText(/\/bustats/, (msg) => {
     // RAM utilizzata in MB
     var mem = process.memoryUsage().heapUsed / 1024 / 1024;
 
-    // Dimensione index.js in KB
+    // Dimensione busi.js in KB
     var fs = require("fs");
     var stats = fs.statSync("busi.js")
     var dim = Math.round(stats["size"] / 1024.0 * 100) / 100
