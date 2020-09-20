@@ -672,8 +672,9 @@ bot.onText(/\/consegna/, (msg) => {
     // Numero di possibili correzioni
     var esito = Math.floor(Math.random() * (5 - 1 + 1) + 1)
 
-    if (esito === 1)
-        bot.sendMessage(msg.chat.id, "Allora, questa è la tavola " + tav + "...\nLa tavola non si presenta neanche male... BRUTTO STO QUA! I SEGNI DEVONO ESSERE PIÙ OMOGENEI, POSSIBILE CHE NON L'ABBIATE ANCORA CAPITOOH!? TI METTO SEI E MEZZO RE-GA-LA-TO, CHI È CHE TIENE LA CONTABILITÀ DEI VOTI? SCRIVI BASTA SEIIIH!\nHai mezzi voti?", {
+    if (esito === 1) {
+        const testoEsito = "Allora, questa è la tavola " + tav + "...\nLa tavola non si presenta neanche male... BRUTTO STO QUA! I SEGNI DEVONO ESSERE PIÙ OMOGENEI, POSSIBILE CHE NON L'ABBIATE ANCORA CAPITOOH!? TI METTO SEI E MEZZO RE-GA-LA-TO, CHI È CHE TIENE LA CONTABILITÀ DEI VOTI? SCRIVI BASTA SEIIIH!\nHai mezzi voti?"
+        bot.sendMessage(msg.chat.id, testoEsito, {
             reply_markup: {
                 inline_keyboard: [
                     [{
@@ -687,19 +688,28 @@ bot.onText(/\/consegna/, (msg) => {
                     ]
                 ]
             }
-        });
+        })
+    }
 
-    if (esito === 2)
-        bot.sendMessage(msg.chat.id, "Allora, questa è la tavola " + tav + "...\nMA NON È POSSIBILE CHE UNA MEDIANA SIA A 17 DA UNA PARTE E A 12 DALL'ALTRA! È TUTTO STORTOOOH! ADESSO VAI AL POSTO E TI BECCHI CINQUEEEH!");
+    if (esito === 2) {
+        const testoEsito = "Allora, questa è la tavola " + tav + "...\nMA NON È POSSIBILE CHE UNA MEDIANA SIA A 17 DA UNA PARTE E A 12 DALL'ALTRA! È TUTTO STORTOOOH! ADESSO VAI AL POSTO E TI BECCHI CINQUEEEH!"
+        bot.sendMessage(msg.chat.id, testoEsito)
+    }
 
-    if (esito === 3)
-        bot.sendMessage(msg.chat.id, "Allora, questa è la tavola " + tav + "...\nVE L'HO DETTO MILLE VOLTE, IL CARTIGLIO SI FA DA METÀ FOGLIO, DEVO SEMPRE RIPETERE LE STESSE COSEEEEH! PER STAVOLTA METTIAMO SEI, MA È REGALATOOOH!");
+    if (esito === 3) {
+        const testoEsito = "Allora, questa è la tavola " + tav + "...\nVE L'HO DETTO MILLE VOLTE, IL CARTIGLIO SI FA DA METÀ FOGLIO, DEVO SEMPRE RIPETERE LE STESSE COSEEEEH! PER STAVOLTA METTIAMO SEI, MA È REGALATOOOH!"
+        bot.sendMessage(msg.chat.id, testoEsito)
+    }
 
-    if (esito === 4)
-        bot.sendMessage(msg.chat.id, "Allora, questa è la tavola " + tav + "...\nLa tavola si presenta bene... I segni sono omogenei e non ci sono errori gravi, anche i titoli sono fatti bene... Tutto sommato è una bella tavola, mettiamo sette.");
+    if (esito === 4) {
+        const testoEsito = "Allora, questa è la tavola " + tav + "...\nLa tavola si presenta bene... I segni sono omogenei e non ci sono errori gravi, anche i titoli sono fatti bene... Tutto sommato è una bella tavola, mettiamo sette."
+        bot.sendMessage(msg.chat.id, testoEsito)
+    }
 
-    if (esito === 5)
-        bot.sendMessage(msg.chat.id, "Allora, questa è la tavola " + tav + "...\nCOS'È STO SEGNO ORRIBILE?! VAI AL POSTO E SISTEMALO ALTRIMENTI TI BECCHI TRE E TE LO TIENIIIH!");
+    if (esito === 5) {
+        const testoEsito = "Allora, questa è la tavola " + tav + "...\nCOS'È STO SEGNO ORRIBILE?! VAI AL POSTO E SISTEMALO ALTRIMENTI TI BECCHI TRE E TE LO TIENIIIH!"
+        bot.sendMessage(msg.chat.id, testoEsito)
+    }
 
 });
 
@@ -713,18 +723,19 @@ bot.on('callback_query', function onCallbackQuery(callbackQuery) {
 
     // Con mezzo voto
     if (action === 'si') {
-        text = 'VAI A PRENDERE LA TAVOLA, NON MI FIDO DI VOI!';
+        result = 'VAI A PRENDERE LA TAVOLA, NON MI FIDO DI VOI!';
     }
 
     // Senza mezzo voto
     if (action === 'no') {
-        text = "E ALLORA TI TIENI SEI E VAI AL POSTO!";
+        result = "E ALLORA TI TIENI SEI E VAI AL POSTO!";
     }
 
     // Invio del testo del mezzo voto
-    bot.sendMessage(msg.chat.id, text);
+    bot.sendMessage(msg.chat.id, result)
 
 });
+
 
 // Codice di /bustats
 bot.onText(/\/bustats/, (msg) => {
