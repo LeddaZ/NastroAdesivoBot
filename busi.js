@@ -729,7 +729,7 @@ bot.onText(/\/bustats/, (msg) => {
     var dim = Math.round(stats["size"] / 1024.0 * 100) / 100
 
     // Visualizzazione statistiche
-    bot.sendMessage(msg.chat.id, "<b>Statistiche del Busi</b>\n<b>RAM utilizzata: </b>" + Math.round(mem * 100) / 100 + " MB\n<b>Dimensione del codice (<code>bot.js</code>): </b>" + dim + " KB\n", {
+    bot.sendMessage(msg.chat.id, "<b>Statistiche del Busi</b>\n<b>RAM utilizzata: </b>" + Math.round(mem * 100) / 100 + " MB\n<b>Dimensione del codice (<code>busi.js</code>): </b>" + dim + " KB\n", {
         parse_mode: "HTML"
     });
 
