@@ -719,7 +719,7 @@ bot.on('callback_query', function onCallbackQuery(callbackQuery) {
 
     var action = callbackQuery.data;
     var msg = callbackQuery.message;
-    let text;
+    let result;
 
     // Con mezzo voto
     if (action === 'si') {
