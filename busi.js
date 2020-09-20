@@ -759,7 +759,9 @@ bot.onText(/\/bustats/, (msg) => {
 });
 
 /*
+
 Fine del codice
 
-R. B. & L. L.
+U n i t e v i  a l  c u l t o  d e l  B u s a t a .
+
 */
