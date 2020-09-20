@@ -15,7 +15,7 @@ Per scaricare una versione precedente visitare la sezione [Releases](https://git
 # Avviare il bot
 Per avviare il codice su un proprio bot seguire queste istruzioni:
 - Creare un bot con [BotFather](https://t.me/BotFather) e annotarsi la token del bot
-- Nelle impostazioni del bot attivare la tastiera inline; inoltre se il bot viene aggiunto a un gruppo dovrà essere amministratore per funzionare
+- Nelle impostazioni del bot attivare la tastiera inline; inoltre se il bot viene aggiunto a un gruppo dovrà essere amministratore per assicurare il corretto funzionamento
 - Installare [Node.js](https://nodejs.org/it/). È consigliato installare l'ultima versione LTS, dato che il bot viene testato su Node 12 LTS
 - Installare [Git](https://git-scm.com/)
 - Aprire una nuova finestra del terminale/prompt dei comandi
@@ -38,8 +38,8 @@ Per avviare il codice su un proprio bot seguire queste istruzioni:
 - [Visual Studio Code](https://code.visualstudio.com/): l'editor di codice che uso/ho usato per scrivere il bot
 - [Notepad++](https://notepad-plus-plus.org/): quello che usavo prima di VS Code
 - [GitHub](https://github.com/): questo sito per caricare il codice sorgente del bot
-- [release-it](https://github.com/release-it/release-it): modulo npm per generare automaticamente le pubblicazioni su GitHub
-- [auto-changelog](https://github.com/CookPete/auto-changelog): genera il changelog delle pubblicazioni automaticamente dai commit
+- [release-it](https://github.com/release-it/release-it): modulo npm per generare automaticamente le [pubblicazioni](https://github.com/LeddaZ/NastroAdesivoBot/releases) su GitHub
+- [auto-changelog](https://github.com/CookPete/auto-changelog): genera il changelog delle pubblicazioni leggendo tutti i commit tra una versione e l'altra
 - [Stack Overflow](https://stackoverflow.com/) e tutti quelli che fanno domande e rispondono: senza "prendere in presto" codice da loro il bot non sarebbe a questo punto
 - [heroku-node-telegram-bot](https://github.com/odditive/heroku-node-telegram-bot): grazie a questo esempio ho finalmente capito come hostare il bot su Heroku
 
