@@ -180,7 +180,7 @@ var data = mtime.toLocaleDateString('it-IT', d) + "/" + mtime.toLocaleDateString
 
 
 // Testo di /businfo e /start
-var start = "<b>NastroAdesivoBot</b>\nVersione <code>" + ver + "</code> del " + data + "\nDigita /busitrigger per la lista di trigger e comandi\n<a href=\"https://github.com/LeddaZ/NastroAdesivoBot/\">Codice sorgente del bot</a> - <a href=\"https://github.com/LeddaZ/NastroAdesivoBot/blob/master/extra/note.md\">Note di rilascio</a>\nIspirato al mitico <b>Renato Busata</b> e creato da @LeddaZ"
+var start = "<b>NastroAdesivoBot</b>\nVersione <code>" + ver + "</code> del " + data + "\nDigita /busitrigger per la lista di trigger e comandi\n<a href=\"https://github.com/LeddaZ/NastroAdesivoBot/\">Codice sorgente</a> - <a href=\"https://github.com/LeddaZ/NastroAdesivoBot/blob/master/extra/note.md\">Note di rilascio</a>\nIspirato al mitico <b>Renato Busata</b> e creato da @LeddaZ"
 
 
 // Codice del bot
