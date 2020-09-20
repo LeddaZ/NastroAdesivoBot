@@ -10,8 +10,10 @@ let bot;
 var request = require("request");
 var dotenv = require('dotenv').config();
 
+
 // Lettura della token del bot da .env
 var token = process.env.TOKEN;
+
 
 // Impostazione webhook per heroku
 if (process.env.NODE_ENV === 'production') {
@@ -22,8 +24,10 @@ else {
     bot = new Bot(token, { polling: true });
 }
 
+
 // Dichiarazione del bot
 module.exports = bot;
+
 
 // Trigger
 var t1 = "loddo";
@@ -146,9 +150,11 @@ var t131 = "quanto manca";
 var t132 = "calci";
 var t133 = "luce";
 
+
 // Lettura della versione del bot da package.json
 var pjson = require('./package.json');
 var ver = pjson.version;
+
 
 /*
 Lettura della data della versione (data in cui package.json è stato
@@ -157,6 +163,7 @@ modificato per l'ultima volta)
 var fs = require('fs');
 var stats = fs.statSync("package.json");
 var mtime = stats.mtime;
+
 // Formato della data (g/m/a)
 var d = {
     day: 'numeric'
@@ -167,8 +174,10 @@ var m = {
 var y = {
     year: 'numeric'
 };
+
 // Creazione della stringa con la data
 var data = mtime.toLocaleDateString('it-IT', d) + "/" + mtime.toLocaleDateString('it-IT', m) + "/" + mtime.toLocaleDateString('it-IT', y);
+
 
 // Testo di /businfo e /start
 var start = "<b>NastroAdesivoBot</b>\nVersione <code>" + ver + "</code> del " + data + "\nDigita /busitrigger per la lista di trigger e comandi\n<a href=\"https://github.com/LeddaZ/NastroAdesivoBot/\">Codice sorgente del bot</a> - <a href=\"https://github.com/LeddaZ/NastroAdesivoBot/blob/master/extra/note.md\">Note di rilascio</a>\nIspirato al mitico <b>Renato Busata</b> e creato da @LeddaZ"
