@@ -731,8 +731,11 @@ bot.on('callback_query', function onCallbackQuery(callbackQuery) {
         result = "E ALLORA TI TIENI SEI E VAI AL POSTO!";
     }
 
-    // Invio del testo del mezzo voto
-    bot.sendMessage(msg.chat.id, result)
+    // Invio del testo del mezzo voto e rimozione dei pulsanti
+    var msgId = msg.message_id
+    bot.sendMessage(msg.chat.id, result).then(
+        bot.deleteMessage(msg.chat.id, msgId)
+    )
 
 });
 
