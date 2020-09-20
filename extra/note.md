@@ -1,5 +1,11 @@
 # Note di rilascio
 
+## Versione 2.4.0
+- La formattazione del codice è stata migliorata
+- Alcune parti del codice sono state rifatte
+- I pulsanti del mezzo voto su `/consegna` vengono rimossi dopo la selezione
+- `/businfo` è stato aggiornato
+
 ## Versione 2.3.8
 - `/businfo` è stato migliorato
 - I link per i trigger delle foto sono stati aggiornati
