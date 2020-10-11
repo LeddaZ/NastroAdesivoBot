@@ -1,5 +1,8 @@
 # Note di rilascio
 
+## Versione 2.4.1
+- Il link della pagina Animalismo a scuola è stato spostato su `/trovabusi`
+
 ## Versione 2.4.0
 - La formattazione del codice è stata migliorata
 - Alcune parti del codice sono state rifatte
