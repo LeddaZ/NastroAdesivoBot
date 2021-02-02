@@ -1,5 +1,8 @@
 # Note di rilascio
 
+## Versione 2.4.3
+- Il bot ora utilizza Node 14 LTS invece del 12
+
 ## Versione 2.4.2
 - È stata aggiornata una dipendenza per risolvere una falla di sicurezza
 
