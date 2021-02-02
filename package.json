@@ -4,7 +4,7 @@
   "description": "Il bot del Busata",
   "main": "index.js",
   "engines": {
-    "node": "12.x"
+    "node": "14.x"
   },
   "dependencies": {
     "dotenv": "^8.2.0",
