@@ -670,13 +670,9 @@ bot.onText(/\/consegna/, (msg) => {
         testoEsito = "Allora, questa è la tavola " + tav + "...\nLa tavola non si presenta neanche male... BRUTTO STO QUA! I SEGNI DEVONO ESSERE PIÙ OMOGENEI, POSSIBILE CHE NON L'ABBIATE ANCORA CAPITOOH!? TI METTO SEI E MEZZO RE-GA-LA-TO, CHI È CHE TIENE LA CONTABILITÀ DEI VOTI? SCRIVI BASTA SEIIIH!\nHai mezzi voti?"
         bot.sendMessage(msg.chat.id, testoEsito, {
             reply_markup: {
-                inline_keyboard: [[{
-                        text: 'Sì',
-                        callback_data: 'si'
-                    }, {
-                        text: 'No',
-                        callback_data: 'no'
-                    }
+                inline_keyboard: [[
+                    { text: 'Sì', callback_data: 'si' },
+                    { text: 'No', callback_data: 'no' }
                 ]]
             }
         });
@@ -710,40 +706,40 @@ bot.on('callback_query', function onCallbackQuery(callbackQuery) {
 
     var action = callbackQuery.data;
     var msg = callbackQuery.message;
-    let result;
+    let testoFinale;
 
 
     // /consegna
     // Con mezzo voto
     if (action === 'si') {
-        result = 'VAI A PRENDERE LA TAVOLA, NON MI FIDO DI VOI!';
+        testoFinale = 'VAI A PRENDERE LA TAVOLA, NON MI FIDO DI VOI!';
     }
 
     // Senza mezzo voto
     if (action === 'no') {
-        result = "E ALLORA TI TIENI SEI E VAI AL POSTO!";
+        testoFinale = "E ALLORA TI TIENI SEI E VAI AL POSTO!";
     }
 
 
     // /busiaudio (20 audio per pagina)
     // Pagina 1
     if (action === '1') {
-        result = "<b>Audio del Busata - Pagina 1</b>\nAndate via, AutoCAD, Bassi, Basta battere, Benvegnù, Brutto sto qua, Busata è un sapiente, Busata perde tutto, Busi bestemmia, Busi è perfido, Busi è un po’ tardo, Busi va all’inferno, Busi16, BusiAcuto, Busirena, Cacciato via, Calma assoluta, Carta stracciata, Che schifo, Ciuccia il tè";
+        testoFinale = "<b>Audio del Busata - Pagina 1</b>\nAndate via, AutoCAD, Bassi, Basta battere, Benvegnù, Brutto sto qua, Busata è un sapiente, Busata perde tutto, Busi bestemmia, Busi è perfido, Busi è un po’ tardo, Busi va all’inferno, Busi16, BusiAcuto, Busirena, Cacciato via, Calma assoluta, Carta stracciata, Che schifo, Ciuccia il tè";
     }
 
     // Pagina 2
     if (action === '2') {
-        result = "<b>Audio del Busata - Pagina 2</b>\nColpa di Guerra, Compassione, Cosmo, Denti, Devo finire la tavola, Due, Facebook, Falasco, Ferragosto, Foglia, Gomma, Governo, Guerra, Guerra a 90, Hai capito, Il filo, Il taglio di Guerra, Insolente, Koreani mangiacani, Ledda studia chimica";
+        testoFinale = "<b>Audio del Busata - Pagina 2</b>\nColpa di Guerra, Compassione, Cosmo, Denti, Devo finire la tavola, Due, Facebook, Falasco, Ferragosto, Foglia, Gomma, Governo, Guerra, Guerra a 90, Hai capito, Il filo, Il taglio di Guerra, Insolente, Koreani mangiacani, Ledda studia chimica";
     }
 
     // Pagina 3
     if (action === '3') {
-        result = "Macchine, Marchesin, Marchesin vai via, Merja bocciato, Merja fa andare Busi all’inferno, Merja ha le mani giù, Metto 2 subito, Mi avete stufato, Mister Fantastico, Moro, Nirvana, Nirvana lento, Norvegia, Orari, Orco, Orco can, Orco2, Palazzo, Porta la cartellina, Povero Guerra";
+        testoFinale = "Macchine, Marchesin, Marchesin vai via, Merja bocciato, Merja fa andare Busi all’inferno, Merja ha le mani giù, Metto 2 subito, Mi avete stufato, Mister Fantastico, Moro, Nirvana, Nirvana lento, Norvegia, Orari, Orco, Orco can, Orco2, Palazzo, Porta la cartellina, Povero Guerra";
     }
 
     // Pagina 4
     if (action === '4') {
-        result = "Previo terrorismo, Rivoluzionario, Sfoglia il quaderno, Si diventa deficienti, Soddisfa il Busi, Stare al mondo, Telecamera, Terrapiattisti, Ti caccio via, Ti tieni il 2, Tigri stecchite, Titoli, Vedovato, Vedovato è un poeta, Vedovato traffica, Ventiquattrore, Via, Violenza privata, Viva la rivoluzione";
+        testoFinale = "Previo terrorismo, Rivoluzionario, Sfoglia il quaderno, Si diventa deficienti, Soddisfa il Busi, Stare al mondo, Telecamera, Terrapiattisti, Ti caccio via, Ti tieni il 2, Tigri stecchite, Titoli, Vedovato, Vedovato è un poeta, Vedovato traffica, Ventiquattrore, Via, Violenza privata, Viva la rivoluzione";
     }
 
     /* Ri-dichiarazione dei pulsanti per /busiaudio, così possono essere
@@ -765,10 +761,10 @@ bot.on('callback_query', function onCallbackQuery(callbackQuery) {
     var msgId = msg.message_id;
     if (action === 'si' || action === 'no') {
         bot.editMessageText(testoEsito, { chat_id: msg.chat.id, message_id: msg.message_id }).then(
-            bot.sendMessage(msg.chat.id, result)
+            bot.sendMessage(msg.chat.id, testoFinale)
         );
     } else {
-        bot.editMessageText(result, pagine);
+        bot.editMessageText(testoFinale, pagine);
     }
     
 
