@@ -750,15 +750,27 @@ bot.on('callback_query', function onCallbackQuery(callbackQuery) {
 bot.onText(/\/bustats/, (msg) => {
 
     // RAM utilizzata in MB
-    var mem = process.memoryUsage().heapUsed / Math.pow(1024, 2);
+    var mem = Math.round(process.memoryUsage().heapUsed / Math.pow(1024, 2) * 100) / 100;
+
+    // Tempo di attivita' (h:m:s)
+    var uptime = process.uptime();
+    var h = Math.floor(uptime / (60*60));
+    var m = Math.floor(uptime % (60*60) / 60);
+    var s = Math.floor(uptime % 60);
+    // Aggiunge lo zero davanti a m e s se necessario
+    if (m < 10) {
+        m = "0" + m;
+    }
+    if (s < 10) {
+        s = "0" + s;
+    }
 
     // Dimensione busi.js in KB
-    const fs = require("fs");
     const stats = fs.statSync("busi.js");
-    var dim = Math.round(stats["size"] / 1024.0);
+    var dim = Math.round(stats.size / 1024 * 100) / 100;
 
     // Visualizzazione statistiche
-    bot.sendMessage(msg.chat.id, "<b>Statistiche del Busi</b>\n<b>RAM utilizzata: </b>" + Math.round(mem * 100) / 100 + " MB\n<b>Dimensione del codice (<code>busi.js</code>): </b>" + dim + " KB\n", { parse_mode: "HTML" });
+    bot.sendMessage(msg.chat.id, "<b>Statistiche del Busi</b>\n<b>RAM utilizzata: </b>" + mem + " MB\n<b>Dimensione del codice (<code>busi.js</code>): </b>" + dim + " KB\n<b>Tempo di attività (h:m:s): </b>" + h + ":" + m + ":" + s, { parse_mode: "HTML" });
 
 });
 
