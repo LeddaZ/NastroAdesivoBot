@@ -719,7 +719,7 @@ bot.on('callback_query', function onCallbackQuery(callbackQuery) {
 
     /* Ri-dichiarazione dei pulsanti per /busiaudio, così possono essere
        mantenuti dopo l'interazione */
-    var pagine = {
+    var opzioni = {
         chat_id: msg.chat.id,
         message_id: msg.message_id,
         reply_markup: {
@@ -734,13 +734,12 @@ bot.on('callback_query', function onCallbackQuery(callbackQuery) {
     };
 
     // Invio del risultato (e rimozione dei pulsanti per /consegna)
-    var msgId = msg.message_id;
     if (action === 'si' || action === 'no') {
         bot.editMessageText(testoEsito, { chat_id: msg.chat.id, message_id: msg.message_id }).then(
             bot.sendMessage(msg.chat.id, testoFinale)
         );
     } else {
-        bot.editMessageText(testoFinale, pagine);
+        bot.editMessageText(testoFinale, opzioni);
     }
     
 
