@@ -153,15 +153,9 @@ const stats = fs.statSync("package.json");
 var mtime = stats.mtime;
 
 // Formato della data (g/m/a)
-var d = {
-    day: 'numeric'
-};
-var m = {
-    month: 'numeric'
-};
-var y = {
-    year: 'numeric'
-};
+var d = { day: 'numeric' };
+var m = { month: 'numeric' };
+var y = { year: 'numeric' };
 
 // Creazione della stringa con la data
 var data = mtime.toLocaleDateString('it-IT', d) + "/" + mtime.toLocaleDateString('it-IT', m) + "/" + mtime.toLocaleDateString('it-IT', y);
@@ -202,9 +196,7 @@ bot.on("message", (msg) => {
         bot.sendMessage(msg.chat.id, "SEI BELLABONA?");
 
     if (msg.text.toString().toLowerCase().indexOf(t11) === 0)
-        bot.sendMessage(msg.chat.id, "Dire 'salute' quando si st<b>E</b>rnuta è buona educazione, ma in alcuni casi, come in 2IE, disturba la lezione, quindi non si dice, pena... L'INFERNOOOOOOH! CI SIAMO CAPITIIIIH?", {
-            parse_mode: "HTML"
-        });
+        bot.sendMessage(msg.chat.id, "Dire 'salute' quando si st<b>E</b>rnuta è buona educazione, ma in alcuni casi, come in 2IE, disturba la lezione, quindi non si dice, pena... L'INFERNOOOOOOH! CI SIAMO CAPITIIIIH?", { parse_mode: "HTML" });
 
     if (msg.text.toString().toLowerCase().indexOf(t12) === 0)
         bot.sendMessage(msg.chat.id, "IL PUNTO Z È ALL'INFINITOOOH!");
@@ -492,9 +484,7 @@ bot.on("message", (msg) => {
         bot.sendMessage(msg.chat.id, "IL BUSATA È CATTIVOOOOOH!");
 
     if (msg.text.toString().toLowerCase().indexOf(t113) === 0)
-        bot.sendMessage(msg.chat.id, "<code>|||||||||||||||\n|||||||||||||||\nDUEDUEDUEDU||||\nEDUEDUEDUED||||\n|||||||||||||||\n|||||||||||||||\n||||UEDUEDUEDUE\n||||DUEDUEDUEDU\n|||||||||||||||\n|||||||||||||||</code>", {
-            parse_mode: "HTML"
-        });
+        bot.sendMessage(msg.chat.id, "<code>|||||||||||||||\n|||||||||||||||\nDUEDUEDUEDU||||\nEDUEDUEDUED||||\n|||||||||||||||\n|||||||||||||||\n||||UEDUEDUEDUE\n||||DUEDUEDUEDU\n|||||||||||||||\n|||||||||||||||</code>", { parse_mode: "HTML" });
 
     if (msg.text.toString().toLowerCase().indexOf(t115) === 0)
         bot.sendMessage(msg.chat.id, "OH! LE PAPERETTEEEH! AH LEDDA DOVREMO ISCRIVERLO A QUALCHE ASSOCIAZIONE, LUI CI TIENE A QUESTE COSEEEH!");
@@ -550,17 +540,13 @@ bot.on("message", (msg) => {
 // Codice di /start e /businfo
 bot.onText(/\/start/, (msg) => {
 
-    bot.sendMessage(msg.chat.id, start, {
-        parse_mode: "HTML"
-    });
+    bot.sendMessage(msg.chat.id, start, { parse_mode: "HTML" });
 
 });
 
 bot.onText(/\/businfo/, (msg) => {
 
-    bot.sendMessage(msg.chat.id, start, {
-        parse_mode: "HTML"
-    });
+    bot.sendMessage(msg.chat.id, start, { parse_mode: "HTML" });
 
 });
 
@@ -568,9 +554,7 @@ bot.onText(/\/businfo/, (msg) => {
 // Codice di /busitrigger
 bot.onText(/\/busitrigger/, (msg) => {
 
-    bot.sendMessage(msg.chat.id, "<b>Trigger del Busi</b>\n120 tavole, Animalismo a scuola, Buongiorno, Busascii, Calci, Cattivo, Chi sei?, Collina, Farfalle, Liliana Segre, Loddo, Luce, Ma non ho fatto niente, Merjaaa, Non ho capito, Non ho la tavola, Non ho lo scotch, Nota, Orario, Paperette, Popopopo, Prospettiva, Punto Z, Qualsiasi bestemmia, Quanto manca?, Salute, Sofferenza, Straccia la carta, Voti\n\n<b>Comandi del Busi</b>\n/start - Avvia il bot\n/busiaudio - Visualizza la lista di audio del Busi\n/busifoto - Visualizza la lista di foto del Busi\n/businfo - Visualizza versione e autore del bot\n/busitrigger - Visualizza la lista di trigger e comandi\n/bustats - Visualizza statistiche sul bot\n/nota - Genera una nota del Busi\n/consegna - Simula la consegna di una tavola. Chi non ce l'ha si becca DUE!\n/trovabusi - Mostra alcuni link riguardanti il Busi", {
-        parse_mode: "HTML"
-    });
+    bot.sendMessage(msg.chat.id, "<b>Trigger del Busi</b>\n120 tavole, Animalismo a scuola, Buongiorno, Busascii, Calci, Cattivo, Chi sei?, Collina, Farfalle, Liliana Segre, Loddo, Luce, Ma non ho fatto niente, Merjaaa, Non ho capito, Non ho la tavola, Non ho lo scotch, Nota, Orario, Paperette, Popopopo, Prospettiva, Punto Z, Qualsiasi bestemmia, Quanto manca?, Salute, Sofferenza, Straccia la carta, Voti\n\n<b>Comandi del Busi</b>\n/start - Avvia il bot\n/busiaudio - Visualizza la lista di audio del Busi\n/busifoto - Visualizza la lista di foto del Busi\n/businfo - Visualizza versione e autore del bot\n/busitrigger - Visualizza la lista di trigger e comandi\n/bustats - Visualizza statistiche sul bot\n/nota - Genera una nota del Busi\n/consegna - Simula la consegna di una tavola. Chi non ce l'ha si becca DUE!\n/trovabusi - Mostra alcuni link riguardanti il Busi", { parse_mode: "HTML" });
 
 });
 
@@ -578,9 +562,7 @@ bot.onText(/\/busitrigger/, (msg) => {
 // Codice di /biobusi
 bot.onText(/\/biobusi/, (msg) => {
 
-    bot.sendMessage(msg.chat.id, "<b>Renato Busata</b> si laurea in architettura presso l'Istituto Universitario di Architettura di Venezia nel 1983. Dal 1989 è docente di disegno presso istituti e licei padovani. Tra le varie pubblicazioni si segnalano 'Testimonianze storiche e artistiche', edito dal Comune di Rubano; 'Piccolo manuale per affrontare un progetto di architettura' di Gangemi Editore, con l'introduzione di Franco Purini e Luigi Monetti; 'Architetture tra Roma e Milano nel secondo dopoguerra', Ed. Libreria Progetto. Nel 2006 è dottore di ricerca in Composizione architettonica presso l'Università IUAV di Venezia.", {
-        parse_mode: "HTML"
-    });
+    bot.sendMessage(msg.chat.id, "<b>Renato Busata</b> si laurea in architettura presso l'Istituto Universitario di Architettura di Venezia nel 1983. Dal 1989 è docente di disegno presso istituti e licei padovani. Tra le varie pubblicazioni si segnalano 'Testimonianze storiche e artistiche', edito dal Comune di Rubano; 'Piccolo manuale per affrontare un progetto di architettura' di Gangemi Editore, con l'introduzione di Franco Purini e Luigi Monetti; 'Architetture tra Roma e Milano nel secondo dopoguerra', Ed. Libreria Progetto. Nel 2006 è dottore di ricerca in Composizione architettonica presso l'Università IUAV di Venezia.", { parse_mode: "HTML" });
 
 });
 
@@ -589,15 +571,12 @@ bot.onText(/\/biobusi/, (msg) => {
 bot.onText(/\/busiaudio/, (msg) => {
 
     bot.sendMessage(msg.chat.id, "<b>Audio del Busata</b>\nSeleziona una pagina", {
-        reply_markup: {
-            inline_keyboard: [[
+        reply_markup: { inline_keyboard: [[
                 { text: 'Pagina 1', callback_data: '1' },
                 { text: 'Pagina 2', callback_data: '2' },
                 { text: 'Pagina 3', callback_data: '3' },
                 { text: 'Pagina 4', callback_data: '4' }
-            ]]
-        }
-    });
+            ]]}, parse_mode: "HTML" });
 
 });
 
@@ -605,9 +584,7 @@ bot.onText(/\/busiaudio/, (msg) => {
 // Codice di /busifoto
 bot.onText(/\/busifoto/, (msg) => {
 
-    bot.sendMessage(msg.chat.id, "<b>Lista di foto del Busi</b>\nBusecs, Busecs2, Cane procione, Non sono parallele, Oh no, Pelliccia, Tigre, Triggered", {
-        parse_mode: "HTML"
-    });
+    bot.sendMessage(msg.chat.id, "<b>Lista di foto del Busi</b>\nBusecs, Busecs2, Cane procione, Non sono parallele, Oh no, Pelliccia, Tigre, Triggered", { parse_mode: "HTML" });
 
 });
 
@@ -615,9 +592,7 @@ bot.onText(/\/busifoto/, (msg) => {
 // Codice di /trovabusi
 bot.onText(/\/trovabusi/, (msg) => {
 
-    bot.sendMessage(msg.chat.id, "<b>Dove trovare il Busi</b>\n<a href=\"https://www.amazon.it/s?i=stripbooks&rh=p_27%3ARenato+Busata&ref=dp_byline_sr_book_1/\">Amazon</a>\n<a href=\"https://it-it.facebook.com/renato.busata/\">Facebook</a>\n<a href=\"https://www.ibs.it/libri/autori/Renato%20Busata/\">IBS</a>\n<a href=\"https://it.linkedin.com/in/renato-busata-1862856b/\">LinkedIn</a>\n<a href=\"https://www.paginebianche.it/padova/renato-busata.aejihcgfii/\">PagineBianche</a>\n<a href=\"https://didattica.unipd.it/off/docente/6B85B690A4276AB18048CD49115FA3CC/\">Università degli Studi di Padova</a>\n<a href=\"https://it-it.facebook.com/pages/biz/community/Animalismo-a-scuola-169759173228670/\">Animalismo a scuola</a>", {
-        parse_mode: "HTML"
-    });
+    bot.sendMessage(msg.chat.id, "<b>Dove trovare il Busi</b>\n<a href=\"https://www.amazon.it/s?i=stripbooks&rh=p_27%3ARenato+Busata&ref=dp_byline_sr_book_1/\">Amazon</a>\n<a href=\"https://it-it.facebook.com/renato.busata/\">Facebook</a>\n<a href=\"https://www.ibs.it/libri/autori/Renato%20Busata/\">IBS</a>\n<a href=\"https://it.linkedin.com/in/renato-busata-1862856b/\">LinkedIn</a>\n<a href=\"https://www.paginebianche.it/padova/renato-busata.aejihcgfii/\">PagineBianche</a>\n<a href=\"https://didattica.unipd.it/off/docente/6B85B690A4276AB18048CD49115FA3CC/\">Università degli Studi di Padova</a>\n<a href=\"https://it-it.facebook.com/pages/biz/community/Animalismo-a-scuola-169759173228670/\">Animalismo a scuola</a>", { parse_mode: "HTML" });
 
 });
 
@@ -754,7 +729,8 @@ bot.on('callback_query', function onCallbackQuery(callbackQuery) {
                 { text: 'Pagina 3', callback_data: '3' },
                 { text: 'Pagina 4', callback_data: '4' }
             ]]
-        }
+        },
+        parse_mode: "HTML"
     };
 
     // Invio del risultato (e rimozione dei pulsanti per /consegna)
@@ -783,9 +759,7 @@ bot.onText(/\/bustats/, (msg) => {
     var dim = Math.round(stats["size"] / 1024.0);
 
     // Visualizzazione statistiche
-    bot.sendMessage(msg.chat.id, "<b>Statistiche del Busi</b>\n<b>RAM utilizzata: </b>" + Math.round(mem * 100) / 100 + " MB\n<b>Dimensione del codice (<code>busi.js</code>): </b>" + dim + " KB\n", {
-        parse_mode: "HTML"
-    });
+    bot.sendMessage(msg.chat.id, "<b>Statistiche del Busi</b>\n<b>RAM utilizzata: </b>" + Math.round(mem * 100) / 100 + " MB\n<b>Dimensione del codice (<code>busi.js</code>): </b>" + dim + " KB\n", { parse_mode: "HTML" });
 
 });
 
