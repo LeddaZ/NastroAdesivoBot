@@ -10,10 +10,8 @@ let bot;
 const request = require("request");
 const dotenv = require('dotenv').config();
 
-
 // Lettura della token del bot da .env
 const token = process.env.TOKEN;
-
 
 // Dichiarazione del bot
 bot = new Bot(token, { polling: true });
@@ -145,7 +143,6 @@ const t133 = "luce";
 // Lettura della versione del bot da package.json
 const pjson = require('./package.json');
 var ver = pjson.version;
-
 
 /*
 Lettura della data della versione (data in cui package.json è stato
@@ -622,7 +619,7 @@ bot.onText(/\/trovabusi/, (msg) => {
 bot.onText(/\/nota/, (msg) => {
 
     // Numero di note
-    var nota = Math.floor(Math.random() * (8 - 1 + 1) + 1)
+    var nota = Math.floor(Math.random() * (8 - 1) + 1);
 
     // Testo delle note
     if (nota === 1)
@@ -656,48 +653,45 @@ bot.onText(/\/nota/, (msg) => {
 bot.onText(/\/consegna/, (msg) => {
 
     // Numero di tavole
-    var tav = Math.floor(Math.random() * (15 - 1 + 1) + 1)
+    var tav = Math.floor(Math.random() * (15 - 1) + 1);
 
     // Numero di possibili correzioni
-    var esito = Math.floor(Math.random() * (5 - 1 + 1) + 1)
+    var esito = Math.floor(Math.random() * (5 - 1) + 1);
 
     if (esito === 1) {
         const testoEsito = "Allora, questa è la tavola " + tav + "...\nLa tavola non si presenta neanche male... BRUTTO STO QUA! I SEGNI DEVONO ESSERE PIÙ OMOGENEI, POSSIBILE CHE NON L'ABBIATE ANCORA CAPITOOH!? TI METTO SEI E MEZZO RE-GA-LA-TO, CHI È CHE TIENE LA CONTABILITÀ DEI VOTI? SCRIVI BASTA SEIIIH!\nHai mezzi voti?"
         bot.sendMessage(msg.chat.id, testoEsito, {
             reply_markup: {
-                inline_keyboard: [
-                    [{
+                inline_keyboard: [[{
                         text: 'Sì',
                         callback_data: 'si'
-                    },
-                    {
+                    }, {
                         text: 'No',
                         callback_data: 'no'
                     }
-                    ]
-                ]
+                ]]
             }
-        })
+        });
     }
 
     if (esito === 2) {
         const testoEsito = "Allora, questa è la tavola " + tav + "...\nMA NON È POSSIBILE CHE UNA MEDIANA SIA A 17 DA UNA PARTE E A 12 DALL'ALTRA! È TUTTO STORTOOOH! ADESSO VAI AL POSTO E TI BECCHI CINQUEEEH!"
-        bot.sendMessage(msg.chat.id, testoEsito)
+        bot.sendMessage(msg.chat.id, testoEsito);
     }
 
     if (esito === 3) {
         const testoEsito = "Allora, questa è la tavola " + tav + "...\nVE L'HO DETTO MILLE VOLTE, IL CARTIGLIO SI FA DA METÀ FOGLIO, DEVO SEMPRE RIPETERE LE STESSE COSEEEEH! PER STAVOLTA METTIAMO SEI, MA È REGALATOOOH!"
-        bot.sendMessage(msg.chat.id, testoEsito)
+        bot.sendMessage(msg.chat.id, testoEsito);
     }
 
     if (esito === 4) {
         const testoEsito = "Allora, questa è la tavola " + tav + "...\nLa tavola si presenta bene... I segni sono omogenei e non ci sono errori gravi, anche i titoli sono fatti bene... Tutto sommato è una bella tavola, mettiamo sette."
-        bot.sendMessage(msg.chat.id, testoEsito)
+        bot.sendMessage(msg.chat.id, testoEsito);
     }
 
     if (esito === 5) {
         const testoEsito = "Allora, questa è la tavola " + tav + "...\nCOS'È STO SEGNO ORRIBILE?! VAI AL POSTO E SISTEMALO ALTRIMENTI TI BECCHI TRE E TE LO TIENIIIH!"
-        bot.sendMessage(msg.chat.id, testoEsito)
+        bot.sendMessage(msg.chat.id, testoEsito);
     }
 
 });
@@ -721,10 +715,10 @@ bot.on('callback_query', function onCallbackQuery(callbackQuery) {
     }
 
     // Invio del testo del mezzo voto e rimozione dei pulsanti
-    var msgId = msg.message_id
+    var msgId = msg.message_id;
     bot.sendMessage(msg.chat.id, result).then(
         bot.deleteMessage(msg.chat.id, msgId)
-    )
+    );
 
 });
 
@@ -733,12 +727,12 @@ bot.on('callback_query', function onCallbackQuery(callbackQuery) {
 bot.onText(/\/bustats/, (msg) => {
 
     // RAM utilizzata in MB
-    var mem = process.memoryUsage().heapUsed / 1024 / 1024;
+    var mem = process.memoryUsage().heapUsed / Math.pow(1024, 2);
 
     // Dimensione busi.js in KB
     const fs = require("fs");
-    const stats = fs.statSync("busi.js")
-    var dim = Math.round(stats["size"] / 1024.0 * 100) / 100
+    const stats = fs.statSync("busi.js");
+    var dim = Math.round(stats["size"] / 1024.0);
 
     // Visualizzazione statistiche
     bot.sendMessage(msg.chat.id, "<b>Statistiche del Busi</b>\n<b>RAM utilizzata: </b>" + Math.round(mem * 100) / 100 + " MB\n<b>Dimensione del codice (<code>busi.js</code>): </b>" + dim + " KB\n", {
