@@ -153,12 +153,12 @@ const stats = fs.statSync("package.json");
 var mtime = stats.mtime;
 
 // Formato della data (g/m/a)
-var d = { day: 'numeric' };
+var g = { day: 'numeric' };
 var m = { month: 'numeric' };
-var y = { year: 'numeric' };
+var a = { year: 'numeric' };
 
 // Creazione della stringa con la data
-var data = mtime.toLocaleDateString('it-IT', d) + "/" + mtime.toLocaleDateString('it-IT', m) + "/" + mtime.toLocaleDateString('it-IT', y);
+var data = mtime.toLocaleDateString('it-IT', g) + "/" + mtime.toLocaleDateString('it-IT', m) + "/" + mtime.toLocaleDateString('it-IT', a);
 
 
 // Testo di /businfo e /start
