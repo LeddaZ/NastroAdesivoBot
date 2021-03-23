@@ -10,7 +10,7 @@ A [questo](https://github.com/LeddaZ/NastroAdesivoBot/blob/master/extra/link.txt
 # Codice del bot
 È possibile scaricare la versione più recente del codice di **NastroAdesivoBot** cliccando [qui](https://github.com/LeddaZ/NastroAdesivoBot/archive/master.zip)
 
-Per scaricare una versione precedente visitare la sezione [Releases](https://github.com/LeddaZ/NastroAdesivoBot/releases), cercare la versione desiderata e cliccare su `Source code (zip)` sotto ad `Assets`
+Per scaricare una versione specifica visitare la sezione [Releases](https://github.com/LeddaZ/NastroAdesivoBot/releases), cercare la versione desiderata e cliccare su `Source code (zip)` sotto ad `Assets`. È inoltre possibile trovare il codice dell'ultima release del bot a [questo](https://github.com/LeddaZ/NastroAdesivoBot/archive/release.zip) link.
 
 # Avviare il bot
 Per avviare il codice su un proprio bot seguire queste istruzioni:
@@ -34,14 +34,12 @@ Per avviare il codice su un proprio bot seguire queste istruzioni:
 - [Telegram](https://telegram.org/): meglio di WhatsApp
 - [BotFather](https://t.me/BotFather): il bot per creare i bot
 - [Deaddrop](https://t.me/dead_drop_bot): un servizio che fornisce link diretti per qualsiasi file caricato su Telegram
-- [Heroku](https://heroku.com/): la piattaforma utilizzata per il deploy del bot, ossia per farlo restare online su un server senza usare il mio computer
 - [Visual Studio Code](https://code.visualstudio.com/): l'editor di codice che uso/ho usato per scrivere il bot
 - [Notepad++](https://notepad-plus-plus.org/): quello che usavo prima di VS Code
 - [GitHub](https://github.com/): questo sito per caricare il codice sorgente del bot
 - [release-it](https://github.com/release-it/release-it): modulo npm per generare automaticamente le [pubblicazioni](https://github.com/LeddaZ/NastroAdesivoBot/releases) su GitHub
 - [auto-changelog](https://github.com/CookPete/auto-changelog): genera il changelog delle pubblicazioni leggendo tutti i commit tra una versione e l'altra
 - [Stack Overflow](https://stackoverflow.com/) e tutti quelli che fanno domande e rispondono: senza "prendere in presto" codice da loro il bot non sarebbe a questo punto
-- [heroku-node-telegram-bot](https://github.com/odditive/heroku-node-telegram-bot): grazie a questo esempio ho finalmente capito come hostare il bot su Heroku
 
 **Nel 2019 il Busi ha cambiato scuola, quindi è improbabile che vengano aggiunti nuovi trigger/audio/foto; comunque il bot rimarrà online**
 
