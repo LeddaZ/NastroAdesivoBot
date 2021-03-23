@@ -588,8 +588,15 @@ bot.onText(/\/biobusi/, (msg) => {
 // Codice di /busiaudio
 bot.onText(/\/busiaudio/, (msg) => {
 
-    bot.sendMessage(msg.chat.id, "<b>Lista di audio del Busi</b>\nAndate via, AutoCAD, Bassi, Basta battere, Benvegnù, Brutto sto qua, Busata è un sapiente, Busata perde tutto, Busi bestemmia, Busi è perfido, Busi è un po’ tardo, Busi va all’inferno, Busi16, BusiAcuto, Busirena, Cacciato via, Calma assoluta, Carta stracciata, Che schifo, Ciuccia il tè, Colpa di Guerra, Compassione, Cosmo, Denti, Devo finire la tavola, Due, Facebook, Falasco, Ferragosto, Foglia, Gomma, Governo, Guerra, Guerra a 90, Hai capito, Il filo, Il taglio di Guerra, Insolente, Koreani mangiacani, Ledda studia chimica, Macchine, Marchesin, Marchesin vai via, Merja bocciato, Merja fa andare Busi all’inferno, Merja ha le mani giù, Metto 2 subito, Mi avete stufato, Mister Fantastico, Moro, Nirvana, Nirvana lento, Norvegia, Orari, Orco, Orco can, Orco2, Palazzo, Porta la cartellina, Povero Guerra, Previo terrorismo, Rivoluzionario, Sfoglia il quaderno, Si diventa deficienti, Soddisfa il Busi, Stare al mondo, Telecamera, Terrapiattisti, Ti caccio via, Ti tieni il 2, Tigri stecchite, Titoli, Vedovato, Vedovato è un poeta, Vedovato traffica, Ventiquattrore, Via, Violenza privata, Viva la rivoluzione", {
-        parse_mode: "HTML"
+    bot.sendMessage(msg.chat.id, "<b>Audio del Busata</b>\nSeleziona una pagina", {
+        reply_markup: {
+            inline_keyboard: [[
+                { text: 'Pagina 1', callback_data: '1' },
+                { text: 'Pagina 2', callback_data: '2' },
+                { text: 'Pagina 3', callback_data: '3' },
+                { text: 'Pagina 4', callback_data: '4' }
+            ]]
+        }
     });
 
 });
@@ -648,7 +655,8 @@ bot.onText(/\/nota/, (msg) => {
 
 });
 
-
+// testoEsito dev'essere pubblica se verrà usata al di fuori da questo blocco di codice
+var testoEsito = "";
 // Codice di /consegna
 bot.onText(/\/consegna/, (msg) => {
 
@@ -659,7 +667,7 @@ bot.onText(/\/consegna/, (msg) => {
     var esito = Math.floor(Math.random() * (5 - 1) + 1);
 
     if (esito === 1) {
-        const testoEsito = "Allora, questa è la tavola " + tav + "...\nLa tavola non si presenta neanche male... BRUTTO STO QUA! I SEGNI DEVONO ESSERE PIÙ OMOGENEI, POSSIBILE CHE NON L'ABBIATE ANCORA CAPITOOH!? TI METTO SEI E MEZZO RE-GA-LA-TO, CHI È CHE TIENE LA CONTABILITÀ DEI VOTI? SCRIVI BASTA SEIIIH!\nHai mezzi voti?"
+        testoEsito = "Allora, questa è la tavola " + tav + "...\nLa tavola non si presenta neanche male... BRUTTO STO QUA! I SEGNI DEVONO ESSERE PIÙ OMOGENEI, POSSIBILE CHE NON L'ABBIATE ANCORA CAPITOOH!? TI METTO SEI E MEZZO RE-GA-LA-TO, CHI È CHE TIENE LA CONTABILITÀ DEI VOTI? SCRIVI BASTA SEIIIH!\nHai mezzi voti?"
         bot.sendMessage(msg.chat.id, testoEsito, {
             reply_markup: {
                 inline_keyboard: [[{
@@ -675,35 +683,37 @@ bot.onText(/\/consegna/, (msg) => {
     }
 
     if (esito === 2) {
-        const testoEsito = "Allora, questa è la tavola " + tav + "...\nMA NON È POSSIBILE CHE UNA MEDIANA SIA A 17 DA UNA PARTE E A 12 DALL'ALTRA! È TUTTO STORTOOOH! ADESSO VAI AL POSTO E TI BECCHI CINQUEEEH!"
+        testoEsito = "Allora, questa è la tavola " + tav + "...\nMA NON È POSSIBILE CHE UNA MEDIANA SIA A 17 DA UNA PARTE E A 12 DALL'ALTRA! È TUTTO STORTOOOH! ADESSO VAI AL POSTO E TI BECCHI CINQUEEEH!"
         bot.sendMessage(msg.chat.id, testoEsito);
     }
 
     if (esito === 3) {
-        const testoEsito = "Allora, questa è la tavola " + tav + "...\nVE L'HO DETTO MILLE VOLTE, IL CARTIGLIO SI FA DA METÀ FOGLIO, DEVO SEMPRE RIPETERE LE STESSE COSEEEEH! PER STAVOLTA METTIAMO SEI, MA È REGALATOOOH!"
+        testoEsito = "Allora, questa è la tavola " + tav + "...\nVE L'HO DETTO MILLE VOLTE, IL CARTIGLIO SI FA DA METÀ FOGLIO, DEVO SEMPRE RIPETERE LE STESSE COSEEEEH! PER STAVOLTA METTIAMO SEI, MA È REGALATOOOH!"
         bot.sendMessage(msg.chat.id, testoEsito);
     }
 
     if (esito === 4) {
-        const testoEsito = "Allora, questa è la tavola " + tav + "...\nLa tavola si presenta bene... I segni sono omogenei e non ci sono errori gravi, anche i titoli sono fatti bene... Tutto sommato è una bella tavola, mettiamo sette."
+        testoEsito = "Allora, questa è la tavola " + tav + "...\nLa tavola si presenta bene... I segni sono omogenei e non ci sono errori gravi, anche i titoli sono fatti bene... Tutto sommato è una bella tavola, mettiamo sette."
         bot.sendMessage(msg.chat.id, testoEsito);
     }
 
     if (esito === 5) {
-        const testoEsito = "Allora, questa è la tavola " + tav + "...\nCOS'È STO SEGNO ORRIBILE?! VAI AL POSTO E SISTEMALO ALTRIMENTI TI BECCHI TRE E TE LO TIENIIIH!"
+        testoEsito = "Allora, questa è la tavola " + tav + "...\nCOS'È STO SEGNO ORRIBILE?! VAI AL POSTO E SISTEMALO ALTRIMENTI TI BECCHI TRE E TE LO TIENIIIH!"
         bot.sendMessage(msg.chat.id, testoEsito);
     }
 
 });
 
 
-// Risposta al mezzo voto su /consegna
+// Risposte ai pulsanti di /consegna e /busiaudio
 bot.on('callback_query', function onCallbackQuery(callbackQuery) {
 
     var action = callbackQuery.data;
     var msg = callbackQuery.message;
     let result;
 
+
+    // /consegna
     // Con mezzo voto
     if (action === 'si') {
         result = 'VAI A PRENDERE LA TAVOLA, NON MI FIDO DI VOI!';
@@ -714,11 +724,53 @@ bot.on('callback_query', function onCallbackQuery(callbackQuery) {
         result = "E ALLORA TI TIENI SEI E VAI AL POSTO!";
     }
 
-    // Invio del testo del mezzo voto e rimozione dei pulsanti
+
+    // /busiaudio (20 audio per pagina)
+    // Pagina 1
+    if (action === '1') {
+        result = "<b>Audio del Busata - Pagina 1</b>\nAndate via, AutoCAD, Bassi, Basta battere, Benvegnù, Brutto sto qua, Busata è un sapiente, Busata perde tutto, Busi bestemmia, Busi è perfido, Busi è un po’ tardo, Busi va all’inferno, Busi16, BusiAcuto, Busirena, Cacciato via, Calma assoluta, Carta stracciata, Che schifo, Ciuccia il tè";
+    }
+
+    // Pagina 2
+    if (action === '2') {
+        result = "<b>Audio del Busata - Pagina 2</b>\nColpa di Guerra, Compassione, Cosmo, Denti, Devo finire la tavola, Due, Facebook, Falasco, Ferragosto, Foglia, Gomma, Governo, Guerra, Guerra a 90, Hai capito, Il filo, Il taglio di Guerra, Insolente, Koreani mangiacani, Ledda studia chimica";
+    }
+
+    // Pagina 3
+    if (action === '3') {
+        result = "Macchine, Marchesin, Marchesin vai via, Merja bocciato, Merja fa andare Busi all’inferno, Merja ha le mani giù, Metto 2 subito, Mi avete stufato, Mister Fantastico, Moro, Nirvana, Nirvana lento, Norvegia, Orari, Orco, Orco can, Orco2, Palazzo, Porta la cartellina, Povero Guerra";
+    }
+
+    // Pagina 4
+    if (action === '4') {
+        result = "Previo terrorismo, Rivoluzionario, Sfoglia il quaderno, Si diventa deficienti, Soddisfa il Busi, Stare al mondo, Telecamera, Terrapiattisti, Ti caccio via, Ti tieni il 2, Tigri stecchite, Titoli, Vedovato, Vedovato è un poeta, Vedovato traffica, Ventiquattrore, Via, Violenza privata, Viva la rivoluzione";
+    }
+
+    /* Ri-dichiarazione dei pulsanti per /busiaudio, così possono essere
+       mantenuti dopo l'interazione */
+    var pagine = {
+        chat_id: msg.chat.id,
+        message_id: msg.message_id,
+        reply_markup: {
+            inline_keyboard: [[
+                { text: 'Pagina 1', callback_data: '1' },
+                { text: 'Pagina 2', callback_data: '2' },
+                { text: 'Pagina 3', callback_data: '3' },
+                { text: 'Pagina 4', callback_data: '4' }
+            ]]
+        }
+    };
+
+    // Invio del risultato (e rimozione dei pulsanti per /consegna)
     var msgId = msg.message_id;
-    bot.sendMessage(msg.chat.id, result).then(
-        bot.deleteMessage(msg.chat.id, msgId)
-    );
+    if (action === 'si' || action === 'no') {
+        bot.editMessageText(testoEsito, { chat_id: msg.chat.id, message_id: msg.message_id }).then(
+            bot.sendMessage(msg.chat.id, result)
+        );
+    } else {
+        bot.editMessageText(result, pagine);
+    }
+    
 
 });
 
