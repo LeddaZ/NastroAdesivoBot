@@ -2,7 +2,7 @@
   "name": "nastroadesivobot",
   "version": "2.4.3",
   "description": "Il bot del Busata",
-  "main": "index.js",
+  "main": "busi.js",
   "engines": {
     "node": "14.x"
   },
@@ -35,7 +35,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "start": "node busi.js"
   },
   "author": "@LeddaZ on Telegram",
   "license": "ISC",

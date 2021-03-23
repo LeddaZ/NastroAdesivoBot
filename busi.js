@@ -15,17 +15,8 @@ const dotenv = require('dotenv').config();
 const token = process.env.TOKEN;
 
 
-// Impostazione webhook per heroku
-if (process.env.NODE_ENV === 'production') {
-    bot = new Bot(token);
-    bot.setWebHook(process.env.HEROKU_URL + bot.token);
-}
-else {
-    bot = new Bot(token, { polling: true });
-}
-
-
 // Dichiarazione del bot
+bot = new Bot(token, { polling: true });
 module.exports = bot;
 
 
