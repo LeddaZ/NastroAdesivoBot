@@ -1,5 +1,12 @@
 # Note di rilascio
 
+## Versione 2.5.0
+- Il codice è stato notevolmente migliorato, riorganizzato e riformattato
+- Il bot non è più hostato su Heroku (temporaneamente)
+- Sono stati riaggiunti i pulsanti per cambiare pagina su `/busiaudio`
+- Il messaggio originale di `/consegna` non viene eliminato; ora vengono solo rimossi i pulsanti del mezzo voto
+- È stato riaggiunto il tempo di attività in `/bustats`
+
 ## Versione 2.4.3
 - Il bot ora utilizza Node 14 LTS invece del 12
 
