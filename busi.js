@@ -3,7 +3,6 @@ Il Busata by @LeddaZ
 Scritto in Node.js con https://github.com/yagop/node-telegram-bot-api
 */
 
-
 // Moduli npm richiesti
 const Bot = require("node-telegram-bot-api");
 let bot;
@@ -16,7 +15,6 @@ const token = process.env.TOKEN;
 // Dichiarazione del bot
 bot = new Bot(token, { polling: true });
 module.exports = bot;
-
 
 // Trigger
 const t1 = "loddo";
@@ -139,7 +137,6 @@ const t131 = "quanto manca";
 const t132 = "calci";
 const t133 = "luce";
 
-
 // Lettura della versione del bot da package.json
 const pjson = require('./package.json');
 var ver = pjson.version;
@@ -160,10 +157,8 @@ var a = { year: 'numeric' };
 // Creazione della stringa con la data
 var data = mtime.toLocaleDateString('it-IT', g) + "/" + mtime.toLocaleDateString('it-IT', m) + "/" + mtime.toLocaleDateString('it-IT', a);
 
-
 // Testo di /businfo e /start
 var start = "<b>NastroAdesivoBot</b>\nVersione <code>" + ver + "</code> del " + data + "\nDigita /busitrigger per la lista di trigger e comandi\n<a href=\"https://github.com/LeddaZ/NastroAdesivoBot/\">Codice sorgente</a> - <a href=\"https://github.com/LeddaZ/NastroAdesivoBot/blob/master/extra/changelog.md\">Note di rilascio</a>\nIspirato al mitico <b>Renato Busata</b> e creato da @LeddaZ"
-
 
 // Codice del bot
 bot.on("message", (msg) => {
@@ -536,7 +531,6 @@ bot.on("message", (msg) => {
 
 });
 
-
 // Codice di /start e /businfo
 bot.onText(/\/start/, (msg) => {
 
@@ -550,7 +544,6 @@ bot.onText(/\/businfo/, (msg) => {
 
 });
 
-
 // Codice di /busitrigger
 bot.onText(/\/busitrigger/, (msg) => {
 
@@ -558,14 +551,12 @@ bot.onText(/\/busitrigger/, (msg) => {
 
 });
 
-
 // Codice di /biobusi
 bot.onText(/\/biobusi/, (msg) => {
 
     bot.sendMessage(msg.chat.id, "<b>Renato Busata</b> si laurea in architettura presso l'Istituto Universitario di Architettura di Venezia nel 1983. Dal 1989 è docente di disegno presso istituti e licei padovani. Tra le varie pubblicazioni si segnalano 'Testimonianze storiche e artistiche', edito dal Comune di Rubano; 'Piccolo manuale per affrontare un progetto di architettura' di Gangemi Editore, con l'introduzione di Franco Purini e Luigi Monetti; 'Architetture tra Roma e Milano nel secondo dopoguerra', Ed. Libreria Progetto. Nel 2006 è dottore di ricerca in Composizione architettonica presso l'Università IUAV di Venezia.", { parse_mode: "HTML" });
 
 });
-
 
 // Codice di /busiaudio
 bot.onText(/\/busiaudio/, (msg) => {
@@ -580,7 +571,6 @@ bot.onText(/\/busiaudio/, (msg) => {
 
 });
 
-
 // Codice di /busifoto
 bot.onText(/\/busifoto/, (msg) => {
 
@@ -588,14 +578,12 @@ bot.onText(/\/busifoto/, (msg) => {
 
 });
 
-
 // Codice di /trovabusi
 bot.onText(/\/trovabusi/, (msg) => {
 
     bot.sendMessage(msg.chat.id, "<b>Dove trovare il Busi</b>\n<a href=\"https://www.amazon.it/s?i=stripbooks&rh=p_27%3ARenato+Busata&ref=dp_byline_sr_book_1/\">Amazon</a>\n<a href=\"https://it-it.facebook.com/renato.busata/\">Facebook</a>\n<a href=\"https://www.ibs.it/libri/autori/Renato%20Busata/\">IBS</a>\n<a href=\"https://it.linkedin.com/in/renato-busata-1862856b/\">LinkedIn</a>\n<a href=\"https://www.paginebianche.it/padova/renato-busata.aejihcgfii/\">PagineBianche</a>\n<a href=\"https://didattica.unipd.it/off/docente/6B85B690A4276AB18048CD49115FA3CC/\">Università degli Studi di Padova</a>\n<a href=\"https://it-it.facebook.com/pages/biz/community/Animalismo-a-scuola-169759173228670/\">Animalismo a scuola</a>", { parse_mode: "HTML" });
 
 });
-
 
 // Codice di /nota
 bot.onText(/\/nota/, (msg) => {
@@ -675,14 +663,12 @@ bot.onText(/\/consegna/, (msg) => {
 
 });
 
-
 // Risposte ai pulsanti di /consegna e /busiaudio
 bot.on('callback_query', function onCallbackQuery(callbackQuery) {
 
     var action = callbackQuery.data;
     var msg = callbackQuery.message;
     let testoFinale;
-
 
     // /consegna
     // Con mezzo voto
@@ -694,7 +680,6 @@ bot.on('callback_query', function onCallbackQuery(callbackQuery) {
     if (action === 'no') {
         testoFinale = "E ALLORA TI TIENI SEI E VAI AL POSTO!";
     }
-
 
     // /busiaudio (20 audio per pagina)
     // Pagina 1
@@ -741,10 +726,8 @@ bot.on('callback_query', function onCallbackQuery(callbackQuery) {
     } else {
         bot.editMessageText(testoFinale, opzioni);
     }
-    
 
 });
-
 
 // Codice di /bustats
 bot.onText(/\/bustats/, (msg) => {
