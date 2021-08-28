@@ -1,8 +1,8 @@
-# Note di rilascio
+# Changelog
 
 ## Versione 2.5.0
 - Il codice è stato notevolmente migliorato, riorganizzato e riformattato
-- Il bot non è più hostato su Heroku (temporaneamente)
+- Il bot non è più hostato su Heroku (temporaneamente, forse)
 - Sono stati riaggiunti i pulsanti per cambiare pagina su `/busiaudio`
 - Il messaggio originale di `/consegna` non viene eliminato; ora vengono solo rimossi i pulsanti del mezzo voto
 - È stato riaggiunto il tempo di attività in `/bustats`
@@ -31,7 +31,7 @@
 - Aggiorato `node-fetch` per risolvere una falla di sicurezza
 
 ## Versione 2.3.6
-- È stato corretto il link delle note di rilascio in `/businfo`
+- È stato corretto il link del changelog in `/businfo`
 
 ## Versione 2.3.5
 - È stato modificato il trigger `Animalismo a scuola`
