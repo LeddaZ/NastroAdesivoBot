@@ -4,9 +4,9 @@ Scritto in Node.js con https://github.com/yagop/node-telegram-bot-api
 */
 
 // Moduli npm richiesti
-import Bot from "node-telegram-bot-api";
+const Bot = require("node-telegram-bot-api");
 let bot;
-import request from "request";
+const request = require("request");
 const dotenv = require('dotenv').config();
 
 // Lettura della token del bot da .env
@@ -14,7 +14,7 @@ const token = process.env.TOKEN;
 
 // Dichiarazione del bot
 bot = new Bot(token, { polling: true });
-export default bot;
+module.exports = bot;
 
 // Trigger
 const t1 = "loddo";
@@ -138,15 +138,15 @@ const t132 = "calci";
 const t133 = "luce";
 
 // Lettura della versione del bot da package.json
-import { version } from './package.json';
-var ver = version;
+const pjson = require('./package.json');
+var ver = pjson.version;
 
 /*
 Lettura della data della versione (data in cui package.json è stato
 modificato per l'ultima volta)
 */
-import { statSync } from 'fs';
-const stats = statSync("package.json");
+const fs = require('fs');
+const stats = fs.statSync("package.json");
 var mtime = stats.mtime;
 
 // Formato della data (g/m/a)
@@ -749,7 +749,7 @@ bot.onText(/\/bustats/, (msg) => {
     }
 
     // Dimensione busi.js in KB
-    const stats = statSync("busi.js");
+    const stats = fs.statSync("busi.js");
     var dim = Math.round(stats.size / 1024 * 100) / 100;
 
     // Visualizzazione statistiche
