@@ -724,7 +724,7 @@ bot.onText(/\/bustats/, (msg) => {
     var h = Math.floor(uptime / (60*60));
     var m = Math.floor(uptime % (60*60) / 60);
     var s = Math.floor(uptime % 60);
-    // Aggiunge lo zero davanti a m e s se necessario
+    // Aggiunge lo zero davanti a min e sec se necessario
     if (m < 10) {
         m = "0" + m;
     }
