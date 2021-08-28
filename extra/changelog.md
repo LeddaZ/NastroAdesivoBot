@@ -1,5 +1,10 @@
 # Changelog
 
+## Versione 2.5.1
+- È stata rimossa la data della versione
+- Sono state aggiornate le dipendenze
+- Diversi miglioramenti nel codice
+
 ## Versione 2.5.0
 - Il codice è stato notevolmente migliorato, riorganizzato e riformattato
 - Il bot non è più hostato su Heroku (temporaneamente, forse)
