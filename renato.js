@@ -732,12 +732,12 @@ bot.onText(/\/bustats/, (msg) => {
         s = "0" + s;
     }
 
-    // Dimensione busi.js in KB
-    const stats = fs.statSync("busi.js");
+    // Dimensione renato.js in KB
+    const stats = fs.statSync("renato.js");
     var dim = Math.round(stats.size / 1024 * 100) / 100;
 
     // Visualizzazione statistiche
-    bot.sendMessage(msg.chat.id, "<b>Le BusiStatistiche</b>\n<b>RAM utilizzata: </b>" + mem + " MB\n<b>Dimensione del codice (<code>busi.js</code>): </b>" + dim + " KB\n<b>Tempo di attività (h:m:s): </b>" + h + ":" + m + ":" + s, { parse_mode: "HTML" });
+    bot.sendMessage(msg.chat.id, "<b>Le BusiStatistiche</b>\n<b>RAM utilizzata: </b>" + mem + " MB\n<b>Dimensione del codice (<code>renato.js</code>): </b>" + dim + " KB\n<b>Tempo di attività (h:m:s): </b>" + h + ":" + m + ":" + s, { parse_mode: "HTML" });
 
 });
 
