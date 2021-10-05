@@ -28,7 +28,7 @@
     "github": {
       "release": true,
       "releaseName": "Versione ${version}",
-      "changelog": "npx auto-changelog --stdout --commit-limit false --unreleased --template https://raw.githubusercontent.com/LeddaZ/NastroAdesivoBot/master/extra/changelog.hbs"
+      "changelog": "npx auto-changelog --stdout -l false -u -t https://raw.githubusercontent.com/LeddaZ/NastroAdesivoBot/master/extra/changelog.hbs"
     },
     "npm": {
       "publish": false
