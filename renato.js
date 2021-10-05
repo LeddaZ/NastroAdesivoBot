@@ -34,8 +34,7 @@ var trigger = ["loddo", "buongiorno", "non ho lo scotch", "popopopo", "merja", "
                "sfoglia il quaderno", "stare al mondo", "basta battere", "si diventa deficienti", "metto 2 subito",
                "porta la cartellina", "liliana segre", "busata perde tutto", "ciuccia il t", "il filo", "previo terrorismo",
                "busi è perfido", "calma assoluta", "rivoluzionario", "120 tavole", "cattivo", "busasci", "paperette", "ferragosto",
-               "telecamera", "ventiquattrore", "via", "voti", "nota", "titoli", "prospettiva", "foglia", "collina", "quanto manca",
-               "calci", "luce"];
+               "telecamera", "tigri stecchite", "ventiquattrore", "via", "voti", "nota", "titoli", "prospettiva", "foglia", "collina", "quanto manca", "calci", "luce"];
 
 // Lettura della versione del bot da package.json
 const pjson = require('./package.json');
