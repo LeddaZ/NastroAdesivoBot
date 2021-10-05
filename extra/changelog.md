@@ -1,5 +1,8 @@
 # Changelog
 
+## Versione 2.5.4
+- Aggiornato `/businfo`
+
 ## Versione 2.5.3
 - Aggiornate alcune dipendenze per risolvere falle di sicurezza
 
