@@ -1,4 +1,4 @@
-# NastroAdesivoBot ![Versione](https://img.shields.io/github/v/release/LeddaZ/NastroAdesivoBot?color=%23005000&label=Versione)
+# NastroAdesivoBot ![Versione](https://img.shields.io/github/v/release/LeddaZ/NastroAdesivoBot?color=red&label=Ultima%20versione)
 Il bot Telegram del Busi scritto in Node.js.
 
 # Changelog
