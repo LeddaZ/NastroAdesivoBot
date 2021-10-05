@@ -1,5 +1,10 @@
 # Changelog
 
+## Versione 2.5.2
+- È stata riaggiunta la data della versione
+- Sono state aggiunte le specifiche del server a `/bustats`
+- Altri miglioramenti al codice
+
 ## Versione 2.5.1
 - È stata rimossa la data della versione
 - Sono state aggiornate le dipendenze
