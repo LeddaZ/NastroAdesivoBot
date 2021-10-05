@@ -1,5 +1,10 @@
 # Changelog
 
+## Versione 3.0.0
+- I trigger sono stati inseriti in un array (prima c'era una variabile per ogni trigger)
+- `/busitrigger` è stato migliorato
+- `BusiCasa` è stato rimosso
+
 ## Versione 2.5.4
 - Aggiornato `/businfo`
 
