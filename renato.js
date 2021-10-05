@@ -8,6 +8,8 @@ const Bot = require("node-telegram-bot-api");
 let bot;
 const request = require("request");
 const dotenv = require('dotenv').config();
+const { exec } = require("child_process");
+const fs = require('fs');
 
 // Lettura della token del bot da .env
 const token = process.env.TOKEN;
@@ -145,7 +147,6 @@ var ver = pjson.version;
 Lettura della data della versione (data in cui package.json è stato
 modificato per l'ultima volta)
 */
-const fs = require('fs');
 const stats = fs.statSync("package.json");
 var mtime = stats.mtime;
 
@@ -159,6 +160,25 @@ var data = mtime.toLocaleDateString('it-IT', g) + "/" + mtime.toLocaleDateString
 
 // Testo di /businfo e /start
 var start = "<b>NastroAdesivoBot</b>\nVersione <code>" + ver + "</code> del " + data + "\nDigita /busitrigger per la lista di trigger e comandi\n<a href=\"https://github.com/LeddaZ/NastroAdesivoBot/\">Codice sorgente</a> - <a href=\"https://github.com/LeddaZ/NastroAdesivoBot/blob/master/extra/changelog.md\">Note di rilascio</a>\nIspirato al mitico <b>Renato Busata</b> e creato da @LeddaZ"
+
+// neofetch --stdout
+let nfout;
+function nf() {
+    exec("neofetch --stdout", (error, stdout, stderr) => {
+        if (error) {
+            console.log(`error: ${error.message}`);
+            return;
+        }
+        if (stderr) {
+            console.log(`stderr: ${stderr}`);
+            return;
+        }
+        nfout = stdout.substring(32);
+    });
+}
+/* Eseguo all'avvio del bot altrimenti la prima volta che si invia
+ * /bustats viene fuori undefined */
+nf();
 
 // Codice del bot
 bot.on("message", (msg) => {
@@ -752,8 +772,11 @@ bot.onText(/\/bustats/, (msg) => {
     const stats = fs.statSync("renato.js");
     var dim = Math.round(stats.size / 1024 * 100) / 100;
 
+    // neofetch
+    nf();
+
     // Visualizzazione statistiche
-    bot.sendMessage(msg.chat.id, "<b>Le BusiStatistiche</b>\n<b>RAM utilizzata: </b>" + mem + " MB\n<b>Dimensione del codice (<code>renato.js</code>): </b>" + dim + " KB\n<b>Tempo di attività (h:m:s): </b>" + h + ":" + m + ":" + s, { parse_mode: "HTML" });
+    bot.sendMessage(msg.chat.id, "<b>Le BusiStatistiche</b>\n<b>RAM utilizzata: </b>" + mem + " MB\n<b>Dimensione del codice (<code>renato.js</code>): </b>" + dim + " KB\n<b>Tempo di attività (h:m:s): </b>" + h + ":" + m + ":" + s + "\n\n<b>Specifiche del server</b>\n" + nfout, { parse_mode: "HTML" });
 
 });
 
