@@ -1,6 +1,6 @@
 {
   "name": "nastroadesivobot",
-  "version": "2.5.2",
+  "version": "2.5.3",
   "description": "Il bot del Busata",
   "main": "renato.js",
   "engines": {
