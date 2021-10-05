@@ -164,7 +164,7 @@ var start = "<b>NastroAdesivoBot</b>\nVersione <code>" + ver + "</code> del " + 
 // neofetch --stdout
 let nfout;
 function nf() {
-    exec("neofetch --stdout", (error, stdout, stderr) => {
+    exec("neofetch --stdout --cpu_temp C --disable title underline", (error, stdout, stderr) => {
         if (error) {
             console.log(`error: ${error.message}`);
             return;
@@ -173,7 +173,7 @@ function nf() {
             console.log(`stderr: ${stderr}`);
             return;
         }
-        nfout = stdout.substring(32);
+        nfout = stdout;
     });
 }
 /* Eseguo all'avvio del bot altrimenti la prima volta che si invia
