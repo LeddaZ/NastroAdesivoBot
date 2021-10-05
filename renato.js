@@ -776,7 +776,7 @@ bot.onText(/\/bustats/, (msg) => {
     nf();
 
     // Visualizzazione statistiche
-    bot.sendMessage(msg.chat.id, "<b>Le BusiStatistiche</b>\n<b>RAM utilizzata: </b>" + mem + " MB\n<b>Dimensione del codice (<code>renato.js</code>): </b>" + dim + " KB\n<b>Tempo di attività (h:m:s): </b>" + h + ":" + m + ":" + s + "\n\n<b>Specifiche del server</b>\n" + nfout, { parse_mode: "HTML" });
+    bot.sendMessage(msg.chat.id, "<b>Le BusiStatistiche</b>\nRAM utilizzata: " + mem + " MB\nDimensione del codice (<code>renato.js</code>): " + dim + " KB\nTempo di attività (h:m:s): " + h + ":" + m + ":" + s + "\n\n<b>Il server che tiene in piedi tutto</b>\n" + nfout, { parse_mode: "HTML" });
 
 });
 
