@@ -51,7 +51,7 @@ var mtime = stats.mtime;
 var data = mtime.toLocaleDateString('it-IT');
 
 // Testo di /businfo e /start
-var start = "<b>NastroAdesivoBot</b>\nVersione <code>" + ver + "</code> del " + data + "\nDigita /busitrigger per la lista di trigger e comandi\n<a href=\"https://github.com/LeddaZ/NastroAdesivoBot/\">Codice sorgente</a> - <a href=\"https://github.com/LeddaZ/NastroAdesivoBot/blob/master/extra/changelog.md\">Changelog</a>\nIspirato al mitico <b>Renato Busata</b> e creato da @LeddaZ"
+var start = "<b>NastroAdesivoBot</b>\nVersione <code>" + ver + "</code> del " + data + "\nDigita /busitrigger per la lista di trigger e comandi\n<a href=\"https://github.com/LeddaZ/NastroAdesivoBot/\">Codice sorgente</a> - <a href=\"https://github.com/LeddaZ/NastroAdesivoBot/blob/master/extra/changelog.md\">Changelog</a>\nIspirato al mitico <b>Renato Busata</b> e creato da @LeddaZ";
 
 // Funzione per eseguire comandi nella shell
 function os_func() {
@@ -64,8 +64,8 @@ function os_func() {
 
             callback(stdout);
         });
-    }
-}
+    };
+};
 
 // Codice del bot
 bot.on("message", (msg) => {
@@ -520,8 +520,9 @@ bot.onText(/\/nota/, (msg) => {
 
 });
 
-// testoEsito dev'essere pubblica se verrà usata al di fuori da questo blocco di codice
+// testoEsito dev'essere pubblica perché usata al di fuori da questo blocco di codice
 var testoEsito = "";
+
 // Codice di /consegna
 bot.onText(/\/consegna/, (msg) => {
 
