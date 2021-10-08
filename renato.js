@@ -6,7 +6,7 @@ Scritto in Node.js con https://github.com/yagop/node-telegram-bot-api
 // Moduli npm richiesti
 const Bot = require("node-telegram-bot-api");
 let bot;
-const { exec } = require("child_process");
+const exec = require('child_process').exec;
 const fs = require('fs');
 require("request");
 require('dotenv').config();
@@ -53,24 +53,19 @@ var data = mtime.toLocaleDateString('it-IT');
 // Testo di /businfo e /start
 var start = "<b>NastroAdesivoBot</b>\nVersione <code>" + ver + "</code> del " + data + "\nDigita /busitrigger per la lista di trigger e comandi\n<a href=\"https://github.com/LeddaZ/NastroAdesivoBot/\">Codice sorgente</a> - <a href=\"https://github.com/LeddaZ/NastroAdesivoBot/blob/master/extra/changelog.md\">Changelog</a>\nIspirato al mitico <b>Renato Busata</b> e creato da @LeddaZ"
 
-// neofetch --stdout
-let nfout;
-function nf() {
-    exec("neofetch --stdout --cpu_temp C --disable title underline", (error, stdout, stderr) => {
-        if (error) {
-            console.log(`error: ${error.message}`);
-            return;
-        }
-        if (stderr) {
-            console.log(`stderr: ${stderr}`);
-            return;
-        }
-        nfout = stdout;
-    });
+// Funzione per eseguire comandi nella shell
+function os_func() {
+    this.execCmd = function(cmd, callback) {
+        exec(cmd, (error, stdout) => {
+            if (error) {
+                console.error(`exec error: ${error}`);
+                return;
+            }
+
+            callback(stdout);
+        });
+    }
 }
-/* Eseguo all'avvio del bot altrimenti la prima volta che si invia
- * /bustats viene fuori undefined */
-nf();
 
 // Codice del bot
 bot.on("message", (msg) => {
@@ -659,11 +654,11 @@ bot.onText(/\/bustats/, (msg) => {
     const stats = fs.statSync("renato.js");
     var dim = Math.round(stats.size / 1024 * 100) / 100;
 
-    // neofetch
-    nf();
-
-    // Visualizzazione statistiche
-    bot.sendMessage(msg.chat.id, "<b>Le BusiStatistiche</b>\nRAM utilizzata: " + mem + " MB\nDimensione del codice (<code>renato.js</code>): " + dim + " KB\nTempo di attività (h:m:s): " + h + ":" + m + ":" + s + "\n\n<b>Il server che tiene in piedi tutto</b>\n" + nfout, { parse_mode: "HTML" });
+    // Esegue neofetch e attende l'output prima di inviare il messaggio
+    var bustats = new os_func();
+    bustats.execCmd('neofetch --stdout --cpu_temp C --disable title underline', function (returnvalue) {
+        bot.sendMessage(msg.chat.id, "<b>Le BusiStatistiche</b>\nRAM utilizzata: " + mem + " MB\nDimensione del codice (<code>renato.js</code>): " + dim + " KB\nTempo di attività (h:m:s): " + h + ":" + m + ":" + s + "\n\n<b>Il server che tiene in piedi tutto</b>\n" + returnvalue, { parse_mode: "HTML" });
+    });
 
 });
 
