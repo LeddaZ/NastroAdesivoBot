@@ -6,10 +6,10 @@ Scritto in Node.js con https://github.com/yagop/node-telegram-bot-api
 // Moduli npm richiesti
 const Bot = require("node-telegram-bot-api");
 let bot;
-const request = require("request");
-const dotenv = require('dotenv').config();
 const { exec } = require("child_process");
 const fs = require('fs');
+require("request");
+require('dotenv').config();
 
 // Lettura della token del bot da .env
 const token = process.env.TOKEN;
