@@ -1,5 +1,10 @@
 # Changelog
 
+## Versione 3.1.0
+- Il codice che esegue `neofetch` per visualizzare le specifiche del server in `/bustats` è stato completamente rifatto, inoltre ora l'uptime si aggiorna correttamente
+- Il codice che restituisce la data della versione è stato semplificato
+- Pulizia generale del codice
+
 ## Versione 3.0.0
 - I trigger sono stati inseriti in un array (prima c'era una variabile per ogni trigger)
 - `/busitrigger` è stato migliorato
