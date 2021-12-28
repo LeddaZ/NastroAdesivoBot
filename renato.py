@@ -4,6 +4,7 @@
 # 
 
 # Importazione dei moduli necessari
+import dateparser
 from dotenv import load_dotenv
 import github3
 import math
@@ -27,6 +28,13 @@ for tag in repository.tags():
     assert isinstance(tag, github3.repos.tag.RepoTag)
     ver = '{}'.format(tag.name)[1:]
     break
+
+# Data dell'ultimo commit nel branch release, ossia la data
+# dell'ultima versione
+lastCommitHash = repository.branch("release").latest_sha()
+lastCommitDate = repository.git_commit(lastCommitHash).committer['date']
+date = dateparser.parse(lastCommitDate)
+dateStr = str(date.day) + "/" + str(date.month) + "/" + str(date.year)
 
 
 # Trigger
@@ -402,7 +410,7 @@ def busitrigger(update, context):
 
 
 # /businfo e /start
-startText = "<b>NastroAdesivoBot</b>\nVersione <code>" + ver + "</code> del " + "\nDigita /busitrigger per la lista di trigger e comandi\n<a href=\"https://github.com/LeddaZ/NastroAdesivoBot/\">Codice sorgente</a> - <a href=\"https://github.com/LeddaZ/NastroAdesivoBot/blob/master/extra/changelog.md\">Changelog</a>\nIspirato al mitico <b>Renato Busata</b> e creato da @LeddaZ"
+startText = "<b>NastroAdesivoBot</b>\nVersione <code>" + ver + "</code> del " + dateStr + "\nDigita /busitrigger per la lista di trigger e comandi\n<a href=\"https://github.com/LeddaZ/NastroAdesivoBot/\">Codice sorgente</a> - <a href=\"https://github.com/LeddaZ/NastroAdesivoBot/blob/master/extra/changelog.md\">Changelog</a>\nIspirato al mitico <b>Renato Busata</b> e creato da @LeddaZ"
 
 def businfo(update, context):
     context.bot.send_message(chat_id = update.effective_chat.id, text = startText, parse_mode = telegram.ParseMode.HTML)
