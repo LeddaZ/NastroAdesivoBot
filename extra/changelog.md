@@ -1,5 +1,8 @@
 # Changelog
 
+## Versione 4.0.0
+- Il bot è stato riscritto in Python. Manca solo `neofetch` in `/bustats`, forse verrà riaggiunto più avanti
+
 ## Versione 3.1.0
 - Il codice che esegue `neofetch` per visualizzare le specifiche del server in `/bustats` è stato completamente rifatto, inoltre ora l'uptime si aggiorna correttamente
 - Il codice che restituisce la data della versione è stato semplificato
