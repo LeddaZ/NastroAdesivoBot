@@ -1,5 +1,8 @@
 # Changelog
 
+## Versione 4.0.1
+- È stata riaggiunta la data della versione in `/businfo`
+
 ## Versione 4.0.0
 - Il bot è stato riscritto in Python. Manca solo `neofetch` in `/bustats`, forse verrà riaggiunto più avanti
 
