@@ -4,13 +4,14 @@
 # 
 
 # Importazione dei moduli necessari
-import os, psutil
-from process_uptime import getuptime
-import github3
-import telegram
-import random
-import math
 from dotenv import load_dotenv
+import github3
+import math
+import os
+from process_uptime import getuptime
+import psutil
+import random
+import telegram
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import CallbackQueryHandler, CommandHandler, Filters, MessageHandler, Updater
 
