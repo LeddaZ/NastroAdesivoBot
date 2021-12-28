@@ -1,5 +1,5 @@
 # NastroAdesivoBot ![Versione](https://img.shields.io/github/v/release/LeddaZ/NastroAdesivoBot?color=red&label=Ultima%20versione)
-Il bot Telegram del Busi scritto in Node.js.
+Il bot Telegram del Busi scritto in Python.
 
 # Changelog
 Il [changelog](https://github.com/LeddaZ/NastroAdesivoBot/blob/master/extra/changelog.md) contiene tutte le modifiche introdotte con ogni aggiornamento del bot.
@@ -16,21 +16,22 @@ Per scaricare una versione specifica visitare la sezione [Releases](https://gith
 Per avviare il codice su un proprio bot seguire queste istruzioni:
 - Creare un bot con [BotFather](https://t.me/BotFather) e annotarsi la token del bot
 - Nelle impostazioni del bot attivare la tastiera inline; inoltre se il bot viene aggiunto a un gruppo dovrà essere amministratore per assicurare il corretto funzionamento
-- Installare [Node.js](https://nodejs.org/it/). È consigliato installare l'ultima versione LTS, dato che il bot viene testato su Node 14 LTS
+- Installare [Python](https://www.python.org/downloads/).
 - Installare [Git](https://git-scm.com/)
 - Aprire una nuova finestra del terminale/prompt dei comandi
 - Clonare la repository con `git clone https://github.com/LeddaZ/NastroAdesivoBot.git`
 - Spostarsi nella cartella con `cd NastroAdesivoBot`
-- Installare i moduli npm necessari con `npm install` (se si verificano errori utilzzare `sudo npm install` su Linux/macOS o un prompt con permessi di amministratore su Windows)
+- Installare i moduli necessari con `pip install -r requirements.txt`
 - Creare un file chiamato `.env` (`touch .env` su Linux/macOS e `type nul > .env` su Windows)
 - Aprire il file con un editor di testo (consiglio [Notepad++](https://notepad-plus-plus.org/) su Windows)
-- Scrivere `TOKEN = xyz` nel file, sostituendo `xyz` con la token del bot generata da BotFather
+- Scrivere `BOT_TOKEN = xyz` nel file, sostituendo `xyz` con la token del bot generata da BotFather
+- Scrivere `GITHUB_TOKEN = xyz` nel file, sostituendo `xyz` con la token di GitHub necessaria per leggere la versione del bot. Per informazioni su come creare una token su GitHub, leggere [qui](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token)
 - Salvare il file e chiudere l'editor
-- Eseguire `npm start` per avviare il bot
+- Eseguire `python renato.py` per avviare il bot
 
 # Software utilizzati per creare il bot
-- [Node.js](https://nodejs.org/it/): il linguaggio di programmazione
-- [node-telegram-bot-api](https://github.com/yagop/node-telegram-bot-api): l'API utilizzata dal bot per interfacciarsi con Telegram
+- [Python](https://www.python.org/downloads/): il linguaggio di programmazione
+- [python-telegram-bot](https://github.com/python-telegram-bot/python-telegram-bot): l'API utilizzata dal bot per interfacciarsi con Telegram
 - [Telegram](https://telegram.org/): meglio di WhatsApp
 - [BotFather](https://t.me/BotFather): il bot per creare i bot
 - [Deaddrop](https://t.me/dead_drop_bot): un servizio che fornisce link diretti per qualsiasi file caricato su Telegram
